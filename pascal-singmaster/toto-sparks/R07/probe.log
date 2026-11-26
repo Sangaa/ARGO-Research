@@ -1,0 +1,21 @@
+exact distinct-bin checks: 1092
+grid: 10 x 10 base bins: 58 base nullity: 49
+single-direction numerical rank checks: 62 injective: 40
+minimum single cost: 73
+direction (1, 7) bins 73 sigma_min 0.079020904 condition 75.021450814
+direction (2, 7) bins 76 sigma_min 0.124878573 condition 47.436072099
+direction (3, 7) bins 79 sigma_min 0.173954879 condition 34.025553945
+direction (1, 8) bins 82 sigma_min 0.290600214 condition 20.345171875
+direction (1, 9) bins 91 sigma_min 0.572707342 condition 10.298130501
+direction (1, 10) bins 100 sigma_min 1.000000000 condition 5.885303567
+single budget 73 best (7, 1) bins 73 sigma_min 0.079020904
+single budget 76 best (2, 7) bins 76 sigma_min 0.124878573
+single budget 80 best (3, 7) bins 79 sigma_min 0.173954879
+single budget 90 best (5, 8) bins 90 sigma_min 0.448764511
+single budget 100 best (1, 10) bins 100 sigma_min 1.000000000
+pair rank checks: 68 injective: 26
+pair budget 83 best ((1, 2), (1, 5)) bins 83 sigma_min 0.081943827
+pair budget 90 best ((1, 4), (2, 3)) bins 90 sigma_min 0.142863615
+pair budget 100 best ((3, 1), (5, 1)) bins 92 sigma_min 0.335994758
+base plus (1,6) nullity: 6
+numpy: 2.3.5
