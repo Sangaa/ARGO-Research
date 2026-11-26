@@ -1,0 +1,243 @@
+# LIT_02 — the citation sweep the originality claim was resting on, and what it found
+
+Date: 2026-11-26 · Seat: CLAUDE / ANALYSIS
+Status: `LITERATURE FINDING / NO PROOF CHANGED / ONE CORRECTION TO THE RECORD, ONE NEW PRECEDENT`
+
+Every record in this lane since R12 has carried the same open item: the originality of the
+bound in `referee/` had never been checked against work that cites Jenkins. `LIT_01` read
+Jenkins himself; nobody read outward from him. This is that sweep.
+
+**Nothing below changes a lemma, a constant or a step of the proof.** Two things change:
+the record's citation of Jenkins is wrong in a way that matters, and there is a precedent
+`referee/V3 §2` does not name.
+
+`EVIDENCE CLASS for every literature claim here: DERIVED.` Each is a reading of a primary
+or secondary source named with its exact locator. None is `MEASURED` — a reading is not a
+measurement, and a second reader can disagree with any of them from the same locators.
+
+---
+
+## 1. The citation in every one of our records is to the wrong version
+
+We cite `arXiv:1411.4111`. The field cites:
+
+> H. Jenkins, *Repeated binomial coefficients and high-degree curves*,
+> **Integers 16 (2016), Paper No. A69, 14 pp.**
+
+That is how Matomäki–Radziwiłł–Shao–Tao–Teräväinen list it (their reference [13]). The
+published paper's own front matter gives: received 12/20/14, **revised 2/2/16**, accepted
+9/30/16, published 10/5/16. So `arXiv:1411.4111` is the *submitted* version, and it was
+revised over fourteen months before publication.
+
+**This is not pedantry, because the versions differ in a way that touches our precedent
+analysis.** Read both:
+
+| | preprint (`arXiv:1411.4111`) | published (`Integers 16 #A69`) |
+| --- | --- | --- |
+| cites Beukers–Shorey–Tijdeman | **no — absent from text and references** | **yes, as reference [4]** |
+| reference count | — | 25 |
+| §3 `a = b = 2` genus-3 computation | present | present |
+| §4 names `a = b, a ≠ 1` as the extension | present | present |
+| Theorem 1 requires `b ≠ a` | yes | yes |
+
+The `a = b` precedent question that forced `referee/V2 → V3` was settled from the preprint.
+It happens to come out the same way in both versions, so V3's correction stands. But the
+*reference list* does not, and that is where a precedent for our own theorem would live.
+
+`SCOPE / METHOD:` both versions read directly; the published one's reference list and front
+matter read in full, the preprint's text searched for "Beukers", "Shorey", "Tijdeman" and
+for every numeric bound. `LIMITATION:` I did not diff the two versions line by line, so I
+can state the reference-list difference and the survival of §§3–4, not that nothing else
+moved.
+
+## 2. The precedent `referee/V3 §2` does not name: Beukers–Shorey–Tijdeman 1999
+
+> F. Beukers, T. N. Shorey, R. Tijdeman, *Irreducibility of polynomials and arithmetic
+> progressions with equal products of terms*, in **Number theory in progress, Vol. 1**,
+> de Gruyter, Berlin, 1999, 11–26.
+
+What it gives, as MRSTT describe it in their Remark 1.5: for **fixed `m < m'`**, the number
+of solutions of `C(n,m) = C(n₀,m₀)` is **finite**, by Siegel's theorem on integral points.
+And MRSTT state plainly that the resulting function is **"completely ineffective"** because
+it rests on Siegel.
+
+Jenkins cites it too — in the published version, for the finiteness of `x^a = y^b` for all
+`(a,b)`, and he also calls it ineffective.
+
+`referee/V3 §2` discusses only Jenkins. It should discuss this as well: it is the earlier
+Siegel-based finiteness result in this exact area, it is what the current literature points
+at for the fixed-column case, and it is ineffective — which is the axis our claim lives on.
+V3 §2 is therefore **incomplete rather than wrong**: no sentence in it becomes false, but a
+referee reading §2 would not learn that the ineffective-finiteness precedent goes back to
+1999 and not to 2014.
+
+## 3. A distinction I was about to draw, and it is false
+
+Before checking, I had reasoned that our statement differs from Jenkins' by being *uniform
+in `k`* — that he fixes the columns while we fix the displacement and quantify over all `k`.
+
+**That is wrong.** Jenkins' Theorem 1 fixes `a` and `b` and ranges over all natural `x, y`.
+It is already uniform in `y`, which is our `k`. The quantifier structure is the same as ours.
+
+Checked at source: Theorem 1 is stated for each fixed pair `(a,b)` with `b ≠ a`, concluding
+finitely many solutions in natural numbers `x, y`, with no lower bound on `y` and no
+canonical-position hypothesis. (Proposition 1 carries an `a < y` condition because its proof
+divides by the leftmost term; Theorem 1 does not repeat it.)
+
+So the contribution is **not** uniformity. It is exactly the two rows V3 already states:
+effectivity, and `a = b` for `t >= 3`. Had I written the uniformity claim down it would have
+been a false distinction flattering our own result, built on not having read the theorem
+statement.
+
+## 4. What the sweep did NOT find, which is the point of running it
+
+Read outward from Jenkins, through the papers that cite him and the papers he cites:
+
+| source | what it bounds | effective? | our form? |
+| --- | --- | --- | --- |
+| Beukers–Shorey–Tijdeman 1999 | finiteness for fixed `m < m'` | **no** (Siegel) | no bound on `n` |
+| Jenkins, Integers 16 (2016) #A69 | finiteness for `b ≠ a`; `a=b=2` by illustration | **no** (Siegel) | no bound on `n` |
+| Matomäki–Radziwiłł–Shao–Tao–Teräväinen, *Singmaster's conjecture in the interior of Pascal's triangle*, Q. J. Math. 73 (2022) 1137–…, `arXiv:2106.03335` | the **number** of solutions of `C(n,m)=t` in the interior region `exp(log^{2/3+ε} n) <= m <= n/2` — at most two, sharp | thresholds effective but "unoptimized and likely too large for numerical verification" (their Rem. 1.7) | **no** — bounds a count, not `n` in terms of a displacement |
+| de Weger, *Equal binomial coefficients: some elementary considerations*, J. Number Theory 63 (1997) | specific equations `C(x,2)=C(y,4)`, `C(x,3)=C(y,4)` solved completely | yes, for those cases | no, and no displacement family |
+| *Binomial collisions and near collisions*, `arXiv:1707.06893` | computational: no unknown collisions for `n <= 10^6`, `C(n,k) <= 10^60`; seven infinite near-collision families; de Weger's Conjecture 2.1 = "no other collisions than those given" | computational cutoffs only | no |
+| Kane 2004/2007, Abbott–Erdős–Hanson 1974, Singmaster 1971 | `N(t)`, the multiplicity of a value | yes | no — the dual problem |
+
+**No source found gives an effective bound on `n` in terms of the displacement.** That is
+the gap the `referee/` claim occupies, and after this sweep it is a sweep-supported
+statement rather than an untested assumption.
+
+`LIMITATION, and it is real:` this is a sweep of the papers reachable in one pass from
+Jenkins' citations, his citers, and keyword search. It is **not** a complete citation graph
+— I have no indexed citation database here, and `arXiv:1411.4111` and the Integers version
+are indexed separately, so a paper citing only the Integers version by journal reference can
+be invisible to a preprint-ID search. `EVIDENCE CLASS: BOUNDED_PROXY` for the
+"nothing found" claim specifically. A library search on the Integers citation remains the
+right next step and has not been done.
+
+## 5. The strongest support for the claim, and it is in Jenkins' own words
+
+Jenkins' §3 states that an **effective** form of Siegel's theorem would let one bound the
+height of the integral points, and that no such form is available; that Baker's effective
+methods for genus-1 curves give **triple-exponential** bounds, "too large to be useful";
+and that an effective Schmidt subspace theorem is not available either.
+
+So the author of the closest paper names the absence of an effective bound as *the*
+obstruction, and names the best available effective tool as triple-exponential.
+
+## 6. And the risk that same fact creates, which is larger than the support
+
+Our bound is `n < 200 t²` — polynomial. It is obtained by an elementary route: a logarithmic
+expansion of a ratio of products, a remainder estimate, and a congruence restriction mod 24.
+No Diophantine geometry, no transcendence method, no Siegel.
+
+A Berkeley number theorist, writing on exactly this family, said the effective bounds
+available to him were triple-exponential. If a polynomial bound follows from elementary
+manipulation, then **the prior probability that the elementary argument has a gap goes up,
+not down.** The sweep finding "nothing published" is consistent with two very different
+worlds: a real gap in the literature, or a real gap in our proof.
+
+This cuts against the result and belongs in the record for exactly that reason. It is also
+the honest reading of §5: the support and the risk come from the same sentence.
+
+`WHAT WOULD DISCRIMINATE:` an external referee, or a search for a counterexample above the
+bound in a range the bound forbids and the literature has already searched — de Weger's
+computations reach `n <= 10^6` and `C(n,k) <= 10^60`, so for small `t` our bound is already
+inside territory someone has swept, and a conflict would show up there rather than in theory.
+
+### 6a. That check, run
+
+`tools/lit02_bound_vs_literature.py`, exit 0. It could only have refuted the bound; it did
+not, and what it actually establishes is narrower than "the bound holds".
+
+| `t` | `200t²` | solutions found | exact integer tests | reach past the bound |
+| --- | --- | --- | --- | --- |
+| 2 | 800 | 0 | 788 | 25.0× |
+| 3 | 1800 | 0 | 522 | 11.1× |
+| 4 | 3200 | 0 | 395 | 6.2× |
+| 5 | 5000 | 0 | 316 | 4.0× |
+| 6 | 7200 | 0 | 262 | 2.8× |
+| 7 | 9800 | 0 | 223 | 2.0× |
+| 8 | 12800 | 0 | 203 | 1.6× |
+| 9 | 16200 | 0 | 174 | 1.2× |
+| 10 | 20000 | 0 | 157 | 1.0× |
+| 11 | 24200 | 0 | 143 | **0.83× — vacuous** |
+| 12 | 28800 | 0 | 130 | **0.69× — vacuous** |
+
+`WHAT WAS MEASURED:` existence of any `(n,k)` in canonical position with
+`C(n,k) = C(n-t,k+t)`. `SCOPE:` `2 <= t <= 12`, `n <= 20000`, `1 <= k <= (n-3t)/2`.
+`EVIDENCE: 0` solutions at any `t >= 2`, and so **0 violations** — but also nothing for the
+bound to forbid, which is the honest reading. `EVIDENCE CLASS: BOUNDED_PROXY`, and
+**genuinely discriminating only for `t <= 10`**: at `t = 11, 12` the bound exceeds the search
+window, so no counterexample was reachable and the PASS carries no information there. The
+script prints that column itself rather than leaving a reader to infer it.
+
+`METHOD, and why it is rigorous rather than a sample.` Let
+`g(k) = log C(n,k) - log C(n-t,k+t)`. Then
+
+```
+g(k+1) - g(k) = log[(n-k)(k+t+1)] - log[(k+1)(n-k-2t)],
+```
+
+and the two arguments differ by exactly
+
+```
+(n-k)(k+t+1) - (k+1)(n-k-2t) = t(n+k+2) > 0.
+```
+
+In canonical position `k <= (n-3t)/2`, so `n-k-2t >= (n-t)/2 > 0` and both arguments are
+positive. Hence **`g` is strictly increasing in `k` for every `n` and every `t >= 1`**, so it
+has at most one zero and **at most one `k` per `(n,t)` can solve the equation**. Binary
+search on `sign(g)` locates it; the candidate and its neighbours are then confirmed with
+exact integer `comb()`. The identity `t(n+k+2)` is re-verified at every `(n,t)` the search
+visits — 0 failures — so the fact the method rests on is under test, not asserted.
+
+`THE CONTROL THAT CARRIES THE MOST INFORMATION.` At `t = 1`, excluded by hypothesis, the
+search finds `(15,5), (104,39), (714,272), (4895,1869)` — the Lind/Singmaster family, the
+`(1,1)` class, Jenkins' unsettled `a = b`. Two of them, `n = 714` and `n = 4895`, **exceed**
+`200·1² = 200`. So the hypothesis `t >= 2` is load-bearing and not cosmetic: drop it and the
+bound is false immediately, against a family known since 1968.
+
+`FOUR VERSIONS, THREE DISCARDED, AND WHY THAT IS PART OF THE RESULT.`
+v1 tested every `(n,k)` with exact `comb()`: ~10⁸ comparisons of integers with thousands of
+digits; it ran nine minutes and was abandoned — this record had asked for a *cheap* check and
+the first thing written was the opposite. v2 added a float prune; still ~10⁸ Python-level
+iterations. v3 introduced the binary search but kept exact tests on every candidate; ten
+minutes, abandoned. v4 added a float guard, and this is the part worth recording: the guard
+was first set at `1e-9`, the run reported **`min|g| = 1.07e-9`**, and so **zero** exact
+comparisons executed — the whole absence claim rested on a float separation that had cleared
+its own threshold by a factor of 1.07. A threshold a result barely clears is a threshold
+chosen to clear it. Raised to `1e-5`, four orders above, and `3,313` exact integer
+comparisons now run and all confirm. The claim is bound to exact arithmetic rather than to a
+margin.
+
+---
+
+## What this record asks for
+
+1. **Citation fix, mechanical:** every record in this lane citing `arXiv:1411.4111` should
+   cite `Integers 16 (2016), Paper No. A69` and may keep the arXiv ID as the preprint.
+   `referee/V1–V3` are frozen and must not be edited; the fix applies to unfrozen records,
+   and this entry is the note a referee needs.
+2. **`referee/V4` is warranted, for §2 only,** to name Beukers–Shorey–Tijdeman 1999 as the
+   earlier ineffective-finiteness precedent. I am not issuing it: §2 states what the
+   *contribution* is, the derivation is TOTO's, and reframing a joint contribution claim
+   alone is the kind of thing that should not be done by one seat. **Routed to TOTO.** V3's
+   two rows — effectivity uniformly new, finiteness new only for `t >= 3` — are unaffected
+   and should not change.
+3. **The §6 check is run, in §6a** — `tools/lit02_bound_vs_literature.py`, exit 0. It did
+   not refute the bound, and it is genuinely discriminating only for `t <= 10`; at
+   `t = 11, 12` the bound exceeds the search window and the PASS carries no information.
+   What remains is a run at larger `t`. The `t = 1` control is the informative part: two of
+   the four Lind/Singmaster solutions exceed `200·1²`, so the `t >= 2` hypothesis is
+   load-bearing.
+4. **The sweep is not closed.** `BOUNDED_PROXY`, for the reason in §4.
+
+## Sources
+
+- [Jenkins, *Repeated Binomial Coefficients and High-Degree Curves*, Integers 16 (2016) #A69](https://math.colgate.edu/~integers/q69/q69.pdf) — published version; 25 references; [volume index](https://math.colgate.edu/~integers/vol16.html)
+- [Jenkins, arXiv:1411.4111](https://arxiv.org/abs/1411.4111) — submitted version ([PDF](https://arxiv.org/pdf/1411.4111))
+- [Matomäki, Radziwiłł, Shao, Tao, Teräväinen, *Singmaster's conjecture in the interior of Pascal's triangle*, arXiv:2106.03335](https://arxiv.org/abs/2106.03335) — [journal version, Q. J. Math.](https://academic.oup.com/qjmath/article/73/3/1137/6563541)
+- [*Binomial collisions and near collisions*, arXiv:1707.06893](https://arxiv.org/html/1707.06893)
+- [de Weger, *Equal binomial coefficients: some elementary considerations*, J. Number Theory (1997)](https://research.tue.nl/en/publications/equal-binomial-coefficients-some-elementary-considerations/)
+- Beukers, Shorey, Tijdeman (1999) — located through Jenkins' reference [4] and MRSTT's reference [4]; **the paper itself was not read**, and §2's description of it is taken from how those two sources describe it. `EVIDENCE CLASS: DERIVED, secondary.`
+- [*Repetitions of multinomial coefficients and a generalization of Singmaster's conjecture*, arXiv:2107.09107](https://arxiv.org/pdf/2107.09107) — checked and **not** relevant: bounds `N_k(a)` for multinomials, no displacement equation, does not cite Jenkins
