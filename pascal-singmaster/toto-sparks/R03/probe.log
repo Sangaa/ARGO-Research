@@ -1,0 +1,5 @@
+coprime pairs: 64 integer witness signs: 30754 difference identities: 30754
+Pascal witness expectations: 1079 rivals: 192 raw moment comparisons: 768 fold comparisons: 384
+mean-only shifted controls: 64
+a=3,b=5: S=7, u= {0: 0, 2: 10, 1: 0} v= [0, 6, 0, 12, 12] W(-2..9)= [30, 30, 0, 0, 0, 0, 0, 0, 0, 0, 30, 30]
+s=8: fourth moment gap: 45/128 epsilon: 1/1024
