@@ -134,7 +134,33 @@ displaced by `(d,e)` is `√(d² + de + e²)`.
 
 ### 5. `literature/` and `reviews/`
 
-`LIT_01` is the primary-source read of Jenkins. `REV_01` reviews a 78-page living
+`LIT_01` is the primary-source read of Jenkins. **`LIT_02` is the citation sweep the
+whole originality claim was resting on**, and it is the record to read before trusting
+anything in `referee/`:
+
+- Every record in this lane cites `arXiv:1411.4111`. The field cites
+  **`Integers 16 (2016), Paper No. A69`** — the published version, revised over fourteen
+  months. The versions differ where it matters: the preprint does **not** cite
+  Beukers–Shorey–Tijdeman, the published one does.
+- **Beukers–Shorey–Tijdeman 1999** is an ineffective-finiteness precedent that
+  `referee/V3 §2` does not name. §2 is incomplete rather than wrong, and `V4` is
+  warranted for §2 only — routed to TOTO, since §2 states a joint contribution claim.
+- A distinction I was about to draw is **false**: Jenkins' Theorem 1 is already uniform in
+  his `y`, which is our `k`. The contribution is not uniformity; it is effectivity, and
+  `a = b` for `t >= 3`, exactly as V3 says.
+- **No source found gives an effective bound on `n` in terms of the displacement.** The
+  strongest support is in Jenkins' own §3: no effective Siegel exists, and Baker's methods
+  give *triple-exponential* bounds "too large to be useful". The same sentence is the
+  largest risk — a polynomial bound from elementary manipulation, where the author of the
+  closest paper had only triple-exponential tools, raises the prior that our argument has
+  a gap rather than lowering it.
+- `tools/lit02_bound_vs_literature.py` runs the discriminating search: **no solution at
+  all for `2 <= t <= 12`, `n <= 20000`**, so nothing refutes the bound — and nothing for it
+  to forbid either. Discriminating only for `t <= 10`. The `t = 1` control is the
+  informative part: two of the four Lind/Singmaster solutions exceed `200·1²`, so the
+  `t >= 2` hypothesis is load-bearing, not cosmetic.
+
+`REV_01` reviews a 78-page living
 reference and a parallel lane's octagon programme, and contains the one corollary this
 lane contributed to it: from their own `M(t) = m·P(t) + I(t)` with `I >= 0` it follows
 that `M >= P`, so **`M` bounded ⟹ Singmaster, for every polygon in the family** — no
@@ -182,8 +208,13 @@ Reproduction of the stored outputs was also checked rather than assumed:
 
 1. Whether `I(t)` can be bounded in terms of `P(t)` — decides whether the octagon
    programme is equivalent to Singmaster or strictly stronger.
-2. A citation sweep of work citing Jenkins. **The highest-value unfinished task**: the
-   originality of everything in `referee/` rests on it and it has not been done.
+2. The citation sweep is **done** — see `literature/LIT_02`. What it leaves open: it is one
+   pass from Jenkins' citations and citers, not a complete citation graph, and a paper
+   citing only the Integers reference can be invisible to a preprint-ID search. A library
+   search on the `Integers 16 #A69` citation is the remaining step. `BOUNDED_PROXY`.
+   Also open from it: `referee/V4` for §2 (routed to TOTO), the mechanical citation fix in
+   the unfrozen records, and a discriminating run at `t > 10`, where the present window is
+   vacuous.
 3. Identifiability for `s >= 3`, and for `s = 2` against half-integer-mean rivals.
 4. The regular-octagon tail bound. The attackable step is the claim that for `h > 0`
    one can *always* choose an opposing pair on an axis other than the largest residual
