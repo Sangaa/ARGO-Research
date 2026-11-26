@@ -1,0 +1,5 @@
+pairs: 120 noncoprime: 56 equal: 15
+witness signs: 39560 mixed periodic differences: 39560 expectations: 1836
+rivals: 360 moment comparisons: 1440 fold comparisons: 720
+4,6: W(-2..10): [48, 24, 0, 0, 0, 0, 0, 0, 0, 0, 0, 24, 48]
+4,6,s=9: epsilon: 1/3072 fourth moment gap: 3/32
