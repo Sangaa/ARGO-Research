@@ -1,0 +1,51 @@
+pascal 3 []
+pascal 6 [(4, 2)]
+pascal 7 []
+pascal 8 []
+pascal 9 []
+pascal 13 []
+pascal 19 []
+pascal 26 []
+pascal 29 []
+pascal 54 []
+pascal 56 [(8, 3)]
+pascal 57 []
+pascal 58 []
+pascal 63 []
+pascal 64 []
+pascal 65 []
+pascal 133 []
+pascal 1729 []
+pascal 538 []
+pascal 1144 []
+pascal 1306 []
+pascal 1643 []
+pascal 2193 []
+pascal 510 []
+pascal 1142 []
+pascal 1285 []
+pascal 1541 []
+pascal 2165 []
+pascal 1645 []
+pascal 952 []
+pascal 832 []
+measured exact 0 13
+tolerance 1 data 1 of 13 baseline integer 500..2200 149 of 1701
+tolerance 5 data 4 of 13 baseline integer 500..2200 519 of 1701
+tolerance 10 data 8 of 13 baseline integer 500..2200 896 of 1701
+D*f [1210.9  1052.8   847.28  823.68]
+LOO fixed power 1 errors percent [-25.48 -10.2   19.96  24.57] MAPE 20.051888325619732
+LOO fixed power 2 errors percent [207.83 -21.33 -32.3  -39.  ] MAPE 75.11570533934437
+gain equal (1, 0)
+gain pascal2 (1, 0.25)
+gain 123 (1, 0.2886751345948129)
+gain 369 (1, 0.2886751345948129)
+gain signed (0, 0.75)
+three sensors checks 325
+exact biharmonic component checks 6624
+ring control CuSn20 n^2 pred [ 548.25 1233.56 2193.  ] error% [ 1.91 -5.55  0.  ]
+ring control CuSn20 thin ring pred [ 404.37 1143.73 2193.  ] error% [-24.84 -12.43   0.  ]
+ring control CuAl n^2 pred [ 541.25 1217.81 2165.  ] error% [ 6.13 -5.23  0.  ]
+ring control CuAl thin ring pred [ 399.21 1129.13 2165.  ] error% [-21.72 -12.13   0.  ]
+ring control Mafra n^2 pred [1513.62 3405.66 6054.5 ] error% [ 1.64 -5.24  0.  ]
+ring control Mafra thin ring pred [1116.39 3157.64 6054.5 ] error% [-25.03 -12.14   0.  ]

@@ -1,0 +1,7 @@
+1000000 Pmax 8 Qmax 32 winners [3003]
+10000000 Pmax 8 Qmax 32 winners [3003]
+100000000 Pmax 8 Qmax 32 winners [3003]
+1000000000 Pmax 8 Qmax 32 winners [3003]
+10000000000 Pmax 8 Qmax 32 winners [3003]
+max interior 16 values [5082, 10584, 22308, 108900, 216600, 573300, 4273290, 9018009, 12744900, 114904020, 6080855000]
+sparse exceptional keys 250989
