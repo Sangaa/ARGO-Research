@@ -15,3 +15,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 
 - [R02 — joint moment and cyclic observation kernel](R02/TOTO_RESEARCH_SPARKS_R02.md): sharp finite-window degree obstruction; exact construction and certificate.
 - [R03 — two coprime circles and an unbounded lattice](R03/TOTO_RESEARCH_SPARKS_R03.md): quadratic-periodic witness; sharp threshold and explicit counterexamples. [Certificate](R03/probe.py) · [stdout](R03/probe.log).
+- [R04 — shared divisors](R04/TOTO_RESEARCH_SPARKS_R04.md): sharp threshold a+b-gcd(a,b), including noncoprime, nested and equal circles. [Certificate](R04/probe.py) · [stdout](R04/probe.log).
