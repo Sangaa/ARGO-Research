@@ -1,0 +1,61 @@
+{
+ "ratio_check": {
+  "points_tested": 5711,
+  "mismatches": 0,
+  "examples": []
+ },
+ "closed_cycle": {
+  "rings_tested": 6786,
+  "product_ne_1": 0
+ },
+ "star_of_david": {
+  "hexagons_tested": 12561,
+  "product_mismatch": 0,
+  "gcd_mismatch": 0
+ },
+ "distance1": {
+  "pairs_found": 1496,
+  "same_row_mirror": 300,
+  "cross_row": 1196,
+  "cross_row_interior": 0,
+  "cross_row_examples": [
+   [
+    1,
+    0,
+    0,
+    0
+   ],
+   [
+    1,
+    0,
+    2,
+    0
+   ],
+   [
+    1,
+    1,
+    0,
+    0
+   ],
+   [
+    1,
+    1,
+    2,
+    2
+   ],
+   [
+    2,
+    0,
+    1,
+    0
+   ],
+   [
+    2,
+    0,
+    3,
+    0
+   ]
+  ],
+  "window": "n<=299, all k"
+ }
+}

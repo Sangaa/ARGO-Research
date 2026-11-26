@@ -1,0 +1,75 @@
+{
+ "pell_reduction": {
+  "claim": "C(n,k)=C(n-1,k+1)  <=>  n=(3k+2+m)/2 with m^2=5k^2+8k+4  <=>  X^2-5m^2=-4, X=5k+4",
+  "rows": [
+   {
+    "n": 15,
+    "k": 5,
+    "5k^2+8k+4": 169,
+    "is_square": true,
+    "m": 13,
+    "X=5k+4": 29,
+    "X^2-5m^2": -4
+   },
+   {
+    "n": 104,
+    "k": 39,
+    "5k^2+8k+4": 7921,
+    "is_square": true,
+    "m": 89,
+    "X=5k+4": 199,
+    "X^2-5m^2": -4
+   },
+   {
+    "n": 714,
+    "k": 272,
+    "5k^2+8k+4": 372100,
+    "is_square": true,
+    "m": 610,
+    "X=5k+4": 1364,
+    "X^2-5m^2": -4
+   },
+   {
+    "n": 4895,
+    "k": 1869,
+    "5k^2+8k+4": 17480761,
+    "is_square": true,
+    "m": 4181,
+    "X=5k+4": 9349,
+    "X^2-5m^2": -4
+   },
+   {
+    "n": 33552,
+    "k": 12815,
+    "5k^2+8k+4": 821223649,
+    "is_square": true,
+    "m": 28657,
+    "X=5k+4": 64079,
+    "X^2-5m^2": -4
+   },
+   {
+    "n": 229970,
+    "k": 87840,
+    "5k^2+8k+4": 38580030724,
+    "is_square": true,
+    "m": 196418,
+    "X=5k+4": 439204,
+    "X^2-5m^2": -4
+   }
+  ],
+  "all_X2_minus_5m2_equal_minus4": true
+ },
+ "de_moivre_slices": {
+  "full_census_pairs": 77,
+  "even-k_slice_pairs": 3,
+  "odd-k_slice_pairs": 17,
+  "slice_pairs_not_in_full_census": 0,
+  "note": "cos/sin multiple-angle coefficient families are the k-even and k-odd slices of the same rows; their coincidence sets are subsets by construction, measured here rather than assumed"
+ },
+ "general_transition_law": {
+  "formula": "C(n-d,k+e)/C(n,k) = prod_{i=0}^{d+e-1}(n-k-i) / [ prod_{i=0}^{d-1}(n-i) * prod_{j=1}^{e}(k+j) ]",
+  "cells_tested": 24775,
+  "mismatches": 0,
+  "consequence": "equality at displacement (d,e) is the integer-point set of ONE algebraic curve of total degree d+e; hex distance of that class is sqrt(d^2+de+e^2)"
+ }
+}

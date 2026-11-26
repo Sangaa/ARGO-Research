@@ -1,0 +1,255 @@
+{
+ "census": {
+  "N_rows": 1000,
+  "entries": 251001,
+  "distinct_values": 249927
+ },
+ "multiplicity_canonical": {
+  "1": 249855,
+  "2": 68,
+  "3": 3,
+  "1001": 1
+ },
+ "pairs": {
+  "all": 77,
+  "with_a_k_le_1_leg": 66,
+  "both_k_ge_2": 11
+ },
+ "distance_spectrum_nontrivial": {
+  "min_d2": 3,
+  "max_d2": 42876,
+  "min_dist": 1.7321,
+  "max_dist": 207.0652
+ },
+ "distance_spectrum_all": {
+  "min_d2": 3,
+  "max_d2": 904404,
+  "min_dist": 1.7321,
+  "max_dist": 951.0016
+ },
+ "nontrivial_pairs_listed": [
+  {
+   "V": "3003",
+   "p": [
+    14,
+    6
+   ],
+   "q": [
+    15,
+    5
+   ],
+   "d2": 3
+  },
+  {
+   "V": "612181827433047018914314\u2026",
+   "p": [
+    103,
+    40
+   ],
+   "q": [
+    104,
+    39
+   ],
+   "d2": 3
+  },
+  {
+   "V": "353783517152276505700698\u2026",
+   "p": [
+    713,
+    273
+   ],
+   "q": [
+    714,
+    272
+   ],
+   "d2": 3
+  },
+  {
+   "V": "120",
+   "p": [
+    10,
+    3
+   ],
+   "q": [
+    16,
+    2
+   ],
+   "d2": 43
+  },
+  {
+   "V": "210",
+   "p": [
+    10,
+    4
+   ],
+   "q": [
+    21,
+    2
+   ],
+   "d2": 147
+  },
+  {
+   "V": "1540",
+   "p": [
+    22,
+    3
+   ],
+   "q": [
+    56,
+    2
+   ],
+   "d2": 1191
+  },
+  {
+   "V": "3003",
+   "p": [
+    15,
+    5
+   ],
+   "q": [
+    78,
+    2
+   ],
+   "d2": 4167
+  },
+  {
+   "V": "3003",
+   "p": [
+    14,
+    6
+   ],
+   "q": [
+    78,
+    2
+   ],
+   "d2": 4368
+  },
+  {
+   "V": "7140",
+   "p": [
+    36,
+    3
+   ],
+   "q": [
+    120,
+    2
+   ],
+   "d2": 7141
+  },
+  {
+   "V": "11628",
+   "p": [
+    19,
+    5
+   ],
+   "q": [
+    153,
+    2
+   ],
+   "d2": 18367
+  },
+  {
+   "V": "24310",
+   "p": [
+    17,
+    8
+   ],
+   "q": [
+    221,
+    2
+   ],
+   "d2": 42876
+  }
+ ],
+ "control_3003": {
+  "canonical_reps_within_N": [
+   [
+    14,
+    6
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    78,
+    2
+   ]
+  ],
+  "all_reps_any_n": [
+   [
+    14,
+    6
+   ],
+   [
+    15,
+    5
+   ],
+   [
+    78,
+    2
+   ],
+   [
+    3003,
+    1
+   ]
+  ],
+  "full_multiplicity_with_mirrors": 8
+ },
+ "control_singmaster_family": [
+  {
+   "i": 1,
+   "n": 15,
+   "k": 5,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 4
+  },
+  {
+   "i": 2,
+   "n": 104,
+   "k": 39,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 29
+  },
+  {
+   "i": 3,
+   "n": 714,
+   "k": 272,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 205
+  },
+  {
+   "i": 4,
+   "n": 4895,
+   "k": 1869,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 1412
+  },
+  {
+   "i": 5,
+   "n": 33552,
+   "k": 12815,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 9688
+  },
+  {
+   "i": 6,
+   "n": 229970,
+   "k": 87840,
+   "identity_holds": true,
+   "d2_between_the_two_cells": 3,
+   "V_digits": 66416
+  }
+ ],
+ "exclusionary_power": {
+  "candidate_cells_tested": 154,
+  "rejected_by_H1_or_H2": 0,
+  "inapplicable_boundary_cells": 0,
+  "candidate_pairs_in_population": 77
+ }
+}
