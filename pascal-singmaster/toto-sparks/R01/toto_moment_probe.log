@@ -1,0 +1,15 @@
+prior example P,Q moments 0..6: [(0, '1', '1'), (1, '0', '0'), (2, '1', '1'), (3, '0', '0'), (4, '5/2', '5/2'), (5, '0', '0'), (6, '17/2', '49/4')]
+s=1..32; moment comparisons below d: 576
+first differing moment exactly matched predicted formula: 32/32
+positive symmetric rival and normalized mass: 32/32
+witness polynomial integer sign checks: 3760
+s=1..10, convolution powers n=1..6: 60 cases; zero mismatches
+s= 1 d= 2 eps= 1/4 first moment gap= 1
+s= 2 d= 4 eps= 1/32 first moment gap= 3/4
+s= 3 d= 4 eps= 1/48 first moment gap= 1
+s= 4 d= 6 eps= 1/192 first moment gap= 15/4
+s= 5 d= 6 eps= 1/320 first moment gap= 9/2
+s= 8 d= 10 eps= 1/5120 first moment gap= 2835/4
+s= 16 d= 18 eps= 1/2359296 first moment gap= 10854718875/4
+s= 32 d= 34 eps= 1/292057776128 first moment gap= 4043484860477916195764296875/4
+common-phase criterion: sizes 3..120, 118 sizes; zero mismatches
