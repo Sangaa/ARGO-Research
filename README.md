@@ -27,6 +27,10 @@ evidence class — read the class before the claim.
 
 ---
 
+## [Living Research Library | المكتبة البحثية الحية](living-library/README.md)
+
+Start here to navigate questions, evidence, scripts, failed attempts, independent reviews and open research. The library is a growing public route index, not a claim that all working records are already exported.
+
 ## Lanes
 
 ### [`pascal-singmaster/`](pascal-singmaster/) — repeated values in Pascal's triangle

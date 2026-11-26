@@ -1,0 +1,10 @@
+general exact moment/inversion cases 2550 marginal entries 33150
+w (1, 3, 3, 1) det -8 cov/step -1/8 diag variance/step 1/4
+n=20 P(X=Y) 0.10193588564873256
+w (2, 2, 2, 2) det 0 cov/step 0 diag variance/step 1/2
+n=20 P(X=Y) 0.12537068761957926
+w (3, 1, 1, 3) det 8 cov/step 1/8 diag variance/step 3/4
+n=20 P(X=Y) 0.1797331031526866
+w (3, 6, 9, 12) det -18 cov/step -1/50 diag variance/step 41/100
+w (3, 6, 9, 18) det 0 cov/step 0 diag variance/step 59/144
+independent coefficient comparisons 16555

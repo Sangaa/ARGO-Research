@@ -1,0 +1,5 @@
+cov (1, 1, 1) mean 0 0 trace 1 det 1/4
+cov (1, 2, 3) mean -1/4 -1/12 trace 11/12 det 3/16
+cov (3, 6, 9) mean -1/4 -1/12 trace 11/12 det 3/16
+lattice coefficients 74046 cyclic projection entries 738 rotation 12341 covariance cases 1330
+centered orbit counts 101/101

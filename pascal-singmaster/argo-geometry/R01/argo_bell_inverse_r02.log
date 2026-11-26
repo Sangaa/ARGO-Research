@@ -1,0 +1,26 @@
+CuSn20 analyzer ratios nominal/hum 4.0762081784386615
+unshifted A,B -3711.3541666666665 19018.088541666668 pred 1227.6249363608576 observed 1306.0 err% -6.001153418004779
+shifted A,B 40447.51666666667 18677.93888888889 pred 1232.4642884165944 observed 1306.0 err% -5.630605787397059
+n^2 baseline 1233.5625 error% -5.546516079632468
+same geometry scale ratio comparison follows
+CuAl analyzer ratios nominal/hum 4.245098039215686
+unshifted A,B -10950.520833333334 18993.880208333332 pred 1199.979003722565 observed 1285.0 err% -6.616419943769259
+shifted A,B 30254.583333333332 18815.13888888889 pred 1202.582868477493 observed 1285.0 err% -6.413784554280689
+n^2 baseline 1217.8125 error% -5.228599221789887
+same geometry scale ratio comparison follows
+CuSn20 Wavanal ratios nominal/hum 4.078066914498141
+unshifted A,B -3802.75 19040.9375 pred 1228.0436423433819 observed 1307.0 err% -6.041037311141406
+shifted A,B 40374.4 18702.31111111111 pred 1232.8597288869123 observed 1307.0 err% -5.672553260373958
+n^2 baseline 1234.125 error% -5.5757459831675575
+same geometry scale ratio comparison follows
+CuAl Wavanal ratios nominal/hum 4.192607003891051
+unshifted A,B -8685.1875 18683.546875 pred 1197.998584880216 observed 1281.5 err% -6.515912221598441
+shifted A,B 32681.25 18461.36111111111 pred 1201.2398224797207 observed 1281.5 err% -6.2629869309621
+n^2 baseline 1212.1875 error% -5.4087007413187616
+same geometry scale ratio comparison follows
+synthetic exact cases 1760
+elastic scale Al/Sn 1.0386346208241974 measured analyzer ratios [0.9479553903345725, 0.9982517482517482, 0.9839203675344563, 0.9379184418746196, 0.9872321021431828]
+triples 1771 classes 1519 ambiguous classes 247 members 499
+example key (9,21) [(0, 4, 5), (1, 2, 6)]
+369 key (18,27) [(3, 6, 9)]
+complex spectral reconstruction exact 9261
