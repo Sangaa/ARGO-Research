@@ -1,0 +1,4 @@
+rivals: 567 moment comparisons: 2268 residue vectors: 1386
+example degree: 10 epsilon: 1/1024 weights: [(-1, Fraction(1, 1024)), (0, Fraction(1, 512)), (1, Fraction(33, 1024)), (2, Fraction(111, 1024)), (3, Fraction(113, 512)), (4, Fraction(139, 512)), (5, Fraction(113, 512)), (6, Fraction(111, 1024)), (7, Fraction(33, 1024)), (8, Fraction(1, 512)), (9, Fraction(1, 1024))]
+first moment gap: 45/128 mod7 differs: True
+convolution steps checked: 6
