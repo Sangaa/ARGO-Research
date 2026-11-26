@@ -1,0 +1,6 @@
+triples: 680 largest pair coprime: 352 not coprime: 328
+rivals: 2040 moment checks: 8160 fold checks: 6120
+example 3,5,7 row 12: epsilon: 1/16384 fourth moment gap: 945/2048
+example perturbation: [(-3, 1), (0, -2), (2, -1), (3, 1), (4, -1), (5, 2), (7, 2), (8, -1), (9, 1), (10, -1), (12, -2), (15, 1)]
+example mod 11 differs: True
+convolution steps checked: 6
