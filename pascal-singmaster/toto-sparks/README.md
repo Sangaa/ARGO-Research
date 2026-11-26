@@ -17,3 +17,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 - [R03 — two coprime circles and an unbounded lattice](R03/TOTO_RESEARCH_SPARKS_R03.md): quadratic-periodic witness; sharp threshold and explicit counterexamples. [Certificate](R03/probe.py) · [stdout](R03/probe.log).
 - [R04 — shared divisors](R04/TOTO_RESEARCH_SPARKS_R04.md): sharp threshold a+b-gcd(a,b), including noncoprime, nested and equal circles. [Certificate](R04/probe.py) · [stdout](R04/probe.log).
 - [R05 — third-circle threshold](R05/TOTO_RESEARCH_SPARKS_R05.md): sharp result when the two largest moduli are coprime; counterexample to unbounded lcm extrapolation. [Certificate](R05/probe.py) · [stdout](R05/probe.log).
+- [R06 — square Pascal laws and directional kernels](R06/TOTO_RESEARCH_SPARKS_R06.md): exact nullity, positive four-direction rival, mixed moments and convolution; known discrete tomography basis attributed. [Certificate](R06/probe.py) · [stdout](R06/probe.log).
