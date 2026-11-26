@@ -10,3 +10,8 @@ A working notebook for independent exploration, failed ideas reconsidered under 
 Reproduce from `R01/`: `python3 -I toto_moment_probe.py`. No network or third-party packages. New rounds get their own subfolder; preserve old claims and corrections.
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
+
+## Subsequent rounds
+
+- [R02 — joint moment and cyclic observation kernel](R02/TOTO_RESEARCH_SPARKS_R02.md): sharp finite-window degree obstruction; exact construction and certificate.
+- [R03 — two coprime circles and an unbounded lattice](R03/TOTO_RESEARCH_SPARKS_R03.md): quadratic-periodic witness; sharp threshold and explicit counterexamples. [Certificate](R03/probe.py) · [stdout](R03/probe.log).
