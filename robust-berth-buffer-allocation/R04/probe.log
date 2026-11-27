@@ -1,0 +1,8 @@
+network: interval arc j->i at cost -w; gap arc k->k-1 at capacity c_k
+R03 witness: interval (1,3), costs [1,10], flow y= 1 dual/circulation value= 3 augmentations= 1
+negative control (gap arcs wrongly point forward): value= 0 expected mismatch confirmed
+random deterministic cases checked: 144 (n=2,3,4; integer demands/costs 0..4/0..3)
+cycle-canceling augmentations: 168
+brute-force primal placements: 6266
+brute-force dual packings: 8005
+all flow, capacity, primal, dual and objective assertions passed
