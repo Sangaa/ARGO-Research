@@ -58,6 +58,10 @@ A separate research lane for octagonal and dodecagonal random walks, collision l
 scale phases and spectral questions. It is mathematically independent of Pascal's
 triangle and Singmaster; its route map keeps each round's derivation, certificate,
 stdout and open limits together.
+### [`information-need-price-feedback/`](information-need-price-feedback/README.md) — information need and market-price feedback
+
+A new independent research lane on whether a rumor-generated price trace changes later participants’ perceived information sufficiency or verification. RISP, goal-sensitive information need, rumor-driven price response and price-based social learning are established; the narrow experiment remains untested and originality unresolved. The aftermarket parts example is not this lane’s target.
+
 
 ---
 
