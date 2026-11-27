@@ -1,0 +1,12 @@
+unit identities: 2401
+boundary multiplicity: 8 jump in ratio: 2.9430355294
+truncated phase sum box 8 strict terms 209 right 1.2868294942 left 4.2298650236
+truncated phase sum box 16 strict terms 817 right 1.2868294942 left 4.2298650236
+truncated phase sum box 24 strict terms 1809 right 1.2868294942 left 4.2298650236
+j n side exact_candidate_count ratio_to_exact
+1 9 left 25 3.9329546357
+1 10 right 25 1.2929871098
+2 57 left 161 4.1808989576
+2 58 right 185 1.2875632961
+3 337 left 1009 4.2214483581
+3 338 right 1081 1.2869311942
