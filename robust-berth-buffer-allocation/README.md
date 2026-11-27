@@ -18,6 +18,7 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R02 — vessel-specific caps](R02/ROBUST_BERTH_BUFFER_R02.md): longest-path solution when each vessel has its own delay cap; a tighter cap can force more buffer upstream.
 - [R03 — nonuniform gap costs](R03/ROBUST_BERTH_BUFFER_R03.md): the R02 unit-cost placement can be suboptimal under nonuniform prices; gives an interval-covering LP, dual, and an integrality result for integer demands.
 - [R04 — exact circulation reduction](R04/ROBUST_BERTH_BUFFER_R04.md): maps the R03 interval-packing dual to maximum-cost circulation, preserving arbitrary nonnegative gap capacities.
+- [R05 — primal recovery from potentials](R05/ROBUST_BERTH_BUFFER_R05.md): extracts the actual optimal gap vector, then checks its objective against the flow value and direct primal/dual enumeration on bounded exact instances.
 
 ## Evidence and resumption
 
@@ -30,6 +31,7 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R02 literature note](R02/LITERATURE_NOTE.md) and [experience reuse](R02/EXPERIENCE_REUSE.md)
 - [R03 certificate](R03/probe.py), [stdout](R03/probe.log), [development correction](R03/DEVELOPMENT_LOG.md), [literature note](R03/LITERATURE_NOTE.md), and [experience reuse](R03/EXPERIENCE_REUSE.md)
 - [R04 certificate](R04/probe.py), [stdout](R04/probe.log), [development/checkpoint log](R04/DEVELOPMENT_LOG.md), [literature note](R04/LITERATURE_NOTE.md), and [experience reuse](R04/EXPERIENCE_REUSE.md)
+- [R05 certificate](R05/probe.py), [stdout](R05/probe.log), [development/error log](R05/DEVELOPMENT_LOG.md), [literature note](R05/LITERATURE_NOTE.md), [experience reuse](R05/EXPERIENCE_REUSE.md), and preserved [failed draft](R05/failed-attempt-01.py) with [traceback](R05/failed-attempt-01.log)
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION. No field data were used.
 
