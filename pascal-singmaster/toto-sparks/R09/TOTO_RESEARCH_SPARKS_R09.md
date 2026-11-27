@@ -1,0 +1,31 @@
+# TOTO | دفتر الشرارات R09 — octagonal collision quotient
+27 November 2026. SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
+DERIVED + MEASURED. No claim of mathematical novelty.
+
+## Source and direction
+Return to the two octagonal generators in the earlier group research. Retrieved R08 (blob d221285bda03dfaafc838ecd6f53566f601f8a14) and Claude's [REV-01](../../reviews/REV_01_LIVING_REFERENCE_AND_OCTAGON_2026-11-26.md) (blob 37830593c452f14480deddad4c75bf29ee36e6ee). REV-01 preserves the distinction between actual checks and arithmetic consistency of earlier octagon tables. The new target is endpoint collision probability, not multiplicity of a specified coefficient or a Singmaster bound. TOTO chose this direction independently.
+
+## Model and quotient
+Let zeta=exp(pi*i/4). Model B (regular octagon) is the uniform random walk on the eight complex steps +/-1,+/-zeta,+/-zeta^2,+/-zeta^3. Since the minimal polynomial of zeta is x^4+1, the integer coordinates k in Z^4 label distinct exact complex endpoints. B is isomorphic as an additive walk to the nearest-neighbor walk on Z^4 with steps +/-e_j. This is algebraic rank, not four physical spatial dimensions.
+
+Model A (integer nonregular octagon) takes the eight signed steps from the four columns (2,1),(1,2),(-1,2),(-2,1). Define L: Z^4 -> Z^2 by those columns. Its action on the walk is exactly pushforward: A=L(B) under common step labels. This is not a claim that L extends to a real-linear transformation of the two physical coordinates of the regular octagon. Every path in either model has probability 8^(-n).
+
+## First collision
+Write k=(a,b,c,d) in ker L. Solving gives b=(-5a+3d)/4 and c=(3a-5d)/4, with a+d divisible by 4. If a+d=0 then d=-a,b=-2a,c=2a and nonzero k has l1 norm >=6. Otherwise |a|+|d|>=4 and |b|+|c|>=|(a+d)/2|>=2, giving the same bound. Equality occurs exactly for plus/minus (1,-2,2,-1) and plus/minus (2,-1,-1,2): in the nonzero-sum case equality requires sum +/-4, compatible signs and b,c of the opposite sign, which forces a=d=+/-2. The two positive displayed generators form a Z-basis: write d=-a+4j, then k=a(1,-2,2,-1)+j(0,3,-5,4), and the second displayed generator is twice the first plus the latter.
+
+Two endpoints after n steps differ by a vector of l1 norm at most 2n. Hence L is injective on reachable endpoints for n<=2. At n=3 a shortest kernel relation can be split into two length-three signed walks, giving distinct B endpoints with the same A endpoint. Therefore first loss of endpoint information occurs at n=3, exactly. At 6 steps the four shortest relations each contribute 6!/(2!2!)=180 extra return words, totaling 720.
+
+## Collision probability and its asymptotic
+Define C_X(n)=Pr(X_n=X'_n) for independent walks with the same law. By symmetry C_X(n)=Pr(X_(2n)=0). For exact endpoint counts w_B(k), A's counts are fiber sums w_A(y)=sum_(Lk=y)w_B(k). Thus 8^(2n)*(C_A-C_B) equals the nonnegative sum of cross products w_B(k)w_B(k') over distinct k,k' with Lk=Lk'. This proves inequality without an asymptotic assumption. Equality for n<=2 and strict inequality at n=3 follow above.
+
+For the return asymptotic, use Fourier inversion on the rank-d lattice. B has covariance Sigma_B=I_4/4, A has Sigma_A=(5/2)I_2. In each model the difference lattice of one-step support is the integer even-coordinate-sum sublattice: B via e_i-e_j and 2e_i; A via differences (2,0),(0,2),(1,-1), and every step has odd coordinate sum. Therefore the only unit-modulus points of the characteristic function on the torus are 0 and (pi,...,pi). The walk has period 2; both points contribute equally for even return times. At zero phi(theta)=1-theta^T Sigma theta/2+O(||theta||^4); compactness bounds |phi| below 1 off neighborhoods of the two points. Scaling theta by 1/sqrt(2n), the Gaussian integral gives the standard local central limit return formula:
+p_(2n)(0) ~ 2/((4*pi*n)^(d/2)*sqrt(det Sigma)).
+Hence C_A(n) ~ 1/(5*pi*n), C_B(n) ~ 2/(pi^2*n^2), and C_A(n)/C_B(n) ~ pi*n/10. These are model-specific applications of established lattice random walk theory, not a novel general local limit theorem. Background reference: Lawler and Limic, Random Walk: A Modern Introduction, chapter 2, https://doi.org/10.1017/CBO9780511750854.003 (publisher chapter metadata accessed; proof above uses the usual Fourier-Gaussian argument directly).
+
+A further standard consequence is recurrence of the A walk and transience of the exact B endpoint walk: sums of return probabilities respectively diverge and converge. For an irreducible walk the expected total visits to the origin including time zero equals 1/(1-f), where f is probability of a positive-time return, by the strong Markov property. Thus A returns almost surely at least once and indeed infinitely often, whereas B has positive probability of never returning. Exact return is not the same as return within finite physical distance.
+
+## Execution evidence
+Run python -I probe.py, standard library only. Actual stdout in probe.log, local execution on 27 November 2026. Enumerated integer vectors in [-6,6]^4 filtered by l1<=6; checked exactly the four shortest nonzero relations. Independent dynamic programs for A and B agree with fiber pushforward at all 8 tested times n=1..8; mass conservation, collision inequality and independent balanced-count formula for B verified. Return DP for A through 80 steps, sampled ratios at n=1,2,3,5,10,20,40; exact B return count formula sum (2n)!/prod(r_j!)^2 over four nonnegative r_j summing to n. At n=40 the ratio is 12.644051476, or 1.006181647 times the leading asymptotic. Counts are exact integers; printed ratios are rounded floating values. No finite-resolution detection, physical wave or noise simulation, independent review or novelty assessment. Earlier coefficient-multiplicity experiments are not revalidated by these tests.
+
+## Margin
+Same step count and same eight labels; different quotient and different recurrence class. Exact rank is not visual dimension. Finite detector resolution might turn rank-four exact endpoints into an effectively rank-two observation; quantify crossover separately and do not claim it from the present result. Investigate minimum Euclidean separation of regular octagon endpoints using algebraic conjugates. The old projection-kernel tool now applies to endpoint geometry rather than measured line sums.
