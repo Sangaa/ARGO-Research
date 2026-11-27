@@ -34,6 +34,8 @@ Suppose N vessels are all ready at time 0, use one berth in fixed order, have po
 - K >= N-1 is sufficient to preserve all N handling-completion times, because only the final vessel can finish while all earlier N-1 ships occupy holding spaces.
 - K >= N is necessary and sufficient to clear all N ships from the berth before T, because all N completed ships must be somewhere off the berth while none has yet entered the channel.
 
+The holding slot is freed when the vessel enters the channel, not when it exits. The probe gives zero unmooring/transfer time and processes a slot-freeing entry before a simultaneous blocked-vessel release. For N=1, K=0 preserves the only handling completion and K=1 is needed to clear the berth before T. If a handling completion occurs exactly at T, direct transfer to that slot can change the release-at-T case; the threshold statement assumes strict completion before T.
+
 This threshold is specific to the stated deterministic, fixed-order, unblocked-through-T family. It does not cover uncertain durations crossing T, partial service, heterogeneous vessel footprints, multiple holding areas, channel closures, shared maneuvering resources, or objectives that price channel waiting.
 
 ## Interpretation
