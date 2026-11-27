@@ -16,6 +16,7 @@ This is a derived special-case formulation and computational check, not a novelt
 
 - [R01 — common delay cap](R01/ROBUST_BERTH_BUFFER_R01.md): exact minimum total buffer under a common cap.
 - [R02 — vessel-specific caps](R02/ROBUST_BERTH_BUFFER_R02.md): longest-path solution when each vessel has its own delay cap; a tighter cap can force more buffer upstream.
+- [R03 — nonuniform gap costs](R03/ROBUST_BERTH_BUFFER_R03.md): R02's unit-cost placement can be weighted-cost suboptimal; interval-covering LP, dual and integer-primal result.
 
 ## Evidence and resumption
 
@@ -26,5 +27,6 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R01 retrieved experience and use log](EXPERIENCE_REUSE.md)
 - [R02 certificate](R02/probe.py) and [stdout](R02/probe.log)
 - [R02 literature note](R02/LITERATURE_NOTE.md) and [experience reuse](R02/EXPERIENCE_REUSE.md)
+- [R03 certificate](R03/probe.py), [stdout](R03/probe.log), [development correction](R03/DEVELOPMENT_LOG.md), [literature note](R03/LITERATURE_NOTE.md), and [experience reuse](R03/EXPERIENCE_REUSE.md)
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION. No field data were used.
