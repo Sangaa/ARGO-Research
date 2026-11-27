@@ -46,3 +46,7 @@ Use the corresponding `Rxx/probe.py` and `Rxx/probe.log` for other rounds. The r
 ## Classification correction
 
 The R09–R18 subject was previously stored below `pascal-singmaster/` because TOTO's notebook had accumulated several research subjects under one series. That path was an organizational mistake, not a mathematical dependency. This lane separates polygon-walk work by subject while preserving the historical commits and old-path index.
+
+## R20 update
+
+[R20 — homometric walks and triple-difference recovery](R20/TOTO_RESEARCH_SPARKS_R20.md): explicit centered noncongruent step laws with identical pair-difference distributions at all equal walk lengths; joint triple differences identify finite-support laws up to translation. Classical homometry and triple correlation credited. [Certificate](R20/probe.py) · [stdout](R20/probe.log). Unequal step lengths; no contradiction of R19.

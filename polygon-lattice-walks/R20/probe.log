@@ -1,0 +1,12 @@
+A: [(-5, -7), (-5, -1), (-5, 8), (-5, 14), (-2, -7), (-2, 8), (7, -7), (7, -1), (10, -7)]
+B: [(-9, 3), (-9, 9), (-6, 3), (3, -12), (3, -6), (3, 3), (3, 9), (6, -12), (6, 3)]
+convex hull vertices: 4 6
+n 1 endpoints 9 9 difference bins 49 collision 1/9
+n 2 endpoints 36 36 difference bins 347 collision 25/729
+n 3 endpoints 100 100 difference bins 905 collision 961/59049
+n 4 endpoints 215 215 difference bins 1653 collision 136411/14348907
+n 5 endpoints 382 386 difference bins 2609 collision 7307033/1162261467
+exact difference-bin comparisons: 5563
+triple bins union: 775 different: 300 first witness: ((-15, 0), (-15, 15)) counts: 0 1
+mixed triple moment: 130 -126 gap: 256
+all assertions passed
