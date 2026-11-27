@@ -32,5 +32,4 @@ def main():
     print('five copies: correct posterior',posterior,'false independence posterior',false_independence)
     print('all exact assertions passed')
 
-
 if __name__=='__main__':main()
