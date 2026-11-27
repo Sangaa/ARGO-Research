@@ -57,5 +57,4 @@ def main():
         print(N,str(Q(N**3,6)),K)
     print('all exact assertions passed; sample counts are formula evaluations, not simulation')
 
-
 if __name__=='__main__':main()
