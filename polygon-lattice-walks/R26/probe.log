@@ -1,0 +1,12 @@
+disk grid points: 81 triples: 85320 suboptimal greedy: 19798
+exact quarter-bound and determinant checks: 85320
+t | greedy/optimal (positive definite groups, baseline I)
+2 0.4600728324
+4 0.3045312490
+8 0.2636693533
+16 0.2534179290
+32 0.2508544916
+64 0.2502136230
+128 0.2500534058
+256 0.2500133514
+all exact assertions passed; displayed ratios are decimal proxies

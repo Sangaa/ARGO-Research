@@ -70,3 +70,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R25 update
 
 [R25 — Selection objectives and directional complementarity](R25/TOTO_RESEARCH_SPARKS_R25.md): arbitrarily poor E-greedy selection, classical log-det guarantee and D/E objective mismatch. [Certificate](R25/probe.py) · [stdout](R25/probe.log). Equal group cost and independent additive information only.
+
+## R26 update
+
+[R26 — Equal-trace planar selection](R26/TOTO_RESEARCH_SPARKS_R26.md): E/D equivalence at fixed trace, sharp quarter guarantee for two-choice greedy, exact grid control and strict sharp family. [Certificate](R26/probe.py) · [stdout](R26/probe.log). Isotropic baseline for bound; no larger-budget or originality claim.
