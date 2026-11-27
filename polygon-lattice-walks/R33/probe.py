@@ -62,5 +62,4 @@ def main():
         s=pulse(10,lead);print(lead,s[0],F(4,5)*s[0])
     print('all exact assertions passed')
 
-
 if __name__=='__main__':main()
