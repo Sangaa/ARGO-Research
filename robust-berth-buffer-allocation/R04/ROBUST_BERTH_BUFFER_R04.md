@@ -12,6 +12,8 @@ For each positive R02 interval demand
 
 `w_(j,i)=A_j+sum_(k=j..i)B_k-H_i > 0`,
 
+first require R02's local feasibility condition `A_i+B_i<=H_i` for every vessel. If it fails, no buffer placement can repair that vessel's own minimum delay, and the original schedule is infeasible. The circulation encodes only the remaining `j<i` interval constraints.
+
 the gap variables satisfy
 
 `sum_(k=j+1..i) g_k >= w_(j,i)`, `g_k>=0`,
@@ -44,7 +46,7 @@ For integral gap prices `c_k`, the network capacities are integral, so an integr
 
 ## Recovering the actual gap vector
 
-The circulation's flow is the dual witness; its objective alone is not a buffer schedule. In the **uncapped interval-arc formulation**, the max-cost-circulation dual has node potentials and gap-capacity prices. Its interval-arc inequalities require `P_i-P_j >= w_(j,i)`. For each gap, the nonnegative capacity price can be chosen at least `P_k-P_(k-1)`. These prices form a feasible R03 gap vector, and strong duality makes an optimal dual solution an optimal gap vector. Equivalently, solve R03's primal with the circulation value as its optimum objective. If a solver uses the optional finite redundant upper bounds on interval arcs, its dual may include prices for those added bounds; do not read its raw dual multipliers as the gap vector without accounting for them. The prototype certificate below checks objective equality and flow mapping; it does not emit recovered gap vectors from node potentials.
+The circulation's flow is the dual witness; its objective alone is not a buffer schedule. In the **uncapped interval-arc formulation**, the max-cost-circulation dual has node potentials and gap-capacity prices. Its interval-arc inequalities require `P_i-P_j >= w_(j,i)`. For each gap, its nonnegative capacity price can be chosen at least `max(0,P_k-P_(k-1))`. These prices form a feasible R03 gap vector, and strong duality makes an optimal dual solution an optimal gap vector. Equivalently, solve R03's primal with the circulation value as its optimum objective. If a solver uses the optional finite redundant upper bounds on interval arcs, its dual may include prices for those added bounds; do not read its raw dual multipliers as the gap vector without accounting for them. The prototype certificate below checks objective equality and flow mapping; it does not emit recovered gap vectors from node potentials.
 
 ## Bounded certificate
 

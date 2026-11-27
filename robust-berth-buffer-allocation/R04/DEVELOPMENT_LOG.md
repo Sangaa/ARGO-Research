@@ -32,3 +32,10 @@ I reused R03's warning that objective changes invalidate optimality transfer, th
 - `MEMORY_DELTA=PENDING`; R04 card will be written only after the source revision is merged and pinned. R03 card remains SOURCE_ONLY; no canonical promotion or model-weight learning claim.
 - Next: await internal HORUS review at exact R04 head; correct bounded findings; merge/read back R04 and then add/read back its Library card.
 - This checkpoint is branch-published and remains `SOURCE_ONLY` until merge/readback.
+
+
+## Append-only correction and checkpoint — 2026-11-27
+
+Correction: the earlier checkpoint heading included the template string `18:xx UTC`, which was not a measured time. Treat its date as 2026-11-27 only; the exact clock time is unavailable. This correction preserves the original mistake rather than presenting the placeholder as a timestamp.
+
+Checkpoint: `SESSION_ID=UNKNOWN/UNREGISTERED`; provider conversation ID unavailable. `TASK_ID` remains the user-directed R04 continuation, with no separately registered identifier. Current ref is PR #39, branch `toto/robust-berth-r04-flow-reduction-20261127`, at pre-correction head `9cedef7c9292d305acbf75bcf0cfc8fa7c178e94`. HORUS returned REVISE at head `a67088e51c38baac9f25988d6258051fad387c1d`; two bounded fixes are being applied: add the R04 derivation to the lane's Rounds route, and state R02's required local feasibility test `A_i+B_i<=H_i`. The certificate remains unchanged and its logged 144 cases passed. R03's SOURCE_ONLY experience card was read and used; R04 Library memory remains pending source merge and pinning. Next: publish the fixes, request exact-head HORUS recheck, then merge/read back Research and Library records. This event is branch-published and remains SOURCE_ONLY.
