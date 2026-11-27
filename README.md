@@ -40,7 +40,7 @@ Pascal's triangle bounded by an absolute constant? `3003` appears eight times an
 nobody knows whether anything appears nine.
 
 Headline (R24): an **effective** uniform quadratic bound — for `t >= 2`, `k >= 1`,
-`n >= 2k + 3t`, every solution of `C(n,k) = C(n-t, k+t)` satisfies `n < 113 t²`.
+`n >= 2k + 3t`, every solution of `C(n,k) = C(n-t, k+t)` satisfies `n < (225/2) t²`.
 This is a session-derived tightening of the frozen V3 statement, which remains `n < 200 t²`.
 Jenkins (arXiv:1411.4111) proves *finiteness* for `t_1 != t_2` by Siegel's theorem,
 which is **ineffective** — it gives no searchable range. This bound is explicit, so
