@@ -63,7 +63,7 @@ stdout and open limits together.
 
 ### [`robust-berth-buffer-allocation/`](robust-berth-buffer-allocation/README.md) — robust buffer placement for a fixed berth sequence
 
-A new operations-research lane, independent of the Pascal, Singmaster and polygon-walk programs. R01–R02 derive exact minimum-buffer formulations for common and vessel-specific delay caps in a fixed berth order. Certificates check bounded instances; related robust-scheduling literature is established and novelty remains unresolved.
+A new operations-research lane, independent of the Pascal, Singmaster and polygon-walk programs. R01–R02 derive exact minimum-buffer formulations for common and vessel-specific delay caps; R03 formulates nonuniform linear gap costs as an interval-covering LP with a dual and an integrality result for integer demands. Certificates check bounded examples, not the general theorem. Related robust-scheduling literature is established; novelty remains unresolved.
 
 ## How a lane is added
 
