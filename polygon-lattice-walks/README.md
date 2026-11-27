@@ -106,3 +106,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R34 update
 
 [R34 — Rumor, leak and imperfect warning](R34/TOTO_RESEARCH_SPARKS_R34.md): owner-triggered distinction of robust and expected-loss decisions, signal timing and duplicate-source confidence. [Certificate](R34/probe.py) · [stdout](R34/probe.log). Behavioral feedback is an untested hypothesis.
+
+## R35 update
+
+[R35 — Revisable rules and review blindness](R35/TOTO_RESEARCH_SPARKS_R35.md): observational equivalence of rejected-label completions, exact minimax finite-population audit budget, owner-originated rule revisability principle. [Certificate](R35/probe.py) · [stdout](R35/probe.log). No operational changes or novelty claim.

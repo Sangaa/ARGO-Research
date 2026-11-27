@@ -1,0 +1,10 @@
+label completions: 2916
+finite population cases: 240 exact subset checks: 7638
+N=1000 | bad labels | audit budget for miss <= 5%
+1 950
+5 450
+10 258
+20 138
+50 57
+100 29
+all assertions passed
