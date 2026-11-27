@@ -38,3 +38,8 @@ HORUS reviewed the event arithmetic and threshold logic as an internal analytica
 Duan et al. (2026), European Journal of Operational Research 330(1), DOI 10.1016/j.ejor.2025.09.016, explicitly models restricted channel width, tide/hydrology, finite inner anchorage, vessel traffic and berth allocation. Publisher/institutional abstract and metadata were checked, not the full paper. Finite buffer and blocking effects are established concepts; R07 makes no novelty claim.
 
 No field data, actual port rule, policy recommendation, predictive result, or canonical knowledge promotion. The owner-provided analogy remains USER_REPORTED; the numeric schedule remains a deterministic bounded illustration.
+
+
+## Exact-head review disposition
+
+HORUS returned ACCEPT_BOUNDED for document blob 503c3425ddeb3f8686c2047ffc3a7e253f5070c4 at branch head 4935f1186f155e80f5cdc4b898ad40a754b19afe. The review confirmed the event order, slot-freed-at-entry convention, zero-transfer-time assumption, N=1/K=0 case, strict-before-T threshold scope, and K=0..3 table. HORUS reran the published probe with python3 -I; output matched probe.log byte-for-byte. This was internal analytical-agent review, not a separate provider conversation or human peer review.
