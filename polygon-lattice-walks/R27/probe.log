@@ -1,0 +1,13 @@
+exchange radius 1 budget 2 strict trapped count patterns 2 epsilon 1/16
+exchange radius 2 budget 3 strict trapped count patterns 4 epsilon 1/192
+exchange radius 3 budget 4 strict trapped count patterns 6 epsilon 1/864
+exchange radius 4 budget 5 strict trapped count patterns 8 epsilon 1/2560
+exchange radius 8 budget 9 strict trapped count patterns 16 epsilon 1/36864
+exchange radius 16 budget 17 strict trapped count patterns 32 epsilon 1/557056
+exchange radius 32 budget 33 strict trapped count patterns 64 epsilon 1/8650752
+exchange radius 64 budget 65 strict trapped count patterns 128 epsilon 1/136314880
+exchange radius 128 budget 129 strict trapped count patterns 256 epsilon 1/2164260864
+strict partial exchange patterns: 516
+grid selections: 1050 one-swap local: 208 nonoptimal local: 38
+general k bound checked numerically on grid; proof separate
+all assertions passed

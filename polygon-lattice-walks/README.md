@@ -74,3 +74,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R26 update
 
 [R26 — Equal-trace planar selection](R26/TOTO_RESEARCH_SPARKS_R26.md): E/D equivalence at fixed trace, sharp quarter guarantee for two-choice greedy, exact grid control and strict sharp family. [Certificate](R26/probe.py) · [stdout](R26/probe.log). Isotropic baseline for bound; no larger-budget or originality claim.
+
+## R27 update
+
+[R27 — Exchange traps versus quality guarantees](R27/TOTO_RESEARCH_SPARKS_R27.md): strict arbitrary-radius exchange traps and a general one-swap quality bound in the planar equal-trace model. [Certificate](R27/probe.py) · [stdout](R27/probe.log). Exact trap controls; general k numerical checks distinct from proof.
