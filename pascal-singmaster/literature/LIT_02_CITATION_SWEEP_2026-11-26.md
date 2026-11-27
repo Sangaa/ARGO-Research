@@ -163,8 +163,28 @@ not, and what it actually establishes is narrower than "the bound holds".
 | 11 | 24200 | 0 | 143 | **0.83× — vacuous** |
 | 12 | 28800 | 0 | 130 | **0.69× — vacuous** |
 
+> **Extended 2026-11-27 to `2 <= t <= 20`, `n <= 100000`.** The table above is the
+> original run; the extended one is **discriminating for every `t` from 2 to 20, with no
+> vacuous row** — reach ranges from 125× past the bound at `t = 2` to 1.2× at `t = 20`.
+> Still 0 solutions, still 0 violations.
+>
+> It needed a different exact test, not a bigger budget. With `comb()` the run could not
+> finish: the float guard admits more candidates as `n` grows, because the minimum
+> separation shrinks, and each admitted candidate cost a comparison of ~30,000-digit
+> integers. Cancelling the factorials first,
+> `∏_{i<t}(n−i) · ∏_{j≤t}(k+j) = ∏_{l<2t}(n−k−l)`, makes the exact test `4t`
+> multiplications of integers bounded by `n`. Measured at `n = 100000, t = 20`: 2000 tests
+> in **0.011 s** factored versus **173 s** with `comb()` — **15,483×**. Verified against
+> `comb()` before replacing it, on all **250,347** triples with `t ≤ 6`, `n < 420` —
+> **0 disagreements** — and on the whole `t = 1` family.
+>
+> And the extended range found a **fifth** member of the `t = 1` control family:
+> `(15,5), (104,39), (714,272), (4895,1869), ` **`(33552, 12815)`**. Three of the five
+> exceed `200·1²`, so the `t >= 2` hypothesis is load-bearing against a larger family than
+> the original run could see.
+
 `WHAT WAS MEASURED:` existence of any `(n,k)` in canonical position with
-`C(n,k) = C(n-t,k+t)`. `SCOPE:` `2 <= t <= 12`, `n <= 20000`, `1 <= k <= (n-3t)/2`.
+`C(n,k) = C(n-t,k+t)`. `SCOPE:` `2 <= t <= 20`, `n <= 100000`, `1 <= k <= (n-3t)/2`.
 `EVIDENCE: 0` solutions at any `t >= 2`, and so **0 violations** — but also nothing for the
 bound to forbid, which is the honest reading. `EVIDENCE CLASS: BOUNDED_PROXY`, and
 **genuinely discriminating only for `t <= 10`**: at `t = 11, 12` the bound exceeds the search
