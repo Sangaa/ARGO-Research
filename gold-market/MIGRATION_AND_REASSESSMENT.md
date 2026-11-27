@@ -37,3 +37,8 @@ The public research tree contains identifiable TOTO and Claude records for these
 
 ## Provenance
 Imported artifacts retain source branch, commit, and blob identity in [source_manifest.json](source_manifest.json). The R01 issue body and all 26 issue comments are preserved verbatim in the public records lane, with source URLs and original comment timestamps in the manifest. Transfer-time observations are recorded here and in the PR, not backdated into the private lab.
+
+
+## Addendum — HORUS participation boundary (2026-11-27)
+
+HORUS reviewed the separate robust-berth R05 study as an **internal analytical collaboration agent**; its R05 development log records that this was not a standalone ChatGPT conversation and no provider session ID exists. See [R05 review record](../robust-berth-buffer-allocation/R05/DEVELOPMENT_LOG.md). That review belongs to the berth-allocation study and is not evidence about the Gold Lab method. No directly attributable HORUS Gold Lab review was found in the transferred source records. No mathematical result from R05 is imported into the Gold model.
