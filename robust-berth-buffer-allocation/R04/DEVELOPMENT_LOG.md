@@ -20,3 +20,15 @@ I reused R03's warning that objective changes invalidate optimality transfer, th
 - Latest inspected ARGO-Research main before R04 work: `9f725a25867b39a4dfdf0a75b9cda523db9318d5`, which includes R03 merge `6bb3a345f4ee0ebadd1062a952953127bd68e9a8` and an unrelated polygon R24 merge. No open berth-buffer PR or R04 branch was found in the bounded GitHub check.
 - `MEMORY_DELTA=PRESENT` planned: add an immutable SOURCE_ONLY R04 experience card after research source is merged and pinned. No promotion to canonical knowledge or claim of model-weight learning.
 - Next action: internal HORUS review, corrections if needed, merge/read back Research R04, then add and read back its Library card. This checkpoint is a draft until the review and source merges close.
+
+
+## CHECKPOINT — 2026-11-27 18:xx UTC
+
+- `SESSION_ID=UNKNOWN/UNREGISTERED`; no authenticated provider conversation ID is exposed.
+- `TASK_ID=USER-DIRECTED CONTINUATION; separately registered ID unavailable`.
+- Current work ref: `PR #39`, branch `toto/robust-berth-r04-flow-reduction-20261127`, review pending.
+- Last source evidence: `ARGO-Research branch head a67088e51c38baac9f25988d6258051fad387c1d`; R04 certificate stdout has 144 deterministic instances, 6,266 primal placements, 8,005 dual packings, flow and orientation assertions passing. This is bounded execution evidence, not a proof of the general mapping.
+- Experience used: R03 SOURCE_ONLY Library card `robust-berth-weighted-gap-costs-20261127-r03`; its objective-change and dual-feasibility lessons altered the R04 checks.
+- `MEMORY_DELTA=PENDING`; R04 card will be written only after the source revision is merged and pinned. R03 card remains SOURCE_ONLY; no canonical promotion or model-weight learning claim.
+- Next: await internal HORUS review at exact R04 head; correct bounded findings; merge/read back R04 and then add/read back its Library card.
+- This checkpoint is branch-published and remains `SOURCE_ONLY` until merge/readback.
