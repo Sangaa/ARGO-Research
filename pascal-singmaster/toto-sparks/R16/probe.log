@@ -1,0 +1,12 @@
+unit form checks: 2401
+cap: 2000 box radius: 13 vectors scanned: 531441
+norm comparisons: 2000 nonzero classes: 169 representatives: 8556
+first nonzero norm multiplicities: [(1, 12), (4, 12), (9, 12), (13, 48), (16, 12), (25, 24), (36, 12), (37, 48), (49, 24), (52, 48), (61, 48), (64, 12), (73, 48), (81, 12), (97, 48), (100, 24), (109, 48), (117, 48)]
+Bessel norm cap: 100 mean proxy: 13.157521244429
+Bessel norm cap: 400 mean proxy: 13.159630599693
+Bessel norm cap: 1600 mean proxy: 13.159630751779
+Bessel norm cap: 10000 mean proxy: 13.159630751779
+phase box: 4 F(1), F(sqrt(period factor)): 13.159776488684 13.159493745156
+phase box: 6 F(1), F(sqrt(period factor)): 13.159776858596 13.159504152252
+phase box: 8 F(1), F(sqrt(period factor)): 13.159776858596 13.159504152256
+no finite-time path simulation; quadrature and phase values are numerical proxies
