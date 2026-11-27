@@ -75,7 +75,7 @@ Round by round, in date order. The useful ones to start from:
 | `R20`–`R22` | the margin, and the `J1`/`J2` layers |
 | `R23` | review of the `n < 200t²` derivation — the verdict that produced `referee/V1` |
 
-### 3. `spectral/S01`–`S08` — does Pascal's regularity reach the laws of nature?
+### 3. `spectral/S01`–`S10` — does Pascal's regularity reach the laws of nature?
 
 Opened by a direction from Human Authority: Pascal's row is the binomial
 distribution, which is the discrete heat kernel and tends to the Gaussian — so does
@@ -105,9 +105,21 @@ What actually came out of it:
   against all 10 genuine repetition pairs in range (**0 false exclusions**), which is
   the check the Krawtchouk row failed.
 
+- **The apparatus question answers itself, and the answer is no for `s >= 3`.** `S03`
+  recovers `(s, L)` from variance and excess kurtosis *inside* the Pascal family and left
+  the model-selection question open. `S10` closes it both ways: identifiability is
+  **proved** for `s = 2` against half-integer rivals — the case `S03` left open, closed by
+  a two-point vertex bound giving `mu4 >= 11/16` against the target `1/2` — and **refuted**
+  for every `s` from 3 to 20 by explicit non-Pascal rivals, the smallest being
+  `(3/128, 9/32, 25/64, 9/32, 3/128)` on `{0, ±1, ±2}`, which matches Pascal `(1,3,3,1)/8`
+  in both variance and excess kurtosis and differs first at the sixth moment. So the
+  recovery formulas are parameter recovery, not a test of the model. `S10` also shows the
+  claim is conditional on a lattice: off every lattice, a four-point rival exists at
+  `u² = 3/2`.
+
 `S04` and `S01` carry correction notices at the top. `S07` is the record of a review
 published by a parallel lane that **I did not read** before writing three records that
-repeat claims it had already refuted.
+repeat claims it had already refuted. `S10` narrows the hopeful reading of `S03 §5`.
 
 ### 4. `hex_lattice_R10/` — the geometric lane, and why it closed
 
