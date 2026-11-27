@@ -1,4 +1,4 @@
-# SINGMASTER R24 — tightening the effective bound to `n < 113 t^2`
+# SINGMASTER R24 — tightening the effective bound to `n < (225/2) t^2`
 
 **Date:** 2026-11-27  
 **Status:** SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION  
@@ -24,7 +24,7 @@ binom(n,k) = binom(n-t,k+t),
 then
 
 ```text
-n < 113 t^2.
+n < (225/2) t^2.
 ```
 
 This retains V3's canonical-position hypothesis. It does not cover non-canonical triples and does not settle the Singmaster conjecture.
@@ -37,44 +37,44 @@ Keep V3's variables `Q = n-k-t+1/2`, `x=1/Q`, and bracket endpoints `W=-L` or `W
 1/2 + 1/4 + 1/4 + 1/12 + 1/2 + 2/3 = 9/4.
 ```
 
-Therefore `|E| <= (9/4)t^5x^4`. After dividing the logarithmic identity by `t x^2/24`, the error is at most `54t^4x^2`:
+The sum is **strictly** less than `9/4`: in particular, the `s_i^2 d_i x^4` source is strictly below its listed `1/4` bound because `|s_i| <= (t-1)/2 < t/2`, while the other source bounds are no larger than their listed entries. Thus `|E| < (9/4)t^5x^4`. After dividing the logarithmic identity by `t x^2/24`, the error is strictly less than `54t^4x^2`:
 
 ```text
 (24/(t x^2)) log(A/B) = W + (t^2-1)x + err,
-|err| <= 54t^4x^2.
+|err| < 54t^4x^2.
 ```
 
-Assume for contradiction that `Q >= (113/2)t^2`. Then `x <= 2/(113t^2)`. At a lower bracket endpoint, `W=-L<=-1`, so
+Assume for contradiction that `Q >= (225/4)t^2`. Then `x <= 4/(225t^2)`. At a lower bracket endpoint, `W=-L<=-1`, so
 
 ```text
 (24/(t x^2)) log(A/B)
-  <= -1 + 2/113 + 216/12769 < 0.
+  < -1 + 4/225 + 864/50625 < 0.
 ```
 
 At an upper endpoint with `R>=1`,
 
 ```text
-(24/(t x^2)) log(A/B) >= 1 - 216/12769 > 0.
+(24/(t x^2)) log(A/B) > 1 - 864/50625 > 0.
 ```
 
 The remaining case is `R=0`. By the mod-24 bracket, this occurs only when `t == +/-1 (mod 6)`; since `t>=2`, then `t>=5`. Dividing by `t x^3/24` instead gives
 
 ```text
 (24/(t x^3)) log(A/B)
-  >= t^2 - 1 - 54t^4x
-  >= (5/113)t^2 - 1
-  >= 12/113 > 0.
+  > t^2 - 1 - 54t^4x
+  >= t^2/25 - 1
+  >= 0.
 ```
 
-The endpoint signs and V3's monotonicity lemma place the unique zero strictly inside the excluded arithmetic bracket, a contradiction. Thus `Q < (113/2)t^2`.
+At `t=5` the last coarse lower bound is zero, but the first inequality is strict because the Taylor remainder is strict; for larger admissible `t`, the final bound is positive. The endpoint signs and V3's monotonicity lemma place the unique zero strictly inside the excluded arithmetic bracket, a contradiction. Thus `Q < (225/4)t^2`.
 
-Canonical position gives `n <= 2Q-t-1`, hence `n < 113t^2`.
+Canonical position gives `n <= 2Q-t-1`, hence `n < (225/2)t^2-t-1 < (225/2)t^2`.
 
 ## Independent review and evidence limits
 
 HORUS independently reconstructed the factorial reduction, mod-24 bracket, remainder estimate, positivity/monotonicity step, and canonical-position scope in V3/R23 and found no gap in those steps. HORUS also identified the direct constant tightening. This is a model-side review within this session, not human peer review or external validation.
 
-[`singmaster_r24_bound.py`](tools/singmaster_r24_bound.py) checks the numerical margins above using exact rational arithmetic. The script does not re-prove V3's analytic remainder lemma or its binomial-factorization identities; those are inherited proof obligations cited above. No scan, numerical approximation, or empirical data supports the all-`t` conclusion.
+[`singmaster_r24_bound.py`](tools/singmaster_r24_bound.py) checks the displayed margins using exact rational arithmetic. The strict remainder step is explicit in this record; the certificate does not re-prove V3's analytic remainder expansion or its binomial-factorization identities, which remain inherited proof obligations. No scan, numerical approximation, or empirical data supports the all-`t` conclusion.
 
 ## Next
 
