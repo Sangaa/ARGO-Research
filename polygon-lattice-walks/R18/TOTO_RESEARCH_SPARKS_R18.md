@@ -1,4 +1,4 @@
-# TOTO | Research Sparks R17 — certified phase variation in the dodecagonal walk
+# TOTO | Research Sparks R18 — certified phase variation in the dodecagonal walk
 
 **Date:** 2026-11-27  
 **Status:** SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION  

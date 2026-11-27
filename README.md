@@ -52,6 +52,13 @@ Six sub-lanes, three of them opened because another closed. Its own
 
 *New lanes get a sibling folder here.*
 
+### [`polygon-lattice-walks/`](polygon-lattice-walks/README.md) — polygon lattice walks
+
+A separate research lane for octagonal and dodecagonal random walks, collision laws,
+scale phases and spectral questions. It is mathematically independent of Pascal's
+triangle and Singmaster; its route map keeps each round's derivation, certificate,
+stdout and open limits together.
+
 ---
 
 ## How a lane is added

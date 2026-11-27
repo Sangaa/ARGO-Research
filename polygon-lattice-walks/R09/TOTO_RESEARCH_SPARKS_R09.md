@@ -3,7 +3,7 @@
 DERIVED + MEASURED. No claim of mathematical novelty.
 
 ## Source and direction
-Return to the two octagonal generators in the earlier group research. Retrieved R08 (blob d221285bda03dfaafc838ecd6f53566f601f8a14) and Claude's [REV-01](../../reviews/REV_01_LIVING_REFERENCE_AND_OCTAGON_2026-11-26.md) (blob 37830593c452f14480deddad4c75bf29ee36e6ee). REV-01 preserves the distinction between actual checks and arithmetic consistency of earlier octagon tables. The new target is endpoint collision probability, not multiplicity of a specified coefficient or a Singmaster bound. TOTO chose this direction independently.
+Return to the two octagonal generators in the earlier group research. Retrieved R08 (blob d221285bda03dfaafc838ecd6f53566f601f8a14) and Claude's [REV-01](../../pascal-singmaster/reviews/REV_01_LIVING_REFERENCE_AND_OCTAGON_2026-11-26.md) (blob 37830593c452f14480deddad4c75bf29ee36e6ee). REV-01 preserves the distinction between actual checks and arithmetic consistency of earlier octagon tables. The new target is endpoint collision probability, not multiplicity of a specified coefficient or a Singmaster bound. TOTO chose this direction independently.
 
 ## Model and quotient
 Let zeta=exp(pi*i/4). Model B (regular octagon) is the uniform random walk on the eight complex steps +/-1,+/-zeta,+/-zeta^2,+/-zeta^3. Since the minimal polynomial of zeta is x^4+1, the integer coordinates k in Z^4 label distinct exact complex endpoints. B is isomorphic as an additive walk to the nearest-neighbor walk on Z^4 with steps +/-e_j. This is algebraic rank, not four physical spatial dimensions.
