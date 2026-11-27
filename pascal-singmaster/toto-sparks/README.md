@@ -24,3 +24,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 - [R10 — octagonal separation and Pell units](R10/TOTO_RESEARCH_SPARKS_R10.md): sharp order of minimum distance, bounded-error discrimination thresholds, exact small-size minima. [Certificate](R10/probe.py) · [stdout](R10/probe.log).
 - [R11 — finite-resolution collision law](R11/TOTO_RESEARCH_SPARKS_R11.md): fixed positive radius changes collision exponent; Stone local limit theorem, exact disk counts. [Certificate](R11/probe.py) · [stdout](R11/probe.log).
 - [R12 — Pell-scale critical-resolution discontinuities](R12/TOTO_RESEARCH_SPARKS_R12.md): two distinct subsequential limits, exact jump 8/e, six exact disk counts and truncated phase sums. [Certificate](R12/probe.py) · [stdout](R12/probe.log).
+- [R13 — smooth observation and scale phase](R13/TOTO_RESEARCH_SPARKS_R13.md): analytic periodic Gaussian limit, certified nonconstancy. [Certificate](R13/probe.py) · [stdout](R13/probe.log).

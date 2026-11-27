@@ -1,0 +1,14 @@
+even lattice vectors: 41761 box radius: 8
+certified outside-box bound: 1.376870114e-09
+F(1) certified interval: (4.9409, 4.9410)
+F(sqrt(lambda)) certified interval: (4.9716, 4.9718)
+certified difference > 0.03
+phase 0.000 box sum 4.9409283661
+phase 0.125 box sum 4.9443149671
+phase 0.250 box sum 4.9540803507
+phase 0.375 box sum 4.9660663423
+phase 0.500 box sum 4.9716736992
+phase 0.625 box sum 4.9660663423
+phase 0.750 box sum 4.9540803507
+phase 0.875 box sum 4.9443149671
+phase 1.000 box sum 4.9409283661
