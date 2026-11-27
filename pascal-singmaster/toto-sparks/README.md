@@ -25,3 +25,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 - [R11 — finite-resolution collision law](R11/TOTO_RESEARCH_SPARKS_R11.md): fixed positive radius changes collision exponent; Stone local limit theorem, exact disk counts. [Certificate](R11/probe.py) · [stdout](R11/probe.log).
 - [R12 — Pell-scale critical-resolution discontinuities](R12/TOTO_RESEARCH_SPARKS_R12.md): two distinct subsequential limits, exact jump 8/e, six exact disk counts and truncated phase sums. [Certificate](R12/probe.py) · [stdout](R12/probe.log).
 - [R13 — smooth observation and scale phase](R13/TOTO_RESEARCH_SPARKS_R13.md): analytic periodic Gaussian limit, certified nonconstancy. [Certificate](R13/probe.py) · [stdout](R13/probe.log).
+- [R14 — phase-balanced observation and Bessel orbit sum](R14/TOTO_RESEARCH_SPARKS_R14.md): uniform limiting phase-bias bound and exact mean formula; numerical cross-checks. [Certificate](R14/probe.py) · [stdout](R14/probe.log).

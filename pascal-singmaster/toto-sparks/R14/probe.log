@@ -1,0 +1,14 @@
+even lattice vectors: 41761 distinct form pairs: 2356
+uniform real box tail bound after phase reduction: 1.37687011417e-09
+256-node mean (proxy): 4.955190673183
+nodes measured_spread conservative_alias_bound
+1 0.0307453331566 96.1538461538
+2 0.00222068201454 6.41025641026
+3 7.87834833549e-06 0.455705432009
+4 3.69614223672e-08 0.0325393726409
+8 0 8.47004519897e-07
+12 0 2.2048222598e-11
+orbit box 4 representatives 1592 norm classes 85 mean proxy 4.955185013897
+orbit box 6 representatives 6768 norm classes 301 mean proxy 4.955190673159
+orbit box 8 representatives 19560 norm classes 771 mean proxy 4.955190673183
+No finite-time paths evaluated; quadrature and orbit sums are numerical proxies.
