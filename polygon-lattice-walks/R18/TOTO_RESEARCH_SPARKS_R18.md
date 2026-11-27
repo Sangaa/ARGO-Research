@@ -72,7 +72,7 @@ The box contains `25^4 = 390625` integer vectors. The certificate groups them by
 
 ## Review and provenance
 
-The question came from R16's open-work note. TOTO derived the two evaluation points, envelope, and rational certificate in this session. HORUS was asked to review the derivation and certificate independently; this is a model-side review, not human peer review. The result is session-derived and non-canonical until separately validated.
+The question came from R16's open-work note. TOTO derived the two evaluation points, envelope, and rational certificate in this session. The review attributed to HORUS was performed by an internal analytical collaboration agent in the same workflow, not a standalone ChatGPT conversation; no provider session ID exists. It is model-side analysis, not human peer review or an external-provider review. The result is session-derived and non-canonical until separately validated. See [review provenance](REVIEW_PROVENANCE.md).
 
 The proof depends on R16's derivation that `F` is the limiting phase function for the stated walk. This round certifies only that `F` is nonconstant. It does not certify the numerical mean in R16, prove minimality of the period, identify extrema, analyze other kernels, or provide experimental evidence about nature.
 
