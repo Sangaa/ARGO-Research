@@ -62,3 +62,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R23 update
 
 [R23 — Anchor uniqueness, conditioning and sampling cost](R23/TOTO_RESEARCH_SPARKS_R23.md): uniform signature margin with diverging anchored inverse gain, feasible noise ambiguity, and rare-reference sampling bound. [Certificate](R23/probe.py) · [stdout](R23/probe.log). Exact anchors assumed; no global shape instability claim.
+
+## R24 update
+
+[R24 — Complementary anchor geometry and information budget](R24/TOTO_RESEARCH_SPARKS_R24.md): exact centered linear covariance, complementary weak references, area identity and fixed-trace optimum. [Certificate](R24/probe.py) · [stdout](R24/probe.log). Independent readings and known anchors assumed.
