@@ -1,0 +1,16 @@
+grid subset area and trace checks: 420
+h individual worst variance / sigma^2 ; combined worst variance / sigma^2
+1/2 3/2 3/26
+1/4 6 6/49
+1/8 24 24/193
+1/16 96 96/769
+1/32 384 384/3073
+1/64 1536 1536/12289
+1/128 6144 6144/49153
+1/256 24576 24576/196609
+1/512 98304 98304/786433
+1/1024 393216 393216/3145729
+1/2048 1572864 1572864/12582913
+1/4096 6291456 6291456/50331649
+shared-reading covariance / sigma^2: (Fraction(1, 2), Fraction(1, 4), Fraction(1, 2))
+all exact assertions passed
