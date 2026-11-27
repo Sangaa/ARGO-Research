@@ -66,3 +66,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R24 update
 
 [R24 — Complementary anchor geometry and information budget](R24/TOTO_RESEARCH_SPARKS_R24.md): exact centered linear covariance, complementary weak references, area identity and fixed-trace optimum. [Certificate](R24/probe.py) · [stdout](R24/probe.log). Independent readings and known anchors assumed.
+
+## R25 update
+
+[R25 — Selection objectives and directional complementarity](R25/TOTO_RESEARCH_SPARKS_R25.md): arbitrarily poor E-greedy selection, classical log-det guarantee and D/E objective mismatch. [Certificate](R25/probe.py) · [stdout](R25/probe.log). Equal group cost and independent additive information only.
