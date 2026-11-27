@@ -7,7 +7,8 @@ A route index for research that can be resumed, challenged and reproduced. It co
 | Question / المسار | Start here | Resume |
 |---|---|---|
 | Repeated binomial values / حدسية سينجماستر | [Route index](../pascal-singmaster/README.md) · [Frozen review versions](../pascal-singmaster/referee/README.md) | Fixed-shift bounds, scope, open conjecture |
-| Spectral modes and hidden information / الطيف | [Spectral records](../pascal-singmaster/spectral/) · [TOTO probes](../pascal-singmaster/toto-sparks/README.md) | Compare observable modes, exact phase conditions |
+| Pascal spectral modes / طيف باسكال | [Spectral records](../pascal-singmaster/spectral/) | Compare observable modes and exact phase conditions |
+| Polygon lattice walks / مشي الشبكات متعددة الأضلاع | [Independent lane and route map](../polygon-lattice-walks/README.md) | Resume collision laws, scale phases and spectral questions independently of Pascal |
 | Geometry-first generators / تصميم الهندسة | [ARGO R01 evidence and route index](../pascal-singmaster/argo-geometry/R01/README.md) | Ternary lift, square marginals, octagonal interior multiplicity |
 | Hexagonal lattice / الشبكة السداسية | [Notes and certificates](../pascal-singmaster/hex_lattice_R10/NOTES.md) | Distinguish lattice geometry and arithmetic |
 | Physical analogues and failed models / النماذج الفيزيائية | [Bell and inverse-model evidence](../pascal-singmaster/argo-geometry/R01/README.md) | No validated material law; define dimensions and measurements |
