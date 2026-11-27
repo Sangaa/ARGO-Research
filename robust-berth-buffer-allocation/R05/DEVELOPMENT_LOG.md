@@ -33,3 +33,10 @@ Horus exact-head analytical review: pending at candidate creation; append the di
 ## Exact-head review and correction trail
 
 HORUS internal analytical-agent review at candidate head `e4c329b4b618f1c5fbf5fdbc01e6e3836f0ec266`: `REVISE BEFORE MERGE`. It found that the reverse-residual sentence did not cover `c_k=0`; the theorem remains valid because the zero-capacity objective terms are both zero, and R05's proof now states that case explicitly. It also identified literal `\n` separators in the lane index, a missing R05 row in the living-library index, and a stdout block that did not exactly match the script. Those documentation defects are corrected in the new candidate; exact-head re-review is pending. This was internal review, not a separate Horus provider session or human peer review.
+
+
+## Final exact-head review disposition
+
+HORUS reviewed the R05 proof, source certificate, stdout, preserved failed draft, and route readbacks at exact head `9f71478911cc6c1250f63b9c76da6d8cd15ca018` (base `e0c173c9b848704dad1d7ee3cc9c406ba833a916`) and returned `ACCEPT_BOUNDED`. It found no remaining blocker. The 201-line failed scratch draft hash and traceback matched the preserved files. Claims remain bounded to the displayed integer and denominator-six grids; originality remains unresolved. HORUS was the internal analytical-agent reviewer; no separate provider conversation or human peer review occurred.
+
+The later commit `c12f0681a5f0e2dbd0c810df74aaca233be004c8` only merged the intervening independent polygon-lattice R28 update into the candidate branch. R05 proof, probe, log, and route files reviewed at `9f714789...` are unchanged. This review record is append-only.
