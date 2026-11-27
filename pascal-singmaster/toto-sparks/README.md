@@ -21,3 +21,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 - [R07 — readout cost versus conditioning](R07/TOTO_RESEARCH_SPARKS_R07.md): exact minimum additional bin count and bounded numerical SVD comparison. [Certificate](R07/probe.py) · [stdout](R07/probe.log).
 - [R08 — constructive instability bound](R08/TOTO_RESEARCH_SPARKS_R08.md): explicit near-kernel and quadratic lower bound on noise amplification; exact checks and bounded SVD. [Certificate](R08/probe.py) · [stdout](R08/probe.log).
 - [R09 — octagonal collision quotient](R09/TOTO_RESEARCH_SPARKS_R09.md): first endpoint collision, exact counts and rank-dependent return laws. [Certificate](R09/probe.py) · [stdout](R09/probe.log).
+- [R10 — octagonal separation and Pell units](R10/TOTO_RESEARCH_SPARKS_R10.md): sharp order of minimum distance, bounded-error discrimination thresholds, exact small-size minima. [Certificate](R10/probe.py) · [stdout](R10/probe.log).
