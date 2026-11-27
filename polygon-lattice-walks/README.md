@@ -102,3 +102,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R33 update
 
 [R33 — Information timing and uncertainty](R33/TOTO_RESEARCH_SPARKS_R33.md): least causal support on a finite scenario tree, asymmetric ramp constraints, exact excess reserve for perfect advance warnings. [Certificate](R33/probe.py) · [stdout](R33/probe.log). Robust modeled feasibility, no empirical forecast claim.
+
+## R34 update
+
+[R34 — Rumor, leak and imperfect warning](R34/TOTO_RESEARCH_SPARKS_R34.md): owner-triggered distinction of robust and expected-loss decisions, signal timing and duplicate-source confidence. [Certificate](R34/probe.py) · [stdout](R34/probe.log). Behavioral feedback is an untested hypothesis.

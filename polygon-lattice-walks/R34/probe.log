@@ -1,0 +1,5 @@
+exact binary decision cases: 14641
+baseline: 2 early noisy: 26/25 saving: 24/25
+miss probability under positive-only preparation: 1/25
+five copies: correct posterior 1/2 false independence posterior 256/257
+all exact assertions passed
