@@ -1,0 +1,9 @@
+original=7
+shares_of_augmented_total=1/2,1/4,1/8
+share_sum=7/8
+temporary_addition=1
+augmented_total=8
+allocations=[4, 2, 1]
+allocated_total=7
+residual=1
+exact_conservation=True
