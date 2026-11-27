@@ -65,6 +65,11 @@ stdout and open limits together.
 
 A new operations-research lane, independent of the Pascal, Singmaster and polygon-walk programs. R01–R02 derive exact minimum-buffer formulations for common and vessel-specific delay caps; R03 gives a weighted interval-covering LP and dual; R04 reduces that dual to maximum-cost circulation; R05 recovers an optimal primal buffer vector from residual node potentials. Certificates check bounded examples only. Related weighted-buffer/interval-flow literature is established; this specialization's novelty remains unresolved.
 
+
+### [gold-market/](gold-market/README.md) — prospective gold-market experiment
+
+A source-only, non-canonical research lane transferred from ARGO KOP. It preserves the frozen R01 baseline, R02 timing correction, successive verifier snapshots, and R03/R04 shadow candidates. No forecast advantage or empirical weight has been established.
+
 ## How a lane is added
 
 A folder goes in when it can carry its own weight, not when it has a result:

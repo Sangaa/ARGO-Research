@@ -1,0 +1,323 @@
+{
+  "title": "ARGO Gold Lab source migration manifest",
+  "status": "non-canonical archival copy; source records retained in Sangaa/ARGO-KOP",
+  "destination_base_commit": "be60225f329b07c5a26c57bd4ca9da78c963d177",
+  "source_repository": "Sangaa/ARGO-KOP",
+  "destination_repository": "Sangaa/ARGO-Research",
+  "counts": {
+    "copied_source_blobs": 30,
+    "verbatim_issue_records": 4,
+    "archived_verifier_snapshots": 7
+  },
+  "artifacts": [
+    {
+      "path": "R02/R02_2026-11-22_PROSPECTIVE_MODEL_REGISTER.md",
+      "expected_git_blob_sha1": "a0327b2190bf5fce21172840443e132cbee424c7",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/56d7cfef144dc4c9aed771bf4ee32d75941faa98/Research/ARGO_GOLD_LAB/R02_2026-11-22_PROSPECTIVE_MODEL_REGISTER.md",
+      "source_ref": "argo/gold-lab-methodology-r02-20261122",
+      "source_commit": "56d7cfef144dc4c9aed771bf4ee32d75941faa98",
+      "original_git_blob_sha1": "a0327b2190bf5fce21172840443e132cbee424c7"
+    },
+    {
+      "path": "R02/R02_VERIFIER_EXECUTION_2026-11-22.md",
+      "expected_git_blob_sha1": "ec80917307d21c33f5da2b7c8d20ee5dffc341c2",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee128fc18/Research/ARGO_GOLD_LAB/R02_VERIFIER_EXECUTION_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee128fc18",
+      "original_git_blob_sha1": "ec80917307d21c33f5da2b7c8d20ee5dffc341c2"
+    },
+    {
+      "path": "R02/R02_VERIFIER_REVIEW_AND_RERUN_2026-11-22.md",
+      "expected_git_blob_sha1": "38617f508929e8deddbbe00f7e7c5eb4e66e7ea0",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee128fc18/Research/ARGO_GOLD_LAB/R02_VERIFIER_REVIEW_AND_RERUN_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee128fc18",
+      "original_git_blob_sha1": "38617f508929e8deddbbe00f7e7c5eb4e66e7ea0"
+    },
+    {
+      "path": "R02/R02a_2026-11-22_ISSUANCE_GATES_AND_SHADOW.md",
+      "expected_git_blob_sha1": "bc28337911e2d45766475c1dee937b0016580745",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee128fc18/Research/ARGO_GOLD_LAB/R02a_2026-11-22_ISSUANCE_GATES_AND_SHADOW.md",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee128fc18",
+      "original_git_blob_sha1": "bc28337911e2d45766475c1dee937b0016580745"
+    },
+    {
+      "path": "R02/R02a_CORRECTION_2026-11-22_SOURCE_TIMING.md",
+      "expected_git_blob_sha1": "95a84de24c64b271b7d851db68e609ecf4783484",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/R02a_CORRECTION_2026-11-22_SOURCE_TIMING.md",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "95a84de24c64b271b7d851db68e609ecf4783484"
+    },
+    {
+      "path": "R02/r02_verifier_r02a.py",
+      "expected_git_blob_sha1": "d4c1d008afd2486c6c2259d485873090d118c68d",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "d4c1d008afd2486c6c2259d485873090d118c68d"
+    },
+    {
+      "path": "archive/r02b/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "ca74519c5710eca8abbe25f0247c001e55f6bdf4",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "ca74519c5710eca8abbe25f0247c001e55f6bdf4"
+    },
+    {
+      "path": "archive/r02b/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "e9abb37e909176a73a2eb2596c79433f7c128ca4",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "e9abb37e909176a73a2eb2596c79433f7c128ca4"
+    },
+    {
+      "path": "archive/r02b/r02_verifier.py",
+      "expected_git_blob_sha1": "344632a4d60b8e09ca28ed9abf4c7610ab08739d",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "344632a4d60b8e09ca28ed9abf4c7610ab08739d"
+    },
+    {
+      "path": "archive/r02c/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "ba760afb9926b71590ab9245200206c3e0453949",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "ba760afb9926b71590ab9245200206c3e0453949"
+    },
+    {
+      "path": "archive/r02c/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "fecf6321b3619048204722c4eba389b67a5b59de",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "fecf6321b3619048204722c4eba389b67a5b59de"
+    },
+    {
+      "path": "archive/r02c/r02_verifier.py",
+      "expected_git_blob_sha1": "73ebe085bc0096a24fee2268d1730d780e4e550d",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "73ebe085bc0096a24fee2268d1730d780e4e550d"
+    },
+    {
+      "path": "archive/r02d/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "e3828c509ecd399d53ef881ae79b978ced6f888a",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "e3828c509ecd399d53ef881ae79b978ced6f888a"
+    },
+    {
+      "path": "archive/r02d/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "46e467b660ffc5713c03932d28927fb5d76b8d99",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "46e467b660ffc5713c03932d28927fb5d76b8d99"
+    },
+    {
+      "path": "archive/r02d/r02_verifier.py",
+      "expected_git_blob_sha1": "394edd048a2ce4809f3a626eb1386843016af780",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "394edd048a2ce4809f3a626eb1386843016af780"
+    },
+    {
+      "path": "archive/r02e/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "8ab2d8f615acd41c12c12f0cd42c73be6486a653",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "8ab2d8f615acd41c12c12f0cd42c73be6486a653"
+    },
+    {
+      "path": "archive/r02e/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "279718c9a20dc1f11aaaf245dfc71829d54f6339",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "279718c9a20dc1f11aaaf245dfc71829d54f6339"
+    },
+    {
+      "path": "archive/r02e/r02_verifier.py",
+      "expected_git_blob_sha1": "664f1ee12c5812e4d58348c0a04450800ef5e80d",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "664f1ee12c5812e4d58348c0a04450800ef5e80d"
+    },
+    {
+      "path": "archive/r02f/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "98070858327ff114d935bafd8d17d1be85e2c8df",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "98070858327ff114d935bafd8d17d1be85e2c8df"
+    },
+    {
+      "path": "archive/r02f/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "2b7fea57b1fcdaa0112f0488450bff05db54a954",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "2b7fea57b1fcdaa0112f0488450bff05db54a954"
+    },
+    {
+      "path": "archive/r02f/r02_verifier.py",
+      "expected_git_blob_sha1": "e5166831d50c80d84eba09f348552d7720f275c6",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "e5166831d50c80d84eba09f348552d7720f275c6"
+    },
+    {
+      "path": "archive/r02g/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "518947b81c26e6a266644d50c2a7aec608a1df87",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "518947b81c26e6a266644d50c2a7aec608a1df87"
+    },
+    {
+      "path": "archive/r02g/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "320837fef9ecdbb65001bcbe6f5a7e1fab229af6",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "320837fef9ecdbb65001bcbe6f5a7e1fab229af6"
+    },
+    {
+      "path": "archive/r02g/r02_verifier.py",
+      "expected_git_blob_sha1": "8b546f82aee8db56b0e444a6f5778ccc7806236e",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "8b546f82aee8db56b0e444a6f5778ccc7806236e"
+    },
+    {
+      "path": "archive/r02h/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "expected_git_blob_sha1": "a30dff5fa2153b5e3c0c7228bc6f906f7771ec67",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_EXECUTION_CHECKPOINT_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "a30dff5fa2153b5e3c0c7228bc6f906f7771ec67"
+    },
+    {
+      "path": "archive/r02h/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "expected_git_blob_sha1": "8b330b319ae7a84e4d286025d505ca761ccd3479",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/a1bd053513ce4d6ea8d7f236149442eee50bcc1b/Research/ARGO_GOLD_LAB/R02B_PROSPECTIVE_DESIGN_AND_READINESS_2026-11-22.md",
+      "source_ref": "argo/gold-lab-r02b-readiness-20261122",
+      "source_commit": "a1bd053513ce4d6ea8d7f236149442eee50bcc1b",
+      "original_git_blob_sha1": "8b330b319ae7a84e4d286025d505ca761ccd3479"
+    },
+    {
+      "path": "archive/r02h/r02_verifier.py",
+      "expected_git_blob_sha1": "6a0817b71b543d0af8246c565073b5d6ab5f0dba",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/b31b8d1e85873516c33d5aa9ca969fdee341c2/Research/ARGO_GOLD_LAB/r02_verifier.py",
+      "source_ref": "argo/gold-lab-r02a-evidence-gates-20261122",
+      "source_commit": "b31b8d1e85873516c33d5aa9ca969fdee341c2",
+      "original_git_blob_sha1": "6a0817b71b543d0af8246c565073b5d6ab5f0dba"
+    },
+    {
+      "path": "R03/R03_2026-11-24_EXTERNAL_METHODS_AND_WEIGHT_CHALLENGER.md",
+      "expected_git_blob_sha1": "c51fcb631793ea1a96e0b722710e5e6098143cba",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/8f7546286385d18d0809293579e0f03ebeacfeaa/Research/ARGO_GOLD_LAB/R03_2026-11-24_EXTERNAL_METHODS_AND_WEIGHT_CHALLENGER.md",
+      "source_ref": "argo/gold-lab-r03-external-weights-review-20261124",
+      "source_commit": "8f7546286385d18d0809293579e0f03ebeacfeaa",
+      "original_git_blob_sha1": "c51fcb631793ea1a96e0b722710e5e6098143cba"
+    },
+    {
+      "path": "R03/R03_2026-11-24_M2_SHADOW_CANDIDATE.json",
+      "expected_git_blob_sha1": "53a26c806eef1eb4f13de48e8b27ade49188787f",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/8f7546286385d18d0809293579e0f03ebeacfeaa/Research/ARGO_GOLD_LAB/R03_2026-11-24_M2_SHADOW_CANDIDATE.json",
+      "source_ref": "argo/gold-lab-r03-external-weights-review-20261124",
+      "source_commit": "8f7546286385d18d0809293579e0f03ebeacfeaa",
+      "original_git_blob_sha1": "53a26c806eef1eb4f13de48e8b27ade49188787f"
+    },
+    {
+      "path": "R04/R04_2026-11-24_MARGINAL_INDICATOR_REGISTER.json",
+      "expected_git_blob_sha1": "e5a78ba7aeb581f933f45688a69dbcf3cc88ce57",
+      "source_kind": "git_blob_copy",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/blob/11d701f0c3db3e6176f7a2294d46d256a77222fe/Research/ARGO_GOLD_LAB/R04_2026-11-24_MARGINAL_INDICATOR_REGISTER.json",
+      "source_ref": "argo/gold-lab-r04-marginal-indicators-20261124",
+      "source_commit": "11d701f0c3db3e6176f7a2294d46d256a77222fe",
+      "original_git_blob_sha1": "e5a78ba7aeb581f933f45688a69dbcf3cc88ce57"
+    },
+    {
+      "path": "records/R01_issue_871.md",
+      "expected_git_blob_sha1": "4389d99390e9418db919b0a629a3ec491ae98fa1",
+      "source_kind": "github_issue_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7080175590.md",
+      "expected_git_blob_sha1": "f1282dfb88f05d8d1671b744a0b6571c3fddbfef",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080175590",
+      "created_at": "2026-11-22T13:56:39Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7093843627.md",
+      "expected_git_blob_sha1": "1d7624274a56504cdafba25af1ef2a44813e4dee",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7093843627",
+      "created_at": "2026-11-23T06:57:34Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7192345398.md",
+      "expected_git_blob_sha1": "2584e97c0415add498b80f65d5a3741974183847",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7192345398",
+      "created_at": "2026-11-26T12:42:05Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "date": "2026-11-24",
+  "status": "SOURCE_ONLY_HEURISTIC_NOT_ACTIVE",
+  "parent": "8f7546286385d18d0809293579e0f03ebeacfeaa",
+  "unchanged": [
+    "R01",
+    "M1",
+    "M2",
+    "primary 20-slot endpoint"
+  ],
+  "candidate": {
+    "id": "M3-SHADOW-v0.1",
+    "weights_pct": {
+      "REAL": 25,
+      "DXY": 15,
+      "MOM": 20,
+      "ETF": 10,
+      "RISK_VIX": 10,
+      "COT": 10,
+      "OPTIONS_SKEW": 10
+    },
+    "amplitude": 0.013,
+    "horizon": 3,
+    "features": {
+      "COT": {
+        "definition": "weekly change in managed money net longs / total open interest, percentage points, futures-only consistent CFTC gold series; clip(change_pp/5,-1,1)",
+        "sign": "positive hypothesis; crowded positioning may reverse",
+        "release": "actual public release before cutoff; not Tuesday observation date",
+        "source": "https://www.cftc.gov/MarketReports/CommitmentsofTraders/index.htm"
+      },
+      "OPTIONS_SKEW": {
+        "definition": "change over five completed sessions in constant 1-month GLD 25-delta call IV minus put IV, percentage points; clip(change_pp/3,-1,1)",
+        "sign": "positive hypothesis; hedging demand and dealer positioning can confound",
+        "source": "https://www.gold.org/download/file/21386/WMM_16_Nov_2026_Waller_the_Dollar.pdf",
+        "availability": "NOT_VERIFIED; no approved raw options vendor yet"
+      }
+    },
+    "remaining_features": "inherit exact M2 definitions; no renormalization; same formula and amplitude",
+    "missing": "M3=MISSING if any input unavailable; no effect on M1/M2 availability"
+  },
+  "evidence": [
+    {
+      "url": "https://www.gold.org/goldhub/research/gold-market-commentary-september-2026",
+      "finding": "ETF +67t, managed-money net positioning -84t, gold -8.5% monthly; historical attribution not incremental forecast proof"
+    },
+    {
+      "url": "https://www.gold.org/goldhub/research/gold-market-commentary-july-2025",
+      "finding": "COMEX positioning correlated with DXY and real yields; test conditional incremental value and avoid double counting"
+    },
+    {
+      "url": "https://www.gold.org/goldhub/research/gold-market-commentary-january-2026",
+      "finding": "historical implied volatility attribution about half monthly return; not a directional forecast coefficient"
+    },
+    {
+      "url": "https://www.gold.org/goldhub/gold-focus/2026/09/china-gold-market-update-official-buying-accelerated-august",
+      "finding": "Shanghai demand, premium, FX, reserve purchases distinct, different lags"
+    },
+    {
+      "url": "https://www.gold.org/goldhub/data/gold-futures-curves",
+      "finding": "daily futures curves include carry; no simple directional weight"
+    },
+    {
+      "url": "https://www.gold.org/goldhub/research/gold-deposit-rates-guidance-paper",
+      "finding": "lease rates partly overlap real yields; watch only"
+    },
+    {
+      "url": "https://www.gold.org/sites/default/files/downloads/2026-11/Gold-Demand-Trends-Q3-2026.pdf",
+      "finding": "China reported 63t; large global unreported demand; strategic horizon only"
+    }
+  ],
+  "watch": {
+    "Shanghai_premium": "matched Shanghai/London times and FX; test separately after data audit",
+    "gold_implied_volatility": "uncertainty interval candidate, not signed direction",
+    "futures_basis": "carry-adjusted maturity-specific diagnostic",
+    "lease_rates": "liquidity diagnostic; access and overlap unresolved",
+    "central_bank_demand": "monthly/quarterly strategic scenario; vintage and reporting gaps",
+    "Egypt": "separate FX, matched dealer premium and spread; no XAU weight transplantation"
+  },
+  "evaluation": "Compare M3 vs M2 and M1/B0 on same predeclared future slots; individual COT-only and skew-only ablations fixed before data; source coverage and abstention reported; no future leakage or changing scales/sign after outcomes; separate untouched confirmatory cohort for learning. Weights and scales are assistant heuristic proposals, not fitted. No empirical gain or activation claimed.",
+  "blockers": "R02 real-data release/calendar/readiness and existing replay positive-price defect remain open. No forecast or code change."
+}

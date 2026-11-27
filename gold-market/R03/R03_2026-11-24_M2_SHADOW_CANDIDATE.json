@@ -1,0 +1,67 @@
+{
+  "document_id": "ARGO_GOLD_LAB_M2_SHADOW_V0_1",
+  "issued_date": "2026-11-24",
+  "timezone": "Africa/Cairo",
+  "status": "RESEARCH_ONLY_NO_FORECAST_ISSUED",
+  "external_review_path": "Research/ARGO_GOLD_LAB/R03_2026-11-24_EXTERNAL_METHODS_AND_WEIGHT_CHALLENGER.md",
+  "primary_experiment_unchanged": {
+    "name": "M1-v0.1",
+    "horizon_trading_sessions": 3,
+    "primary_metric": "paired MAE difference M1 vs B0-G on 20 preregistered slots",
+    "weights": {
+      "REAL": 0.35,
+      "DXY": 0.3,
+      "MOM": 0.2,
+      "ETF": 0.15
+    }
+  },
+  "challenger": {
+    "id": "M2-SHADOW-v0.1",
+    "status": "PROPOSED_EXPLORATORY_NOT_ACTIVE",
+    "weights": {
+      "REAL": 0.3,
+      "DXY": 0.2,
+      "MOM": 0.25,
+      "ETF": 0.1,
+      "RISK_VIX": 0.15
+    },
+    "feature_scores": {
+      "REAL": "clip(-delta_5_completed_sessions_TIPS_10y_basis_points/20,-1,1)",
+      "DXY": "clip(-return_5_completed_sessions_DXY_pct/1.5,-1,1)",
+      "MOM": "clip(return_5_completed_sessions_XAU_pct/4,-1,1)",
+      "ETF": "clip(latest_released_weekly_global_physical_ETF_flow_tonnes/40,-1,1)",
+      "RISK_VIX": "clip(((VIX_t/VIX_5_completed_sessions_ago)-1)/0.20,-1,1)"
+    },
+    "amplitude": 0.013,
+    "horizon_sessions": [
+      3,
+      10
+    ],
+    "formula": "XAU_last_completed_close * exp(0.013*sqrt(h/3)*weighted_score)",
+    "vix_direction": "positive_exploratory_not_verified; may invert in forced-liquidity_sales",
+    "all_features_required": true,
+    "official_issuance_authorized": false,
+    "market_forecast_issued": false
+  },
+  "controls": {
+    "no_R01_or_M1_rewrite": true,
+    "no_lookahead": true,
+    "no_missing_backfill": true,
+    "no_post_outcome_weight_tuning": true,
+    "retain_B0": true,
+    "independent_holdout_required": true,
+    "no_live_trading": true
+  },
+  "sources": [
+    "https://www.gold.org/goldhub/tools/gold-return-attribution-model",
+    "https://www.gold.org/goldhub/data/gold-etfs-holdings-and-flows",
+    "https://www.tradingview.com/support/solutions/43000614331-technical-ratings/",
+    "https://www.cboe.com/insights/posts/what-the-vix-and-vix-1-d-indices-attempt-to-measure-and-how-they-differ",
+    "https://fred.stlouisfed.org/series/VIXCLS/",
+    "https://www.egyptgoldprice.com/methodology",
+    "https://3omlat.app/en/how-it-works",
+    "https://market.isagha.com/articles/2609",
+    "https://market.isagha.com/articles/2611"
+  ],
+  "acceptance": "candidate_only_until_independent_protocol_review_and_real_source_issuance"
+}
