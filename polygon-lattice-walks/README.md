@@ -22,7 +22,7 @@ The records below were moved as complete source/script/stdout triples from the h
 
 ## Current position
 
-R18 closes one specific open item in R16: the dodecagonal phase profile varies. R19 adds a separate inverse-identification result from radial moments. Neither establishes physical interpretation or novelty; R18 does not establish minimal period or global extrema, and R19 does not identify orientation or cover noisy/arbitrary competitors. HORUS reviewed the R18 algebra and certificate in-session; that is model-side review, not human peer review.
+R18 closes one specific open item in R16: the dodecagonal phase profile varies. R19 adds a separate inverse-identification result from radial moments. Neither establishes physical interpretation or novelty; R18 does not establish minimal period or global extrema, and R19 does not identify orientation or cover noisy/arbitrary competitors. R18 was reviewed by an internal analytical collaboration agent in this workflow, not a standalone ChatGPT conversation; no provider session ID exists. This is model-side analysis, not human peer review. See [review provenance](R18/REVIEW_PROVENANCE.md) and the [retrospective dependency audit](DEPENDENCY_AUDIT.md).
 
 The remaining active questions include independent review of the local-limit transfer in R16/R18, literature comparison for the model-specific phase statement, period minimality, noise stability of R19's inverse procedure, and higher-cumulant observables for the broader inverse-identification question.
 
