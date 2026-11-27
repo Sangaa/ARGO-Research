@@ -9,6 +9,7 @@ A route index for research that can be resumed, challenged and reproduced. It co
 | Repeated binomial values / حدسية سينجماستر | [Route index](../pascal-singmaster/README.md) · [Frozen review versions](../pascal-singmaster/referee/README.md) | Fixed-shift bounds, scope, open conjecture |
 | Pascal spectral modes / طيف باسكال | [Spectral records](../pascal-singmaster/spectral/) | Compare observable modes and exact phase conditions |
 | Polygon lattice walks / مشي الشبكات متعددة الأضلاع | [Independent lane and route map](../polygon-lattice-walks/README.md) | Resume collision laws, scale phases and spectral questions independently of Pascal |
+| Robust berth buffers / هوامش الأرصفة المتينة | [Independent R01 lane](../robust-berth-buffer-allocation/README.md) | Minimum total idle buffer for a fixed vessel order under bounded arrival and handling uncertainty; preliminary literature review, no novelty claim |
 | Geometry-first generators / تصميم الهندسة | [ARGO R01 evidence and route index](../pascal-singmaster/argo-geometry/R01/README.md) | Ternary lift, square marginals, octagonal interior multiplicity |
 | Hexagonal lattice / الشبكة السداسية | [Notes and certificates](../pascal-singmaster/hex_lattice_R10/NOTES.md) | Distinguish lattice geometry and arithmetic |
 | Physical analogues and failed models / النماذج الفيزيائية | [Bell and inverse-model evidence](../pascal-singmaster/argo-geometry/R01/README.md) | No validated material law; define dimensions and measurements |
