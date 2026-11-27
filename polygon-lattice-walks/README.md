@@ -86,3 +86,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R29 update
 
 [R29 — Batch-radius dependence](R29/TOTO_RESEARCH_SPARKS_R29.md): exact barrier at every batch radius, loss/gain threshold and parity-sensitive scaling for R28. [Certificate](R29/probe.py) · [stdout](R29/probe.log). Mathematical endpoint-only batches; not an operational transition system.
+
+## R30 update
+
+[R30 — Temporary information scaffold](R30/TOTO_RESEARCH_SPARKS_R30.md): exact isotropic floor compensation, rank-one directional threshold and asymptotic trace optimum in R28. [Certificate](R30/probe.py) · [stdout](R30/probe.log). Mathematical auxiliary information only; no operational design.
