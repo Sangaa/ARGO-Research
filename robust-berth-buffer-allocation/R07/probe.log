@@ -1,0 +1,5 @@
+K=0: starts=[0, 10, 11]; handling_complete=[1, 11, 12]; berth_release=[10, 11, 12]; channel_entry=[10, 11, 12]; C3_le_3=False
+K=1: starts=[0, 1, 10]; handling_complete=[1, 2, 11]; berth_release=[1, 10, 11]; channel_entry=[10, 11, 12]; C3_le_3=False
+K=2: starts=[0, 1, 2]; handling_complete=[1, 2, 3]; berth_release=[1, 2, 10]; channel_entry=[10, 11, 12]; C3_le_3=True
+K=3: starts=[0, 1, 2]; handling_complete=[1, 2, 3]; berth_release=[1, 2, 3]; channel_entry=[10, 11, 12]; C3_le_3=True
+capacities=4; vessels=3; deterministic_integer_times=1
