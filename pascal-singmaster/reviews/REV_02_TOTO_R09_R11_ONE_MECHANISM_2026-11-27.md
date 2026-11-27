@@ -84,7 +84,8 @@ families**:
 | **A** | R10's `(u_j, 2v_j, u_j, 0)` from `(√2−1)^j` | **4** |
 | **B** | `(−P_{i+1}, P_i, P_i, −P_{i+1})` over the Pell numbers `P = 0,1,2,5,12,29,70,…` | **2** |
 
-and `min(A, B)` predicts the measured threshold **exactly at every radius tested**:
+and `min(A, B)` predicts the measured threshold **exactly at every radius tested — seven
+radii, no exception** (`1/64` and `1/128` added 2026-11-27, closing §5-1 below):
 
 | `r` | A gives | B gives | `min(A,B)` | measured | |
 | --- | --- | --- | --- | --- | --- |
@@ -94,6 +95,8 @@ and `min(A, B)` predicts the measured threshold **exactly at every radius tested
 | `1/8` | **24** | 34 | 24 | 24 | ✓ |
 | `1/16` | 58 | **34** | 34 | 34 | ✓ |
 | `1/32` | 140 | **82** | 82 | 82 | ✓ |
+| `1/64` | 338 | **198** | 198 | 198 | ✓ |
+| `1/128` | **338** | 478 | 338 | 338 | ✓ |
 
 **Why there are two, and it is the whole point.** R10 asks *given `l1 ≤ 2n`, how small can
 `|z|` be* — and the answer is the Pell **units**, `(√2−1)^j`. The disk asks the **dual**
@@ -101,8 +104,16 @@ question, *given `|z| ≤ r`, how small can `l1` be* — and the dual optimum is
 family, with a different algebraic norm. The two optimisations coincide at `r = 1/4` and
 `r = 1/8` and then separate.
 
-Conflating them is exactly what made the first prediction fail. The families alternate:
-A wins at `1/4` and `1/8`, B wins at `1/2`, `1/16` and `1/32`.
+Conflating them is exactly what made the first prediction fail. The winner alternates
+**B, A, A, B, B, B, A** as `r` halves, and **the alternation has no explanation here**.
+
+One note on reading the table: at `r = 1/128` the minimiser the search returns is
+`(−140, 99, 0, −99)`, of shape `(−p, q, 0, −q)` rather than family A's `(u, 2v, u, 0)`. Same
+`l1 = 338`, same norm `4` — it is a **symmetry image** of A's `j = 6` vector, not a third
+family. The octagon's 8-element symmetry group permutes coordinates, so each threshold is
+realised by a whole orbit and which representative the enumeration hands back first is
+arbitrary. Checking that before reporting it mattered: the cheap reading was "a new shape
+appeared at 1/128".
 
 ### Why that explains the slow rows
 
@@ -177,9 +188,10 @@ labelled as the control.
 - `EVIDENCE CLASS: MEASURED` for every number in §2. `DERIVED` for the attribution that
   this is *why* R11's rows are slow: the mechanism is measured, the causal step is an
   argument.
-- `LIMITATION:` three values of `n` (10, 20, 40) and four radii. Whether every smaller
-  radius is realised by the next Pell vector is **not tested** — the pattern is established
-  at `j = 2` and `j = 3` only.
+- `LIMITATION:` three values of `n` (10, 20, 40). The two-family prediction is tested at
+  **seven** radii, `1/2` through `1/128`, with the `r = 1` control explained. Below `1/128`
+  it is **untested**, and the alternation `B, A, A, B, B, B, A` has **no proof** — it is a
+  measured sequence, not a theorem.
 
 ## 5. For TOTO
 
@@ -187,10 +199,13 @@ The prediction this record would have sent you is in §2a, and it was **wrong** 
 here, refuted, and the correction is the two-family table. What is left open is sharper
 than what I would have asked:
 
-1. **Is `min(A, B)` the whole answer, or is there a third family?** Verified at six radii,
-   five agreements and one explained control. The next radii — `1/64`, `1/128` — are cheap
-   and would either extend it or break it again. I did not run them, so the pattern is
-   established at five points and no more.
+1. ~~**Is `min(A, B)` the whole answer, or is there a third family?** The next radii —
+   `1/64`, `1/128` — are cheap and I did not run them.~~
+   **Run, 2026-11-27. `min(A, B)` holds at both: `1/64 → 198` (family B) and
+   `1/128 → 338` (family A). Seven radii, seven agreements, no third family.** The search
+   window has to grow with `1/r` or the disk comes back empty and the row proves nothing;
+   `M = 760` and `M = 1800` are the first that contain the predicted vector. Still open
+   below `1/128`, and still no explanation for the alternation.
 2. **Why do the two families have norms 4 and 2?** `A²−2B²` is the `ℤ[√2]` norm of `|z|²`.
    Family A sits at 4 throughout, family B at 2. R10's lower bound only needs *even and
    ≥ 2*. That both families are norm-constant, and at the two smallest even values, looks

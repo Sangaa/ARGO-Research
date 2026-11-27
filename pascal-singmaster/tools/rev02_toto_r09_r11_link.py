@@ -38,7 +38,14 @@ The corrected picture is better. There are TWO interleaved extremal families:
   A = R10's (u_j, 2v_j, u_j, 0), with algebraic norm A^2-2B^2 = 4;
   B = (-P_(i+1), P_i, P_i, -P_(i+1)) over Pell numbers P, with norm 2.
 Taking min(A, B) predicts the measured threshold EXACTLY at every radius tested
-from 1/2 down to 1/32. A wins at 1/4 and 1/8, B wins at 1/2, 1/16 and 1/32.
+from 1/2 down to 1/128 -- SEVEN radii, no exception. The winner alternates
+B, A, A, B, B, B, A as r halves, with no pattern established for the alternation.
+
+At r = 1/128 the measured minimiser is (-140, 99, 0, -99), of shape (-p, q, 0, -q)
+rather than family A's (u, 2v, u, 0). Same l1 = 338 and same norm 4: it is a
+symmetry image of family A's j = 6 vector, not a third family. The octagon's
+8-element symmetry group permutes coordinates, so each threshold is realised by a
+whole orbit and the representative the search returns first is arbitrary.
 
 Why two: R10 asks "given l1 <= 2n, how small can |z| be" and the answer is the
 Pell UNITS. The disk asks the dual question, "given |z| <= r, how small can l1
@@ -130,7 +137,7 @@ def weight(k, M):
     return tot
 
 
-def pell_family(terms=7):
+def pell_family(terms=10):
     """R10's construction: (sqrt2-1)^j = u + v*sqrt2  ->  k = (u, 2v, u, 0)."""
     fam, u, v = {}, 1, 0
     for j in range(terms):
@@ -151,7 +158,7 @@ def pell_numbers(n=14):
     return P
 
 
-def family_B(terms=8):
+def family_B(terms=10):
     """The SECOND extremal family, found by this record after its first
     prediction failed: k = (-P_{i+1}, P_i, P_i, -P_{i+1}), norm A^2-2B^2 = 2.
 
@@ -244,13 +251,20 @@ def main():
     print()
     print(f"  {'r':>7} {'A gives':>9} {'B gives':>9} {'min(A,B)':>9} {'measured':>9} "
           f"{'agree':>7}")
-    RAD = ((1, "1", 1.0), (4, "1/2", .5), (16, "1/4", .25), (64, "1/8", .125),
-           (256, "1/16", .0625), (1024, "1/32", .03125))
-    for den, rl, rv in RAD:
+    # Extended 2026-11-27 to 1/64 and 1/128, closing this record's own sec.5-1
+    # item ("I did not run them, so the pattern is established at five points and
+    # no more"). The window M must grow with 1/r or the disk comes back empty and
+    # the row proves nothing -- M = 760 and 1800 are the first that contain the
+    # predicted vector.
+    RAD = ((1, "1", 1.0, 240), (4, "1/2", .5, 240), (16, "1/4", .25, 240),
+           (64, "1/8", .125, 240), (256, "1/16", .0625, 240),
+           (1024, "1/32", .03125, 320), (4096, "1/64", .015625, 760),
+           (16384, "1/128", .0078125, 1800))
+    for den, rl, rv, M in RAD:
         a = min((l1 for l1, (j, k, m) in fam.items() if m <= rv), default=None)
         b = min((l1 for l1, (i, k, m, N) in famB.items() if m <= rv), default=None)
         pred = min(x for x in (a, b) if x is not None) if (a or b) else None
-        pts = disk(240, 1, den)
+        pts = disk(M, 1, den)
         meas = min(sum(map(abs, k)) for k in pts) if pts else None
         agree = pred == meas
         print(f"  {rl:>7} {str(a):>9} {str(b):>9} {str(pred):>9} {str(meas):>9} "
