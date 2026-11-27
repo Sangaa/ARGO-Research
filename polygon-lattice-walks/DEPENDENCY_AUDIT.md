@@ -12,7 +12,7 @@
 | R14 | R13 profile and R12 lattice/norm structure. | R13 card is experience reuse. | Actual continuation. |
 | R15 | R14 orbit sum; R12 lattice/norm facts. | R14 card is experience reuse. | Actual continuation. |
 | R16 | R15 norm factorization/completeness; R12/R13 local-limit methods. | R14 comparison kernel and R15 card. | Actual continuation with methodological reuse. |
-| R17 | R16 two embeddings/local-limit profile; R13 profile; R09 symmetry warning. | R16 card is experience reuse. | Actual continuation. |
+| R17 | R16 two embeddings/local-limit profile; R13 profile. | R16 card is experience reuse; R09's non-transferable symmetry shortcut is a method caution explicitly not used as a premise. | Actual continuation; R09 is contextual caution only. |
 | R18 | R16 phase function and local-limit identification. | Reads R17 to avoid repeating a same-field result; R17 is not a proof premise. | Mathematical dependency on R16 only; R17 is reuse/navigation. |
 | R19 | Exact moment derivation is self-contained within its specified equal-step regular-polygon family. | R17 motivates an additional observable; R07 is a stability caution. R18 appears in the contemporaneous record because of a round-title collision, not as a mathematical premise. | Independent derivation; contextual/methodological reuse only. |
 
