@@ -94,3 +94,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R31 update
 
 [R31 — Adaptive scaffold scheduling](R31/TOTO_RESEARCH_SPARKS_R31.md): layer lower bounds attain peak, cumulative and active-visit optima on one path; cumulative adaptive/fixed trace ratio tends to one third. [Certificate](R31/probe.py) · [stdout](R31/probe.log). Ideal discrete variable support, no operational deployment.
+
+## R32 update
+
+[R32 — Rate-limited scaffold](R32/TOTO_RESEARCH_SPARKS_R32.md): exact Lipschitz envelope, feasibility and tracking thresholds, asymptotic anticipatory capacity use. [Certificate](R32/probe.py) · [stdout](R32/probe.log). Known demand and fixed minimum-length horizon; no operational deployment.
