@@ -1,0 +1,9 @@
+## Bounded R02h source review | non-positive archived price acceptance | 2026-11-23
+
+SESSION_ID=UNKNOWN/UNREGISTERED; TASK_ID=ARGO-R02H-PRICE-DOMAIN-READBACK-20261123-01; main=35f276b7428ed2b936ac4e8dd35caa4c91fc7ed3; source branch `argo/gold-lab-r02h-outcome-identity-20261123@1e484eb47ea730efa5c075ba15dca983651251ca`, `Research/ARGO_GOLD_LAB/r02_verifier.py` blob `6a0817b71b543d0af8246c565073b5d6ab5f0dba`.
+
+**New bounded source finding (not a runtime reproduction):** `replay_archived_pair()` feeds `outcome['actual']`, `model['prediction']`, and `benchmark['prediction']` to `paired_absolute_error()`. That function checks only `isfinite` and matching target keys, not strictly positive prices. Consequently a correctly hashed and identity-matched synthetic archive containing a negative actual/prediction can pass the price-domain check and yield a numeric absolute-error score. This is distinct from the already documented outcome-identity and `target_key` test gaps. `forecast_xau()` separately requires positive spot, but that guard does not protect replayed archive values.
+
+**Smallest candidate correction:** enforce `actual > 0`, `prediction > 0`, and `benchmark > 0` at the replay/scoring boundary, with negative and zero value fixtures (and a positive control), then read back and run focused tests on the writer-owned isolated branch. Do not infer real market-data corruption from this source review. Keep R02=MISSING / PARTIAL_READINESS / LEARNING_PROVEN=false; no issue, forecast, PR, merge, hosted Actions or canonical promotion is authorized by this comment.
+
+NO_NEW_MEMORY: this is a bounded code-reading finding, not a first-hand execution failure. NEXT: writer verifies the price-domain contract and tests without modifying R01.

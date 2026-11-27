@@ -11,7 +11,7 @@ Track falsifiable global XAU/USD and Egypt retail-gold forecasts prospectively, 
 - [R02 verifier histories](archive/) — distinct R02b–R02h design, checkpoint, and verifier snapshots, each kept under its originating branch. Do not infer a linear history beyond recorded parent references.
 - [R03 method comparison](R03/R03_2026-11-24_EXTERNAL_METHODS_AND_WEIGHT_CHALLENGER.md) and shadow candidate.
 - [R04 indicator register](R04/R04_2026-11-24_MARGINAL_INDICATOR_REGISTER.json) — COT and options-skew candidates, still shadow only.
-- [Source records](records/) — verbatim issue body and selected append-only comments, including P001 outcome.
+- [Source records](records/) — verbatim R01 issue body and all 26 append-only comments, including failures, corrections, and P001 outcome.
 - [Source manifest](source_manifest.json) and [archive verifier](verify_archive.py) — provenance and content-integrity certificate.
 - [Migration and reassessment](MIGRATION_AND_REASSESSMENT.md) — bounded conclusions and next work.
 

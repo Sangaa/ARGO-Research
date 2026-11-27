@@ -1,0 +1,9 @@
+## Owner execution directive: Gold Lab lab-online readiness sprint | 2026-11-22
+
+Detailed operational order to SEMER: https://github.com/Sangaa/ARGO-KOP/issues/783#issuecomment-7086257918
+
+Owner requests completion of the **experimental infrastructure and independent, evidence-based evaluation contract**, using the presently online `DESKTOP-F7FF127` when a safe writer/isolated worktree is verified, then to return to the house backlog. The first official R02 forecast remains **MISSING** unless point-in-time XAU/DXY/TIPS/ETF data, source release/fetch/cutoff chronology, source bytes/hash, exact 3/10-session targets and Egypt conventions are proven. Do not manufacture prices or backdate.
+
+Mandatory newly recovered measured defects in verifier blob `d4c1d008afd2486c6c2259d485873090d118c68d`: #871/7080880472 and #871/7083888975; no positive eligible-path test; accepts fetch after cutoff or before release and future observation/base dates; MOM/ETF swapped weights pass tests. The new work must repair and mutation-test these, audit every-three-day automation's existing prompt and recovery behavior **without duplicate schedule**, and deliver a bounded `LAB_READY` vs `R02_ISSUED` vs `LEARNING_PROVEN` acceptance record. Keep R01 frozen, preserve existing R02a failed timing attempt and all original evidence.
+
+After lab setup reaches bounded readiness or only an external data-release wait remains, SEMER resumes house priority #758 without waiting for a new owner direction. Publishing these directions is not proof of specialist execution or authenticated independence. No real trading or paid Actions.

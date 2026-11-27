@@ -36,4 +36,4 @@ The public research tree contains identifiable TOTO and Claude records for these
 6. Treat TOTO/Claude/HORUS review roles as provenance. Do not turn methodological analogy into causal market evidence.
 
 ## Provenance
-Imported artifacts retain source branch, commit, and blob identity in [source_manifest.json](source_manifest.json). R01 and three selected issue comments are verbatim from private issue #871. Transfer-time observations are recorded here and in the PR, not backdated into the private lab.
+Imported artifacts retain source branch, commit, and blob identity in [source_manifest.json](source_manifest.json). The R01 issue body and all 26 issue comments are preserved verbatim in the public records lane, with source URLs and original comment timestamps in the manifest. Transfer-time observations are recorded here and in the PR, not backdated into the private lab.

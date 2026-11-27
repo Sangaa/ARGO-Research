@@ -1,0 +1,9 @@
+## OWNER-INITIATED EXPERIMENT CONTINUATION / SEMER COORDINATION | 2026-11-22
+
+Owner explicitly requested that the ARGO house run, independently review, improve, document and evaluate this gold-price forecasting and learning-proof experiment **without seeking the owner's market opinions or outcome judgments**. Binding detailed dispatch is published in the coordinator channel: https://github.com/Sangaa/ARGO-KOP/issues/783#issuecomment-7080269891.
+
+Keep R01 P001–P004 frozen. R02 prospective methodology source: `argo/gold-lab-methodology-r02-20261122@56d7cfef144dc4c9aed771bf4ee32d75941faa98`, file `Research/ARGO_GOLD_LAB/R02_2026-11-22_PROSPECTIVE_MODEL_REGISTER.md`, still branch-only/not main. **R02 has not yet issued its first market forecast**, nor independently established improved predictive performance. `FAILURE-R01-ATTRIBUTION-001` means R01 can be numerically scored but not retrofitted with coefficient/causal explanations.
+
+Immediate evidence gates: frozen cutoff and data release/vintage proof; calendar-vs-trading-session target mapping; reproducible arithmetic and quote conventions; independent review status; exact preregistered feature weights, raw source values and contributions; same-target B0 and missing-source/shadow status; record first valid fully sourced *prospective* R02 forecast or MISSING, then score every result append-only without cherry-picking. Establish non-overlapping forward evidence and future holdout before any learning claim.
+
+**This comment is a published instruction and provenance link, not evidence an external SEMER or specialized seat has already accepted or executed the task.** No purchase, Actions, automatic learning promotion, R01 edits or owner input are authorized. Report work/checkpoints here with links to commits, data snapshots and decision-changing corrections.
