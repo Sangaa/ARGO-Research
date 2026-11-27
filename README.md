@@ -72,7 +72,7 @@ A source-only, non-canonical research lane transferred from ARGO KOP. It preserv
 
 ### [temporary-resource-augmentation/](temporary-resource-augmentation/README.md) — exact return after temporary augmentation
 
-A short cross-domain method note formalizing the seven-camels example: add one temporary unit to make indivisible shares integral, allocate 4+2+1 from 8, then return the exact residual 1. It is separate from the berth model and makes no novelty claim.
+A separate method lane for exact-return augmentation. R02 separates integer augmented-total and integer-allocation gates, preserves two negative cases, and records that the exact seven-camel (1/2, 1/4, 1/8) puzzle is already published in Ian Stewart's Scientific American column. No originality claim; initial literature reconnaissance is bounded.
 
 ## How a lane is added
 
