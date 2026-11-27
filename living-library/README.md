@@ -6,6 +6,7 @@ A route index for research that can be resumed, challenged and reproduced. It co
 
 | Question / المسار | Start here | Resume |
 |---|---|---|
+| Prospective gold-market experiment / تجربة سوق الذهب الاستشرافية | [Independent lane and transfer reassessment](../gold-market/README.md) · [source-preserving migration and lessons](../gold-market/MIGRATION_AND_REASSESSMENT.md) | R01 P001 global missed B0 on one target; Egypt unscored. R02 official issuance remains missing; R03/R04 candidates are shadow-only. No predictive advantage or empirical weights established. |
 | Repeated binomial values / حدسية سينجماستر | [Route index](../pascal-singmaster/README.md) · [Frozen review versions](../pascal-singmaster/referee/README.md) | Fixed-shift bounds, scope, open conjecture |
 | Pascal spectral modes / طيف باسكال | [Spectral records](../pascal-singmaster/spectral/) | Compare observable modes and exact phase conditions |
 | Polygon lattice walks / مشي الشبكات متعددة الأضلاع | [Independent lane and route map](../polygon-lattice-walks/README.md) | Resume collision laws, scale phases and spectral questions independently of Pascal |
