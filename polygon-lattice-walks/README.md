@@ -50,3 +50,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R20 update
 
 [R20 — homometric walks and triple-difference recovery](R20/TOTO_RESEARCH_SPARKS_R20.md): explicit centered noncongruent step laws with identical pair-difference distributions at all equal walk lengths; joint triple differences identify finite-support laws up to translation. Classical homometry and triple correlation credited. [Certificate](R20/probe.py) · [stdout](R20/probe.log). Unequal step lengths; no contradiction of R19.
+
+## R21 update
+
+[R21 — Triangle-distance ambiguity on a unit circle](R21/TOTO_RESEARCH_SPARKS_R21.md): distinct equal-length direction sets with identical labeled three-point distance distributions at n=1, but distinguishable four-point distance distributions. Bounded exact search and explicit separator; no all-time or universal four-point theorem. [Certificate](R21/probe.py) · [stdout](R21/probe.log).
