@@ -58,3 +58,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R22 update
 
 [R22 — Reconstruction bounds and geometric anchors](R22/TOTO_RESEARCH_SPARKS_R22.md): published universal 36-point isometry bound; restricted four-point unique-scalene-triangle and five-point unique-diameter derivations. Exact bounded control and negative complement search. [Certificate](R22/probe.py) · [stdout](R22/probe.log) · [auxiliary search](R22/search.cpp) · [search stdout](R22/search.log).
+
+## R23 update
+
+[R23 — Anchor uniqueness, conditioning and sampling cost](R23/TOTO_RESEARCH_SPARKS_R23.md): uniform signature margin with diverging anchored inverse gain, feasible noise ambiguity, and rare-reference sampling bound. [Certificate](R23/probe.py) · [stdout](R23/probe.log). Exact anchors assumed; no global shape instability claim.
