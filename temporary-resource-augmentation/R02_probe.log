@@ -1,0 +1,7 @@
+seven_camels: M=7; q=7/8; T=8; b=1; allocations=[Fraction(4, 1), Fraction(2, 1), Fraction(1, 1)]; status=FEASIBLE
+whole_allocations_fractional_borrow: M=3; q=9/11; T=11/3; b=2/3; allocations=[Fraction(1, 1), Fraction(2, 1)]; status=FAIL_FRACTIONAL_BORROW
+whole_borrow_fractional_allocations: M=2; q=1/2; T=4; b=2; allocations=[Fraction(4, 3), Fraction(2, 3)]; status=FAIL_FRACTIONAL_ALLOCATION
+boundary_q=0: IMPOSSIBLE_FOR_M_POSITIVE
+boundary_q=1: ZERO_BORROW
+boundary_q_gt_1: NEGATIVE_BORROW
+all_exact_checks=True
