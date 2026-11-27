@@ -98,3 +98,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R32 update
 
 [R32 — Rate-limited scaffold](R32/TOTO_RESEARCH_SPARKS_R32.md): exact Lipschitz envelope, feasibility and tracking thresholds, asymptotic anticipatory capacity use. [Certificate](R32/probe.py) · [stdout](R32/probe.log). Known demand and fixed minimum-length horizon; no operational deployment.
+
+## R33 update
+
+[R33 — Information timing and uncertainty](R33/TOTO_RESEARCH_SPARKS_R33.md): least causal support on a finite scenario tree, asymmetric ramp constraints, exact excess reserve for perfect advance warnings. [Certificate](R33/probe.py) · [stdout](R33/probe.log). Robust modeled feasibility, no empirical forecast claim.

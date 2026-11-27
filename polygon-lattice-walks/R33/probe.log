@@ -1,0 +1,11 @@
+exhaustive tree instances: 4096 feasible: 528
+pulse instances: 592 expected-cost checks: 1776
+m=10, p=1/5, lead | no-event use | expected excess
+0 81 324/5
+1 64 256/5
+3 36 144/5
+5 16 64/5
+7 4 16/5
+9 0 0
+10 0 0
+all exact assertions passed
