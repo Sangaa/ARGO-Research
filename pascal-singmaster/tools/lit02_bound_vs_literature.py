@@ -1,5 +1,17 @@
 """LIT_02 sec.6: the discriminating check, run rather than recommended.
 
+RANGE: T = 12, NMAX = 20000. These are the values this certificate has actually
+been OBSERVED to pass with, and that is the only reason they are the ones here.
+
+On 2026-11-27 they were raised to T = 20, NMAX = 100000 to extend the
+discriminating range, merged, and the raised configuration was NEVER SEEN TO
+FINISH -- the run was still going at 15 minutes and was killed at its time limit
+with empty output, because the script prints only at the end. So main carried a
+certificate in a configuration nobody had watched pass, which is worse than a
+certificate with a smaller range: a certificate is a claim that it was run.
+Reverted here to the observed-passing values. An extension goes in only after a
+completed run, not before one.
+
 CLAIM UNDER TEST (referee/V3):
     for t >= 2, k >= 1, n >= 2k + 3t, every solution of C(n,k) = C(n-t, k+t)
     satisfies n < 200 t^2.
@@ -43,13 +55,13 @@ argument the search rests on is itself under test rather than asserted.
 """
 from math import comb, lgamma
 
-T = 20
-NMAX = 100000
+T = 12
+NMAX = 20000
 LOG10 = 2.302585092994046
 
-# Float guard before the exact test. log10 C(n,k) reaches ~30100 at n = 100000, and
+# Float guard before the exact test. log10 C(n,k) reaches ~6020 at n = 20000, and
 # IEEE double carries ~16 significant digits, so the absolute error in g is about
-# 30100 * 2^-52 ~ 6.7e-12. GUARD is ~1.5 MILLION times that, so an exact equality
+# 6020 * 2^-52 ~ 1.3e-12. GUARD is ~7.7 MILLION times that, so an exact equality
 # (g == 0) can never be pruned by it.
 #
 # It was first set to 1e-9. That ran, and reported min|g| = 1.07e-9 -- i.e. the
@@ -142,8 +154,8 @@ def main():
           f"{len([f for f in fail if 'violate' in f])}")
     print(f"\n   HOW THE ABSENCE IS ESTABLISHED. Smallest |log10 ratio| at any")
     print(f"   candidate, over all t and n in range: {worst_sep:.3e}")
-    print(f"   float error budget at n = {NMAX}: ~6.7e-12")
-    print(f"   separation / error budget: {worst_sep/6.7e-12:.3g}x")
+    print(f"   float error budget at n = {NMAX}: ~1.3e-12")
+    print(f"   separation / error budget: {worst_sep/1.3e-12:.3g}x")
     if worst_sep <= 0:
         fail.append(f"min |g| = {worst_sep:.3e} is at or below the guard, so some "
                     f"candidate was NOT separated and the absence claim is not "
