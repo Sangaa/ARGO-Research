@@ -28,5 +28,6 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R02 certificate](R02/probe.py) and [stdout](R02/probe.log)
 - [R02 literature note](R02/LITERATURE_NOTE.md) and [experience reuse](R02/EXPERIENCE_REUSE.md)
 - [R03 certificate](R03/probe.py), [stdout](R03/probe.log), [development correction](R03/DEVELOPMENT_LOG.md), [literature note](R03/LITERATURE_NOTE.md), and [experience reuse](R03/EXPERIENCE_REUSE.md)
+- [R04 certificate](R04/probe.py), [stdout](R04/probe.log), [development/checkpoint log](R04/DEVELOPMENT_LOG.md), [literature note](R04/LITERATURE_NOTE.md), and [experience reuse](R04/EXPERIENCE_REUSE.md)
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION. No field data were used.
