@@ -27,3 +27,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 - [R13 — smooth observation and scale phase](R13/TOTO_RESEARCH_SPARKS_R13.md): analytic periodic Gaussian limit, certified nonconstancy. [Certificate](R13/probe.py) · [stdout](R13/probe.log).
 - [R14 — phase-balanced observation and Bessel orbit sum](R14/TOTO_RESEARCH_SPARKS_R14.md): uniform limiting phase-bias bound and exact mean formula; numerical cross-checks. [Certificate](R14/probe.py) · [stdout](R14/probe.log).
 - [R15 — arithmetic norm spectrum](R15/TOTO_RESEARCH_SPARKS_R15.md): prime splitting counts octagon unit orbits, exhaustive norm control and certified omitted Bessel tail. [Certificate](R15/probe.py) · [stdout](R15/probe.log).
+- [R16 — dodecagonal arithmetic spectrum](R16/TOTO_RESEARCH_SPARKS_R16.md): full observation lattice, unit group, prime splitting, exact norm comparisons and Bessel mean proxy. [Certificate](R16/probe.py) · [stdout](R16/probe.log).
