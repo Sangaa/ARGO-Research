@@ -43,7 +43,7 @@ An **effective** uniform quadratic bound for the equal-displacement equation:
 > for `t >= 2`, `k >= 1`, `n >= 2k + 3t`, every solution of `C(n,k) = C(n-t, k+t)`
 > satisfies `n < 200 t²`.
 
-R24 derives a sharper scoped bound `n < 113 t²` from the same remainder table. V3 remains frozen at `200 t²`; read [the R24 record](SINGMASTER_R24_TIGHTER_BOUND_2026-11-27.md) and its exact rational certificate for the successor derivation.
+R24 derives a sharper scoped bound `n < (225/2) t²` from the same remainder table. V3 remains frozen at `200 t²`; read [the R24 record](SINGMASTER_R24_TIGHTER_BOUND_2026-11-27.md) and its exact rational certificate for the successor derivation.
 
 Why it is of a different kind from what preceded it: Jenkins (arXiv:1411.4111) proves
 *finiteness* for `t_1 != t_2` by Siegel's theorem, which is **ineffective** — it gives
@@ -74,7 +74,7 @@ Round by round, in date order. The useful ones to start from:
 | `R14`–`R19` | the series expansion, the bracket, the product form, the arithmetic scan, the shift, the exact root bound, Fujiwara |
 | `R20`–`R22` | the margin, and the `J1`/`J2` layers |
 | `R23` | review of the `n < 200t²` derivation — the verdict that produced `referee/V1` |
-| `R24` | tightens the same scoped bound to `n < 113t²` using the exact `9/4` remainder constant |
+| `R24` | tightens the same scoped bound to `n < (225/2)t²` using the exact `9/4` remainder constant |
 
 ### 3. `spectral/S01`–`S08` — does Pascal's regularity reach the laws of nature?
 
