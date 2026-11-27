@@ -8,12 +8,12 @@ When can a temporary whole unit be added to an indivisible allocation, used to m
 
 ## Result
 
-If M is the original total, r_i are the stated shares of the augmented total, and q=sum(r_i), exact return of a temporary amount b requires
+Let M>0 be the original total, r_i the stated shares of the augmented total, and q=sum(r_i). Exact return of a temporary amount b requires
 
     q(M+b)=M
     b=M(1-q)/q
 
-For a positive original total, a positive returned addition requires 0<q<1. For indivisible units, b must be a nonnegative integer and every r_i(M+b) must be an integer. These conditions are necessary and sufficient for the stated proportional allocations to sum to M and leave exactly b units to return.
+For a positive returned addition, the domain is 0<q<1. At q=0, no finite augmented total can satisfy the allocation; at q=1, the formula gives b=0; outside 0<q<1, it does not give a positive addition. For indivisible units, assume M is an integer and the r_i are exact rational shares: b must be a nonnegative integer and every r_i(M+b) must be an integer. Together with the equation above, these conditions are necessary and sufficient for the stated proportional allocations to sum to M and leave exactly b units to return.
 
 ## Seven-camels instance
 
