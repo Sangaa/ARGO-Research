@@ -1,0 +1,14 @@
+M E-greedy E-opt ratio D-greedy E-score
+4 4 6 2/3 6
+10 4 12 1/3 12
+100 4 102 2/51 102
+1000 4 1002 2/501 1002
+1000000 4 1000002 2/500001 1000002
+D vs E, k= 3 E-ratio 1/2
+D vs E, k= 10 E-ratio 2/11
+D vs E, k= 100 E-ratio 2/101
+D vs E, k= 1000 E-ratio 2/1001
+diagonal triple cases: 2300 E-greedy suboptimal: 130 worst ratio: 3/7
+log-det diminishing-return comparisons: 405
+finite-k guarantee checks: 5
+all exact assertions passed
