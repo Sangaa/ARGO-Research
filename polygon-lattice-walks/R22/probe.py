@@ -25,6 +25,7 @@ def prod_char(ps,t,cs):
     v=1
     for p,x,c in zip(ps,t,cs):v*=sum(char(c,g) for g in range(4) if transform(x,g)==p)
     return v
+
 def main():
     # 4 free interior points on a single generic H orbit, plus one asymmetric fixed-axis orbit.
     grid=[(1,1),(-1,1),(1,-1),(-1,-1),(2,0),(-2,0),(0,1),(0,-1)]
