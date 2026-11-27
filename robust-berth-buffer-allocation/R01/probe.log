@@ -1,0 +1,7 @@
+model: fixed one-berth order; independent bounded lateness and overrun
+example bounds A: [0, 0, 0] B: [5, 2, 0] target H: 5
+buffer vector [before ship 1..3]: [0, 2, 0] worst departure delays: [5, 5, 5]
+same total buffer, misplaced: [0, 0, 2] worst departure delays: [5, 7, 5]
+minimum total buffer: 2 exact placement: [0, 2, 0]
+exhaustive integer instances checked: 2430
+all exact assertions passed
