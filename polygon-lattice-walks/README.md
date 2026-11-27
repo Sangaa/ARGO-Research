@@ -110,3 +110,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R35 update
 
 [R35 — Revisable rules and review blindness](R35/TOTO_RESEARCH_SPARKS_R35.md): observational equivalence of rejected-label completions, exact minimax finite-population audit budget, owner-originated rule revisability principle. [Certificate](R35/probe.py) · [stdout](R35/probe.log). No operational changes or novelty claim.
+
+## R36 update
+
+[R36 — Audit cadence under imperfect detection](R36/TOTO_RESEARCH_SPARKS_R36.md): time-provenance example, exact mean delay and balanced integer cyclic schedule proof. [Certificate](R36/probe.py) · [stdout](R36/probe.log). Persistent uniformly phased defect and independent detection; no operational change.
