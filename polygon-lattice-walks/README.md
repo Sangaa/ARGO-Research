@@ -90,3 +90,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R30 update
 
 [R30 — Temporary information scaffold](R30/TOTO_RESEARCH_SPARKS_R30.md): exact isotropic floor compensation, rank-one directional threshold and asymptotic trace optimum in R28. [Certificate](R30/probe.py) · [stdout](R30/probe.log). Mathematical auxiliary information only; no operational design.
+
+## R31 update
+
+[R31 — Adaptive scaffold scheduling](R31/TOTO_RESEARCH_SPARKS_R31.md): layer lower bounds attain peak, cumulative and active-visit optima on one path; cumulative adaptive/fixed trace ratio tends to one third. [Certificate](R31/probe.py) · [stdout](R31/probe.log). Ideal discrete variable support, no operational deployment.
