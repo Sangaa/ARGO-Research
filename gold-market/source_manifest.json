@@ -291,15 +291,6 @@
       "original_git_blob_sha1": null
     },
     {
-      "path": "records/R01_issue_871.md",
-      "expected_git_blob_sha1": "4389d99390e9418db919b0a629a3ec491ae98fa1",
-      "source_kind": "github_issue_body",
-      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871",
-      "source_ref": null,
-      "source_commit": null,
-      "original_git_blob_sha1": null
-    },
-    {
       "path": "records/issue_comment_7080175590.md",
       "expected_git_blob_sha1": "f1282dfb88f05d8d1671b744a0b6571c3fddbfef",
       "source_kind": "github_issue_comment_body",
