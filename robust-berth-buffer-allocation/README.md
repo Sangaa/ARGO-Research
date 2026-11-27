@@ -12,12 +12,19 @@ In this bounded model, worst-case delays have an exact max-plus expression. For 
 
 This is a derived special-case formulation and computational check, not a novelty claim, peer-reviewed result, or operational recommendation. Robust scheduling and berth-buffer insertion are established areas; see [literature review](LITERATURE_REVIEW.md). Literature search is preliminary; broader review remains open.
 
+## Rounds
+
+- [R01 — common delay cap](R01/ROBUST_BERTH_BUFFER_R01.md): exact minimum total buffer under a common cap.
+- [R02 — vessel-specific caps](R02/ROBUST_BERTH_BUFFER_R02.md): longest-path solution when each vessel has its own delay cap; a tighter cap can force more buffer upstream.
+
 ## Evidence and resumption
 
 - [Derivation and limits](R01/ROBUST_BERTH_BUFFER_R01.md)
 - [Executable certificate](R01/probe.py)
 - [Captured stdout](R01/probe.log)
 - [Literature review](LITERATURE_REVIEW.md)
-- [Retrieved experience and use log](EXPERIENCE_REUSE.md)
+- [R01 retrieved experience and use log](EXPERIENCE_REUSE.md)
+- [R02 certificate](R02/probe.py) and [stdout](R02/probe.log)
+- [R02 literature note](R02/LITERATURE_NOTE.md) and [experience reuse](R02/EXPERIENCE_REUSE.md)
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION. No field data were used.
