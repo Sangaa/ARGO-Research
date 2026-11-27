@@ -48,4 +48,4 @@ Correction to the R01 scope: the user supplied an exact variant that is already 
 
 This is an exact bounded arithmetic note, not an allocation recommendation, physical-capacity model, or claim that a real temporary resource is freely available. It is distinct from the berth lane: a mathematical borrowed unit is immediately returned; a physical holding slot remains occupied over time and can induce backpressure.
 
-Evidence class: `DERIVED` for the algebra and three exact cases; `SOURCE-VERIFIED` for the identity of the seven-camel variant in the cited scan; originality: `NOT CLAIMED`.
+Evidence class: `DERIVED` for the formula and exact cases; the cited-source match is verified within the inspected scan; literature coverage is bounded and originality is not assessed or claimed.
