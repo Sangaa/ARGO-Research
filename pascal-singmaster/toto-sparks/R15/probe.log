@@ -1,0 +1,9 @@
+cap: 2000 box radius: 11 vectors scanned: 279841
+norm comparisons: 2000 nonzero classes: 141 representatives: 4296
+first nonzero norm multiplicities: [(2, 8), (4, 8), (8, 8), (16, 8), (18, 16), (32, 8), (34, 32), (36, 16), (50, 16), (64, 8), (68, 32), (72, 16), (82, 32), (98, 16), (100, 16), (128, 8), (136, 32), (144, 16)]
+Bessel norm cap: 100 mean proxy: 4.954812377954
+Bessel norm cap: 400 mean proxy: 4.955190647571
+Bessel norm cap: 1600 mean proxy: 4.955190673183
+Bessel norm cap: 10000 mean proxy: 4.955190673183
+certified omitted norm tail beyond 10000: 1.6238701e-14
+quadrature error NOT certified; mean decimals are proxies
