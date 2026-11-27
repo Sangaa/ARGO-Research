@@ -6,8 +6,9 @@
   "destination_repository": "Sangaa/ARGO-Research",
   "counts": {
     "copied_source_blobs": 30,
-    "verbatim_issue_records": 4,
-    "archived_verifier_snapshots": 7
+    "verbatim_issue_records": 27,
+    "archived_verifier_snapshots": 7,
+    "source_issue_comment_count": 26
   },
   "artifacts": [
     {
@@ -290,6 +291,15 @@
       "original_git_blob_sha1": null
     },
     {
+      "path": "records/R01_issue_871.md",
+      "expected_git_blob_sha1": "4389d99390e9418db919b0a629a3ec491ae98fa1",
+      "source_kind": "github_issue_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
       "path": "records/issue_comment_7080175590.md",
       "expected_git_blob_sha1": "f1282dfb88f05d8d1671b744a0b6571c3fddbfef",
       "source_kind": "github_issue_comment_body",
@@ -300,11 +310,241 @@
       "original_git_blob_sha1": null
     },
     {
+      "path": "records/issue_comment_7080274025.md",
+      "expected_git_blob_sha1": "91414efcb867079ee3fa9a1f5cdef1df06a0254b",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080274025",
+      "created_at": "2026-11-22T14:04:41Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7080409350.md",
+      "expected_git_blob_sha1": "57ec2598389f0759bb2a080a466980e17d7a97f9",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080409350",
+      "created_at": "2026-11-22T14:15:31Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7080525211.md",
+      "expected_git_blob_sha1": "182932fdf909310a9a72a3087dcdf1e88d2d2b29",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080525211",
+      "created_at": "2026-11-22T14:24:47Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7080860222.md",
+      "expected_git_blob_sha1": "981782efd709688e553db284a4cf4e345496e1f2",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080860222",
+      "created_at": "2026-11-22T14:51:40Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7080880472.md",
+      "expected_git_blob_sha1": "11d1de503674e433f4ae5f4d02c5f103fac1e98e",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7080880472",
+      "created_at": "2026-11-22T14:53:16Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7083888975.md",
+      "expected_git_blob_sha1": "6c85f5fdb117552ae75d321715f6451a454df6bf",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7083888975",
+      "created_at": "2026-11-22T18:48:50Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7086261214.md",
+      "expected_git_blob_sha1": "d418ee8057afea03b8c3bff351acceaa90a4752f",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7086261214",
+      "created_at": "2026-11-22T21:43:07Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7086355060.md",
+      "expected_git_blob_sha1": "1fa2cc219005d869942286972e8ece8bb9b30194",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7086355060",
+      "created_at": "2026-11-22T21:50:34Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7086665704.md",
+      "expected_git_blob_sha1": "c2f30b1d31eade100654e2a89c853b351ca521ff",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7086665704",
+      "created_at": "2026-11-22T22:14:39Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7087312728.md",
+      "expected_git_blob_sha1": "30fff8b1c8f3cd28b7c62c3cacfb694e38901f65",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7087312728",
+      "created_at": "2026-11-22T23:06:02Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7087372432.md",
+      "expected_git_blob_sha1": "1243f0f3b11bf0075007942a8d28ecff6a561855",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7087372432",
+      "created_at": "2026-11-22T23:10:24Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7087449124.md",
+      "expected_git_blob_sha1": "113c9286f7ca22de16478f909887b269d092d40b",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7087449124",
+      "created_at": "2026-11-22T23:16:24Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7087476631.md",
+      "expected_git_blob_sha1": "835015de7837e20c0321fb3bcf622d4d6d68c794",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7087476631",
+      "created_at": "2026-11-22T23:18:36Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7089466265.md",
+      "expected_git_blob_sha1": "698cb007911cfb4517629a43776ab8b686fe769e",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7089466265",
+      "created_at": "2026-11-23T01:51:07Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7090219101.md",
+      "expected_git_blob_sha1": "2babeb446da6703b8ce21dfd218df9cbe4f936c7",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7090219101",
+      "created_at": "2026-11-23T02:47:48Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7091225940.md",
+      "expected_git_blob_sha1": "b8ee5dba88736231dfe5c4105a70e783d5bf6121",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7091225940",
+      "created_at": "2026-11-23T04:02:36Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
       "path": "records/issue_comment_7093843627.md",
       "expected_git_blob_sha1": "1d7624274a56504cdafba25af1ef2a44813e4dee",
       "source_kind": "github_issue_comment_body",
       "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7093843627",
       "created_at": "2026-11-23T06:57:34Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7103218984.md",
+      "expected_git_blob_sha1": "f9977e3e036f51da0412783481bee160e599ed5f",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7103218984",
+      "created_at": "2026-11-23T13:55:11Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7109279981.md",
+      "expected_git_blob_sha1": "80b3783e07bbb0300c0ae90b35b8d1bcb257e373",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7109279981",
+      "created_at": "2026-11-23T17:51:17Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7110779050.md",
+      "expected_git_blob_sha1": "b83512ed66c8787e6451d2ce826417794ca03b2d",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7110779050",
+      "created_at": "2026-11-23T18:52:39Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7126780198.md",
+      "expected_git_blob_sha1": "3d76b4f6bf1c3e1418fb5d42d04471fe0a41ee25",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7126780198",
+      "created_at": "2026-11-24T08:57:44Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7127013274.md",
+      "expected_git_blob_sha1": "aa94e2dee9e609b9414684fff7046d886d591d8e",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7127013274",
+      "created_at": "2026-11-24T09:08:33Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7127042519.md",
+      "expected_git_blob_sha1": "23052783b96d5aa0a939e99415b2a8c3a6f36b8a",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7127042519",
+      "created_at": "2026-11-24T09:09:53Z",
+      "source_ref": null,
+      "source_commit": null,
+      "original_git_blob_sha1": null
+    },
+    {
+      "path": "records/issue_comment_7155658269.md",
+      "expected_git_blob_sha1": "b4bdaa7875de0d70df60aba7975563e8e3a8be6a",
+      "source_kind": "github_issue_comment_body",
+      "source_url": "https://github.com/Sangaa/ARGO-KOP/issues/871#issuecomment-7155658269",
+      "created_at": "2026-11-25T07:15:20Z",
       "source_ref": null,
       "source_commit": null,
       "original_git_blob_sha1": null

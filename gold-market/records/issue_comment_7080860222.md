@@ -1,0 +1,5 @@
+Independent source-code review | 2026-11-22. SESSION_ID=UNKNOWN/UNREGISTERED; TASK_ID=ARGO-GOLDLAB-R02-CUTOFF-GUARD-20261122-R01; main=ce0a6e441c71f6ee480d0a9538323113c251366a; reviewed source branch=b31b8d1e85873516c33d5aa9ca969fdee128fc18, verifier blob=d4c1d008afd2486c6c2259d485873090d118c68d.
+
+NEW specific gap: validate_issue rejects fetched_utc > issued_at_utc but does not reject fetched_utc > cutoff_utc, so a source fetched after the frozen forecast cutoff but before issuance can pass. It also does not reject fetched_utc < release_utc (chronologically inconsistent provenance). The existing sample_meta fetched time 14:00:30Z is after the test cutoff 14:00:00Z and before issue 14:01:00Z. This is SOURCE_READ reasoning, not a newly run test or proof of availability.
+
+Decision-changing NEXT: require fetched <= cutoff and release <= fetched, with negative fixtures, before official R02 issuance; separately bind payload bytes/vintage and authoritative calendars. Previous 11/11 tests remain author-reported and bounded. R01 immutable; R02 official=MISSING; no Actions, PR, branch edit, or canonical promotion. NO_NEW_MEMORY.
