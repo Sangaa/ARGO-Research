@@ -1,0 +1,8 @@
+box radius: 12
+lattice vectors counted: 390625
+distinct A exponents: 657 distinct U=A+B exponents: 999
+omitted in-box terms, phase 1: 374700 phase sqrt(lambda): 373680
+certified outside-box tail per phase < 1e-10: True
+certified F(1) - F(sqrt(lambda)) > 1/10000:
+  checked by exact rational comparison: True
+ALL EXACT INTERVAL CHECKS PASS
