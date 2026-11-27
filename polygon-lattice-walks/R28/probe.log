@@ -1,0 +1,11 @@
+q 1 squared barrier 33/256 loss/gain 0.50000000
+q 2 squared barrier 1729/36864 loss/gain 0.99541799
+q 4 squared barrier 96001/1638400 loss/gain 5.98606524
+q 8 squared barrier 5225473/84934656 loss/gain 27.97877024
+q 16 squared barrier 301854721/4848615424 loss/gain 119.97416134
+q 32 squared barrier 18252546049/292326211584 loss/gain 495.97156460
+q 64 squared barrier 1133862912001/18146236825600 loss/gain 2015.97018568
+q 128 squared barrier 71468188434433/1143560812363776 loss/gain 8127.96947508
+count-graph cases: 128 states: 16768
+identity graph cases: 5; total vertices: 1272
+all exact assertions passed; loss/gain displays are floating proxies

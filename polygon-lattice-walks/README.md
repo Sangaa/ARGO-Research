@@ -78,3 +78,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R27 update
 
 [R27 — Exchange traps versus quality guarantees](R27/TOTO_RESEARCH_SPARKS_R27.md): strict arbitrary-radius exchange traps and a general one-swap quality bound in the planar equal-trace model. [Certificate](R27/probe.py) · [stdout](R27/probe.log). Exact trap controls; general k numerical checks distinct from proof.
+
+## R28 update
+
+[R28 — Exact transition barrier](R28/TOTO_RESEARCH_SPARKS_R28.md): closed-form minimax single-exchange barrier in R27, optimal-length attaining path, temporary E loss versus final gain, exact graph checks. [Certificate](R28/probe.py) · [stdout](R28/probe.log). Specific family, not a transition-cost model for organizations.
