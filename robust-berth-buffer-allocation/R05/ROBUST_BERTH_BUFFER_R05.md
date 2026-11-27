@@ -30,13 +30,13 @@ Every uncapped interval arc has forward residual capacity, so \(P_i-P_j\ge w_{j,
 \sum_{k=j+1}^{i}\max(0,P_k-P_{k-1})\ge P_i-P_j\ge w_{j,i}.
 \]
 
-Thus the recovered vector is primal feasible. For a gap arc, if its capacity is not tight, its forward residual edge forces \(P_{k-1}\ge P_k\), so \(g_k=0\). If \(g_k>0\), the reverse residual edge implies the gap arc is saturated. For every interval with positive flow, its reverse residual edge makes the interval potential inequality tight. These complementary-slackness conditions make the recovered primal objective equal the circulation optimum. A direct proof is given by the same LP duality; the potentials are not interpreted as buffer amounts themselves.
+Thus the recovered vector is primal feasible. Let \(z_k\) be the flow on gap arc \(k\to k-1\), and put \(\Delta_k=P_k-P_{k-1}\). If \(0\le z_k<c_k\), the forward residual edge gives \(\Delta_k\le0\), hence \(g_k=0\). If \(0<z_k<c_k\), the reverse residual edge also exists, giving \(\Delta_k=0\). If \(z_k=c_k>0\), the reverse residual edge gives \(\Delta_k\ge0\), so \(z_k\Delta_k=c_kg_k\). When \(c_k=0\), necessarily \(z_k=0\); no residual edge is required and both objective terms \(z_k\Delta_k\) and \(c_kg_k\) are zero, even if \(g_k>0\). Thus in every case \(z_k\Delta_k=c_kg_k\). On an interval with positive flow, its forward and reverse residual edges force \(P_i-P_j=w_{j,i}\). Summing potential differences against a circulation cancels at every node, so \(\sum w_{j,i}y_{j,i}=\sum z_k\Delta_k=\sum c_kg_k\). This proves objective equality. The potentials are not interpreted as buffer amounts themselves.
 
 The extraction depends on **uncapped** interval arcs. Adding finite redundant interval upper bounds adds dual variables; raw node potentials alone then need not recover the primal objective. It also depends on the stated sign convention. Always verify the extracted vector against the original interval constraints and objective.
 
 ## Exact bounded certificate
 
-`probe.py` implements integer-scaled negative-cycle cancellation on the uncapped-interval circulation, computes residual shortest-path potentials, extracts the gap vector, and independently enumerates the primal placements and dual packings. All arithmetic is integer exact; the rational family is represented on a common denominator-six grid.
+`probe.py` implements integer-scaled negative-cycle cancellation on the uncapped-interval circulation, computes residual shortest-path potentials, extracts the gap vector, and independently enumerates the primal placements and dual packings. All arithmetic is integer exact; the rational family is represented on a common denominator-six grid. Scaling demands and prices by the same denominator gives integer numerators. R03 proves the interval constraint matrix is totally unimodular, so an integral optimum exists in the scaled primal; the scaled network likewise has integral capacities and an integral optimal circulation. The enumerations therefore cover each displayed grid optimum, not arbitrary rational inputs.
 
 - Integer witness: one demand \(w_{1,3}=3\), costs \((c_2,c_3)=(1,10)\); recovered \((g_2,g_3)=(3,0)\), objective 3.
 - Rational witness: demand \(1/3\), costs \((1/3,2/3)\); recovered \((g_2,g_3)=(1/3,0)\), objective \(1/9\).
@@ -45,9 +45,11 @@ The extraction depends on **uncapped** interval arcs. Adding finite redundant in
 
 This negative-cycle-canceling prototype is not claimed to be polynomial or production-ready. No field data, random-sampling inference, or operational recommendation is present.
 
-## Recorded failure and correction
+## Recorded failures and corrections
 
-The first local check stored gap variables in a node-indexed list with a leading dummy zero, then compared it to a gap-indexed witness. The computed objective was correct, but the witness assertion failed on representation: output `[0,3,0]` versus the same (g_2=3,g_3=0) vector in the expected two-gap convention. The probe now stores gaps in order (g_2,\ldots,g_n) and checks the original constraints. This was an indexing/test failure, not a counterexample to R04 or this recovery claim.
+The first local implementation check used a node-indexed vector with a leading dummy zero, then compared it with a gap-indexed witness. The objective was correct, but the assertion compared `[0,3,0]` with `[3,0]`, two encodings of the same `g_2=3, g_3=0`. The corrected probe stores gaps in order `g_2,...,g_n` and checks the original constraints. This was an indexing/test failure, not a counterexample.
+
+A separate 201-line draft from the scratch workspace used `costs[k-1]` for an `n-1` length gap-price vector; `python3 -I` stopped with `IndexError` before its first witness completed. That exact draft (SHA-256 `90ae9081611601faf1be9569a9d666296fb512d4d3ffab80f6c0a7e909b0aaef`) and traceback are preserved as [failed attempt 01](failed-attempt-01.py) and [captured failure](failed-attempt-01.log). It is distinct from the 144-line candidate `probe.py`, whose exact branch copy passes. The stale draft is retained as failure evidence and is not used as proof or measured output.
 
 ## Prior-work and scope boundary
 
