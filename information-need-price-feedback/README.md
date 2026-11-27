@@ -13,18 +13,19 @@ It is a sibling research topic. It is not an extension of Pascal–Singmaster, p
 - [R01 — scope, prior art, and corrections](R01_SCOPE_AND_PRIOR_ART.md)
 - [R02 — candidate experiment and falsification plan](R02_PRICE_SIGNAL_EXPERIMENT.md)
 - [R03 — cross-domain probes and taxonomy correction](R03_CROSS_DOMAIN_PROBES.md)
+- [R04 — targeted prior-art screen and experiment boundary](R04_PRIOR_ART_SCREEN_AND_EXPERIMENT_LOCK.md)
 
 ## Current research state
 
 1. RISP and goal-sensitive information sufficiency are established topics. A general claim that “need is a gap” or that needs can have multiple goals is not new.
 2. Rumor diffusion, financial rumor price response, and learning from internal prices are also established.
-3. A narrow experimental bridge remains a candidate: compare new participants randomly exposed to an earlier rumor-generated price trace with a matched fixed-price control, holding access to fundamentals constant and measuring belief, sufficiency threshold, verification, and action separately.
-4. A first literature reconnaissance did not establish originality. A systematic search and protocol review remain necessary. No human or market experiment has run.
+3. A narrow experimental bridge remains a candidate: compare new participants randomly exposed to an earlier rumor-generated price trace with matched rumor-only and neutral-trace controls, while disclosing the price trace's origin and information set. Measure inferred social information, perceived sufficiency gap, independent verification, belief calibration, and action separately.
+4. The targeted prior-art screen in R04 rules out novelty claims for the component ideas; it does not resolve whether the exact joint design has been studied. This is not yet a reproducible systematic review. No human or market experiment has run.
 
 ## Evidence and provenance
 
 - Owner-originated direction: model the need itself, its decomposition and changing context; examine signals that alter belief, perceived need, action and outcomes. Spare-parts forecasting is a high-level example, not the research target.
-- Analytical contribution: variable distinctions, candidate experimental design and prior-art synthesis in R01–R03.
+- Analytical contribution: variable distinctions, candidate experimental design and prior-art synthesis in R01–R04.
 - HORUS contribution: internal analytical-agent reviews of the need/measurement and feedback designs. No separate HORUS platform session ID exists for those reviews; they are not represented as independent-session or external peer review.
 - Claim classes: cited literature findings are attributed to their original studies and bounded to those contexts; proposed links are hypotheses; experiment status is UNAVAILABLE (not run); originality is unresolved.
 
