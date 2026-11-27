@@ -1,0 +1,15 @@
+polygon/time cases: 50 lower radial comparisons: 375
+first-deviation checks: 50 independent one-pair checks: 85 scale/time recovery checks: 150
+n circle_M5 pentagon_M5 decagon_M5 pentagon_gap
+1 252 250 252 -2
+2 31504 31500 31504 -4
+3 384156 384150 384156 -6
+5 7132060 7132050 7132060 -10
+10 297519120 297519100 297519120 -20
+n standardized pentagon-minus-decagon M5
+1 -1/16
+2 -1/256
+3 -1/1296
+5 -1/10000
+10 -1/160000
+all assertions passed
