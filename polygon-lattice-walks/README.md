@@ -54,3 +54,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R21 update
 
 [R21 — Triangle-distance ambiguity on a unit circle](R21/TOTO_RESEARCH_SPARKS_R21.md): distinct equal-length direction sets with identical labeled three-point distance distributions at n=1, but distinguishable four-point distance distributions. Bounded exact search and explicit separator; no all-time or universal four-point theorem. [Certificate](R21/probe.py) · [stdout](R21/probe.log).
+
+## R22 update
+
+[R22 — Reconstruction bounds and geometric anchors](R22/TOTO_RESEARCH_SPARKS_R22.md): published universal 36-point isometry bound; restricted four-point unique-scalene-triangle and five-point unique-diameter derivations. Exact bounded control and negative complement search. [Certificate](R22/probe.py) · [stdout](R22/probe.log) · [auxiliary search](R22/search.cpp) · [search stdout](R22/search.log).
