@@ -19,6 +19,7 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R03 — nonuniform gap costs](R03/ROBUST_BERTH_BUFFER_R03.md): the R02 unit-cost placement can be suboptimal under nonuniform prices; gives an interval-covering LP, dual, and an integrality result for integer demands.
 - [R04 — exact circulation reduction](R04/ROBUST_BERTH_BUFFER_R04.md): maps the R03 interval-packing dual to maximum-cost circulation, preserving arbitrary nonnegative gap capacities.
 - [R05 — primal recovery from potentials](R05/ROBUST_BERTH_BUFFER_R05.md): extracts the actual optimal gap vector, then checks its objective against the flow value and direct primal/dual enumeration on bounded exact instances.
+- [R06 — berth-release and channel-queue boundary](R06/BERTH_CHANNEL_RELEASE_BOUNDARY_R06.md): separates service completion, berth clearance and channel entry; a two-vessel example shows when a waiting rule makes the channel queue block the next berth service.
 
 ## Evidence and resumption
 
