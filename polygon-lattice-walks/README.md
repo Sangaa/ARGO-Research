@@ -82,3 +82,7 @@ The R09–R18 subject was previously stored below `pascal-singmaster/` because T
 ## R28 update
 
 [R28 — Exact transition barrier](R28/TOTO_RESEARCH_SPARKS_R28.md): closed-form minimax single-exchange barrier in R27, optimal-length attaining path, temporary E loss versus final gain, exact graph checks. [Certificate](R28/probe.py) · [stdout](R28/probe.log). Specific family, not a transition-cost model for organizations.
+
+## R29 update
+
+[R29 — Batch-radius dependence](R29/TOTO_RESEARCH_SPARKS_R29.md): exact barrier at every batch radius, loss/gain threshold and parity-sensitive scaling for R28. [Certificate](R29/probe.py) · [stdout](R29/probe.log). Mathematical endpoint-only batches; not an operational transition system.
