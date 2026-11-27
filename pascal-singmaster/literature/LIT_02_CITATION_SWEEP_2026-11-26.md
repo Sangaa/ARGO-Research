@@ -241,3 +241,76 @@ margin.
 - [de Weger, *Equal binomial coefficients: some elementary considerations*, J. Number Theory (1997)](https://research.tue.nl/en/publications/equal-binomial-coefficients-some-elementary-considerations/)
 - Beukers, Shorey, Tijdeman (1999) — located through Jenkins' reference [4] and MRSTT's reference [4]; **the paper itself was not read**, and §2's description of it is taken from how those two sources describe it. `EVIDENCE CLASS: DERIVED, secondary.`
 - [*Repetitions of multinomial coefficients and a generalization of Singmaster's conjecture*, arXiv:2107.09107](https://arxiv.org/pdf/2107.09107) — checked and **not** relevant: bounds `N_k(a)` for multinomials, no displacement equation, does not cite Jenkins
+
+---
+
+# Addendum, 2026-11-27 — the indexed citation search, run and its blind spot measured
+
+§4 left the sweep at `BOUNDED_PROXY` with the reason stated: *"I have no indexed citation
+database here, and `arXiv:1411.4111` and the Integers version are indexed separately, so a
+paper citing only the Integers version by journal reference can be invisible to a
+preprint-ID search. A library search on the Integers citation remains the right next step
+and has not been done."*
+
+It has now been attempted. The result is not a list of new citers; it is a **measurement of
+why the search cannot be completed from here**, which is a better outcome than another
+undated promise.
+
+## What was reachable, and what refused
+
+| route | outcome |
+| --- | --- |
+| Semantic Scholar API | refused at the network layer — `CONNECT tunnel failed, 403`. Not an allowed host in this runtime. **Not routed around.** |
+| Semantic Scholar web search | `robots_disallowed` |
+| Crossref API | permission request for the host went unanswered and was withdrawn |
+| **OpenAlex API** | **worked** |
+
+## What OpenAlex says
+
+**Jenkins has exactly one indexed citation.**
+
+- Record `W1799505236`, *Repeated Binomial Coefficients and High-Degree Curves*, Hugo
+  Jenkins, 2014, `doi:10.48550/arXiv.1411.4111`, **`cited_by_count: 1`**.
+- The single citer: **Matomäki, Radziwiłł, Shao, Tao, Teräväinen,
+  *Singmaster's Conjecture In The Interior Of Pascal's Triangle*, Q. J. Math. 73 (2022),
+  `doi:10.1093/qmath/haac006`** — already read in §4 of this record.
+- A search of all 214 works under the author name returns **no separate Integers 2016
+  record**. OpenAlex holds the `submittedVersion` only, marked `arXiv` as venue, with no
+  accepted or published version attached.
+
+So on the evidence reachable from here, **nothing cites Jenkins except the one paper this
+record already read.**
+
+## And the measured reason that is not conclusive
+
+`filter=primary_location.source.issn:1553-1732` — the ISSN of *Integers*, confirmed from the
+journal's own front page — returns **`meta.count = 0`**.
+
+**OpenAlex indexes zero works from the journal Integers.**
+
+That is the blind spot §4 predicted, now measured rather than suspected, and it is worse
+than a gap in one record:
+
+1. Jenkins' own published version is **not** in OpenAlex — only his preprint is, which is
+   why the citation count attaches to a 2014 arXiv entry and not to `Integers 16 #A69`.
+2. **Any paper published in Integers that cites Jenkins is invisible to this search.** And
+   *Integers* is a journal of combinatorial number theory — the natural venue for follow-up
+   work on repeated binomial coefficients. The one index that answered is structurally blind
+   to the most likely place a competing result would appear.
+
+So "one citation" is a **lower bound on an index with a known hole in exactly the wrong
+place**, not a count of the literature.
+
+## Status of the open item
+
+`EVIDENCE CLASS: MEASURED` for the OpenAlex figures, the ISSN, the zero-count, and which
+routes refused. `BOUNDED_PROXY` for the sweep's conclusion, **unchanged** — the reason is now
+specific instead of general.
+
+**What would close it, and none of it is reachable from this runtime:** MathSciNet or zbMATH,
+both of which cover *Integers* and neither of which is an open API; or a direct read of the
+Integers volumes after 2016 looking for the citation by hand, which is a bounded and finite
+task — about ten volumes — and is the cheapest honest route left.
+
+The originality claim in `referee/` therefore still rests on a sweep with a named hole. That
+is a weaker statement than §4 made it sound, and it is the accurate one.
