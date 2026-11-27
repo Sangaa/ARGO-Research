@@ -1,0 +1,25 @@
+k 5 p, loss/gain (decimal proxy):
+1 5.98606524
+2 5.78705858
+3 1.39925082
+4 0.80000000
+5 0.00000000
+k 17 p, loss/gain (decimal proxy):
+1 119.97416134
+8 46.34908566
+13 7.41166612
+14 6.64698091
+15 1.82352345
+16 0.94117647
+17 0.00000000
+k 65 p, loss/gain (decimal proxy):
+1 2015.97018568
+32 568.36686096
+61 7.84615339
+62 6.90769196
+63 1.95384613
+64 0.98461538
+65 0.00000000
+count graph cases: 2144 threshold checks: 4288
+identity graph cases: 14 threshold checks: 28
+all exact assertions passed; displayed ratios only are floating proxies
