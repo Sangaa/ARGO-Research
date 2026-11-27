@@ -1,0 +1,7 @@
+model: fixed one-berth order; independent bounded arrival and handling overrun
+bounds A: [0, 0, 0] B: [5, 2, 0]
+common caps [5,5,5]: minimum gaps: [0, 2, 0] total: 2 worst delays: [5, 5, 5]
+vessel caps [5,4,3]: minimum gaps: [0, 3, 1] total: 4 worst delays: [5, 4, 3]
+infeasible first-vessel cap detected: True
+exhaustive feasible instances checked: 6156
+all exact assertions passed
