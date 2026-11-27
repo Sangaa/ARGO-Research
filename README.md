@@ -70,6 +70,10 @@ A new operations-research lane, independent of the Pascal, Singmaster and polygo
 
 A source-only, non-canonical research lane transferred from ARGO KOP. It preserves the frozen R01 baseline, R02 timing correction, successive verifier snapshots, and R03/R04 shadow candidates. No forecast advantage or empirical weight has been established.
 
+### [temporary-resource-augmentation/](temporary-resource-augmentation/README.md) — exact return after temporary augmentation
+
+A short cross-domain method note formalizing the seven-camels example: add one temporary unit to make indivisible shares integral, allocate 4+2+1 from 8, then return the exact residual 1. It is separate from the berth model and makes no novelty claim.
+
 ## How a lane is added
 
 A folder goes in when it can carry its own weight, not when it has a result:
