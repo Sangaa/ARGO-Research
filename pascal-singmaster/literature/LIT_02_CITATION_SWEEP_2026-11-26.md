@@ -334,3 +334,122 @@ task — about ten volumes — and is the cheapest honest route left.
 
 The originality claim in `referee/` therefore still rests on a sweep with a named hole. That
 is a weaker statement than §4 made it sound, and it is the accurate one.
+
+---
+
+# Addendum 2, 2026-11-27 — the Integers hand read, done; and the one paper it was worth doing for
+
+The first addendum named the route left: *"a direct read of the Integers volumes after 2016
+looking for the citation by hand, which is a bounded and finite task — about ten volumes —
+and is the cheapest honest route left."* This is that read, completed.
+
+## Method, so a second reader can repeat it
+
+Volumes **17 (2017) through 26 (2026)** — every volume after Jenkins' own 16 — were screened
+from the journal's own volume index pages, `https://math.colgate.edu/~integers/vol<N>.html`,
+one per volume. Screening was **by title**: any paper whose title put it in binomial
+coefficients, Pascal's triangle, equal or near-equal binomial values, or Diophantine
+equations in factorials/binomials was then fetched and read in full. Everything else was
+left unread.
+
+The journal's own pages are reachable only through the fetch tool in this runtime; the shell
+is refused at the egress proxy for `math.colgate.edu` (`connect_rejected, HTTP 403`). That is
+the same channel split already recorded for this lane and was **not routed around**.
+
+**The limitation this method has, stated plainly:** title screening finds a paper *about* the
+problem. It cannot find a paper with an unrelated title that cites Jenkins once in passing.
+Closing that would require full text of ~10 volumes, roughly 600 papers, which is not a
+bounded task here. So what follows is a result about the **problem**, not a certified
+citation count.
+
+## What the ten volumes contain in this territory
+
+| volume | paper | relation to equal displacement |
+| --- | --- | --- |
+| 17 (2017) A64 | Blokhuis, Brouwer, de Weger, *Binomial Collisions and Near Collisions* | = `arXiv:1707.06893`, already read in §4 |
+| 20 (2020) A13 | **Katsipis, *Diophantine Equations Coming From Binomial Near-collisions*** | near collisions at **fixed column pairs**, not equal displacement — read in full below |
+| 21 (2021) A34 | de Koninck, Doyon, Verreault | = `arXiv:2107.09107`, already read and not relevant |
+| 18, 19, 22, 23, 24, 25 | — | nothing in this territory |
+| 26 (2026) A26 | Allen, *Solvability of `C(2k,k) = C(2a,a)·C(x+2b,b)`* | read in full; see below |
+
+**No paper found in the ten volumes cites Jenkins.** Not Katsipis, not Allen, not the two
+already known. The originality of the displacement bound survives the hand read.
+
+## Volume 26 A26 — Allen, and why it is not a precedent
+
+Meaghan Allen, *Solvability of* `C(2k,k) = C(2a,a)·C(x+2b,b)`, Integers 26 (2026) #A26.
+Theorem 1: with `k = a + b`, the equation holds **iff `x = a = 1`**. Proof splits into
+`x >= a`, `x = 1`, and `x >= 2 with k >= 150`, with Maple checks for the small range.
+References: Erdős, Hanson, Laishram–Shorey, Moser, Nair–Shorey, Stănică. **No Jenkins, no
+Singmaster, no Beukers–Shorey–Tijdeman.**
+
+It is a *product* equation with a central coefficient on the left, not a repeat of one value
+at two positions. The `k >= 150` threshold is a threshold in the paper's own parameter, not a
+bound on `n` of our kind. Nothing in it touches `referee/`.
+
+## Volume 20 A13 — Katsipis, and why it is the one finding that matters
+
+Katsipis studies `C(m,l) − C(n,k) = d` for **fixed column pairs** `(l,k) = (3,6), (6,3),
+(8,2)`. Not equal displacement: the columns are constants, not `k` and `k+t`, and the
+right-hand side is a non-zero difference. **It does not cite Jenkins.** So it is not a
+precedent either, and the originality conclusion above is unaffected.
+
+What it *is*, is a **measurement of the thing `referee/ §6` is risking.** Jenkins' own
+objection to the effective route is that the constants are "too large to be useful." That is
+a qualitative sentence in our records. Katsipis puts numbers on it, for three concrete cases
+of a near neighbour of our equation, using elliptic logarithms with S. David's Baker-type
+bounds:
+
+| quantity | value |
+| --- | --- |
+| `c_12` | ≈ `1.21 · 10^27` |
+| `c_13` | ≈ `1.34 · 10^281` |
+| bound on `M` before reduction | `< 6.86 · 10^147` |
+| after LLL reduction | `M <= 27` |
+
+Two things follow for this lane, and the second is the uncomfortable one.
+
+1. **The LLL column is the encouraging half.** `10^147` collapsing to `27` is what reduction
+   does for a *fixed, small* instance. It is an instance-by-instance collapse — three column
+   pairs, each reduced on its own — not a uniform bound over a family.
+
+2. **The `10^147` column is the warning.** Our claim is `n < 200t^2` — polynomial, uniform in
+   `t`, with a constant of order `10^2`. The nearest effective work in the literature, on a
+   *strictly easier* problem (fixed columns, one unknown pair at a time), needs intermediate
+   constants at `10^147` to `10^281` before any reduction. A polynomial bound with a small
+   constant over the whole family is therefore **not a small improvement on the literature's
+   effective methods; it is a different order of result.** That raises, rather than lowers,
+   the standard of proof §6 has to meet. §6's risk entry should be read with these numbers
+   next to it.
+
+This is not a refutation of anything in `referee/`. It is the first *quantitative* anchor we
+have for "too large to be useful," and it says the gap our claim has to cross is 145 orders
+of magnitude wide on the nearest comparable problem.
+
+## Status of the open item, after the hand read
+
+`EVIDENCE CLASS: DERIVED` for every reading above — each is a reading of a primary source at
+a named locator, and a second reader can disagree from the same locators. The volume
+enumeration (which volumes exist, which papers each index lists) is `MEASURED`.
+
+The sweep's conclusion moves, but not to closed:
+
+- **Before:** `BOUNDED_PROXY` — one index answered, and it was blind to the most likely venue.
+- **Now:** the blind venue has been read by hand, by title, and holds no citer. The remaining
+  hole is **no longer a venue**; it is a **method** hole: incidental citations in papers whose
+  titles are off-topic, anywhere in the literature, and the two indexes that cover *Integers*
+  (MathSciNet, zbMATH) are still not reachable from this runtime.
+- So: **`BOUNDED_PROXY` still, with a smaller and differently-shaped bound.** The honest
+  sentence for `referee/` is now *"no paper about this problem, in the journal where such a
+  paper would appear, cites Jenkins"* — which is a real statement — and **not** *"nothing
+  cites Jenkins,"* which is still not supported.
+
+The §4 open item is therefore **narrowed and recorded as narrowed, not closed.** I am not
+upgrading it further from this runtime, and the §6 risk entry now has Katsipis' constants
+attached to it.
+
+## Sources added by this addendum
+
+- [Katsipis, *Diophantine Equations Coming From Binomial Near-collisions*, Integers 20 (2020) #A13](https://math.colgate.edu/~integers/u13/u13.pdf) — read in full; does not cite Jenkins
+- [Allen, *Solvability of* `C(2k,k) = C(2a,a)C(x+2b,b)`, Integers 26 (2026) #A26](https://math.colgate.edu/~integers/aa26/aa26.pdf) — read in full; does not cite Jenkins
+- Integers volume indexes 17–26, `https://math.colgate.edu/~integers/vol<N>.html` — the screening surface
