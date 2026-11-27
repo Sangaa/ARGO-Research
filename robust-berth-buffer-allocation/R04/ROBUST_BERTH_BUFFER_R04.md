@@ -44,7 +44,7 @@ For integral gap prices `c_k`, the network capacities are integral, so an integr
 
 ## Recovering the actual gap vector
 
-The circulation's flow is the dual witness; its objective alone is not a buffer schedule. The min-cost-circulation dual has node potentials and gap-capacity prices. Its interval-arc inequalities require `P_i-P_j >= w_(j,i)`. For each gap, the nonnegative capacity price can be chosen at least `P_k-P_(k-1)`. These prices form a feasible R03 gap vector, and strong duality makes an optimal dual solution an optimal gap vector. Equivalently, solve R03's primal at the circulation's certified optimum value. The prototype certificate below checks objective equality and flow mapping; it does not emit recovered gap vectors from node potentials.
+The circulation's flow is the dual witness; its objective alone is not a buffer schedule. In the **uncapped interval-arc formulation**, the max-cost-circulation dual has node potentials and gap-capacity prices. Its interval-arc inequalities require `P_i-P_j >= w_(j,i)`. For each gap, the nonnegative capacity price can be chosen at least `P_k-P_(k-1)`. These prices form a feasible R03 gap vector, and strong duality makes an optimal dual solution an optimal gap vector. Equivalently, solve R03's primal with the circulation value as its optimum objective. If a solver uses the optional finite redundant upper bounds on interval arcs, its dual may include prices for those added bounds; do not read its raw dual multipliers as the gap vector without accounting for them. The prototype certificate below checks objective equality and flow mapping; it does not emit recovered gap vectors from node potentials.
 
 ## Bounded certificate
 
