@@ -20,6 +20,7 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R04 — exact circulation reduction](R04/ROBUST_BERTH_BUFFER_R04.md): maps the R03 interval-packing dual to maximum-cost circulation, preserving arbitrary nonnegative gap capacities.
 - [R05 — primal recovery from potentials](R05/ROBUST_BERTH_BUFFER_R05.md): extracts the actual optimal gap vector, then checks its objective against the flow value and direct primal/dual enumeration on bounded exact instances.
 - [R06 — berth-release and channel-queue boundary](R06/BERTH_CHANNEL_RELEASE_BOUNDARY_R06.md): separates service completion, berth clearance and channel entry; a two-vessel example shows when a waiting rule makes the channel queue block the next berth service.
+- [R07 — finite holding capacity](R07/FINITE_HOLDING_CAPACITY_BACKPRESSURE_R07.md): in a deterministic example, capacity K=N−1 preserves service completions while K=N is needed to clear all N ships before the first channel slot, under stated strict timing assumptions.
 
 ## Evidence and resumption
 
