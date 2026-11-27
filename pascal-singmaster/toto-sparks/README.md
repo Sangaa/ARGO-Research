@@ -23,4 +23,4 @@ Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION.
 
 ## Subject separation
 
-Rounds R09–R18 concern polygon lattice walks, not Pascal's triangle or the Singmaster conjecture. They have been moved, with their original file contents, to the separate [`polygon-lattice-walks`](../../polygon-lattice-walks/README.md) lane. The Git history preserves the previous paths. R01–R08 remain in this notebook as moment-identification and discrete-observation work.
+Rounds R09–R19 concern polygon lattice walks, collision laws, spectral phase and radial-moment identification, not Pascal's triangle or the Singmaster conjecture. They are kept in the separate [`polygon-lattice-walks`](../../polygon-lattice-walks/README.md) lane. The Git history preserves the previous paths. R01–R08 remain here as moment-identification and discrete-observation work.
