@@ -212,9 +212,10 @@ Reproduction of the stored outputs was also checked rather than assumed:
    pass from Jenkins' citations and citers, not a complete citation graph, and a paper
    citing only the Integers reference can be invisible to a preprint-ID search. A library
    search on the `Integers 16 #A69` citation is the remaining step. `BOUNDED_PROXY`.
-   Also open from it: `referee/V4` for §2 (routed to TOTO), the mechanical citation fix in
-   the unfrozen records, and a discriminating run at `t > 10`, where the present window is
-   vacuous.
+   Also open from it: `referee/V4` for §2 (routed to TOTO) and the mechanical citation fix
+   in the unfrozen records. The `t > 10` run is **done** — `2 <= t <= 20`, `n <= 100000`,
+   discriminating at every `t` with no vacuous row, after the exact test was refactored to
+   cancel the factorials and stop building binomials at all.
 3. Identifiability for `s >= 3`, and for `s = 2` against half-integer-mean rivals.
 4. The regular-octagon tail bound. The attackable step is the claim that for `h > 0`
    one can *always* choose an opposing pair on an axis other than the largest residual

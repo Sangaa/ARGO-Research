@@ -1,16 +1,18 @@
 """LIT_02 sec.6: the discriminating check, run rather than recommended.
 
-RANGE: T = 12, NMAX = 20000. These are the values this certificate has actually
-been OBSERVED to pass with, and that is the only reason they are the ones here.
+RANGE: T = 20, NMAX = 100000, and this range HAS been observed to pass.
 
-On 2026-11-27 they were raised to T = 20, NMAX = 100000 to extend the
-discriminating range, merged, and the raised configuration was NEVER SEEN TO
-FINISH -- the run was still going at 15 minutes and was killed at its time limit
-with empty output, because the script prints only at the end. So main carried a
-certificate in a configuration nobody had watched pass, which is worse than a
-certificate with a smaller range: a certificate is a claim that it was run.
-Reverted here to the observed-passing values. An extension goes in only after a
-completed run, not before one.
+The history matters, because it is what produced the exact test used below.
+On 2026-11-27 the range was first raised to these same values while the exact
+test still called comb(), merged, and the raised configuration was NEVER SEEN TO
+FINISH -- killed at its time limit with empty output. It was reverted to the
+observed-passing T = 12, NMAX = 20000, because a certificate is a claim that it
+was run and shipping one in a configuration nobody watched pass inverts the only
+thing it is for.
+
+The fix was not a smaller range. It was removing comb() entirely (see FACTORED
+EXACT TEST below), after which T = 20, NMAX = 100000 completes. An extension goes
+in only after a completed run -- this one did.
 
 CLAIM UNDER TEST (referee/V3):
     for t >= 2, k >= 1, n >= 2k + 3t, every solution of C(n,k) = C(n-t, k+t)
@@ -53,15 +55,15 @@ METHOD, and two abandoned versions.
 The identity t(n+k+2) is re-verified numerically on every (n,t) visited, so the
 argument the search rests on is itself under test rather than asserted.
 """
-from math import comb, lgamma
+from math import lgamma
 
-T = 12
-NMAX = 20000
+T = 20
+NMAX = 100000
 LOG10 = 2.302585092994046
 
-# Float guard before the exact test. log10 C(n,k) reaches ~6020 at n = 20000, and
+# Float guard before the exact test. log10 C(n,k) reaches ~30100 at n = 100000, and
 # IEEE double carries ~16 significant digits, so the absolute error in g is about
-# 6020 * 2^-52 ~ 1.3e-12. GUARD is ~7.7 MILLION times that, so an exact equality
+# 30100 * 2^-52 ~ 6.7e-12. GUARD is ~1.5 MILLION times that, so an exact equality
 # (g == 0) can never be pruned by it.
 #
 # It was first set to 1e-9. That ran, and reported min|g| = 1.07e-9 -- i.e. the
@@ -80,6 +82,43 @@ def g(n, k, t):
             ) / LOG10
 
 
+def equal_exact(n, k, t):
+    """C(n,k) == C(n-t, k+t), exactly, without building either binomial.
+
+    FACTORED EXACT TEST. Cancel the factorials before evaluating:
+
+        C(n,k) = C(n-t, k+t)
+      <=>  n! (k+t)! (n-k-2t)!  =  (n-t)! k! (n-k)!
+      <=>  [n!/(n-t)!] [(k+t)!/k!]  =  [(n-k)!/(n-k-2t)!]
+      <=>  prod_(i<t) (n-i)  *  prod_(1<=j<=t) (k+j)  =  prod_(l<2t) (n-k-l)
+
+    So the test is 4t multiplications of integers bounded by n, instead of
+    constructing two integers with tens of thousands of digits and comparing them.
+
+    WHY THIS EXISTS. With comb(), this certificate could not finish at
+    NMAX = 100000: the float guard admits more candidates as n grows, because the
+    minimum separation shrinks, and each admitted candidate then cost a comparison
+    of ~30,000-digit integers. Measured, at n = 100000, t = 20: 2000 tests take
+    0.011 s factored versus 173 s with comb() -- 15,483x.
+
+    VERIFIED AGAINST comb() BEFORE REPLACING IT, not after: all 250,347 triples
+    with t in 1..6, n < 420 and k in canonical position -- 0 disagreements -- and
+    on the whole known Lind 1968 / Singmaster 1975 family at t = 1,
+    (15,5), (104,39), (714,272), (4895,1869), where both agree it is a solution.
+    The replacement is checked by the thing it replaces; the identity above is
+    algebra, but the implementation of algebra is not.
+    """
+    left = 1
+    for i in range(t):
+        left *= (n - i)
+    for j in range(1, t + 1):
+        left *= (k + j)
+    right = 1
+    for l in range(2 * t):
+        right *= (n - k - l)
+    return left == right
+
+
 def identity_holds(n, k, t):
     """The exact fact the monotonicity argument rests on."""
     return (n - k) * (k + t + 1) - (k + 1) * (n - k - 2 * t) == t * (n + k + 2)
@@ -90,9 +129,9 @@ def solutions(t, nmax):
 
     Also returns the smallest |g| seen at any candidate k. That number is the
     actual evidence when no exact comparison runs: if min|g| stays far above the
-    1.3e-12 float error budget, then g != 0 at every candidate, so no equality
+    6.7e-12 float error budget, then g != 0 at every candidate, so no equality
     holds, and the absence is established by a verified separation rather than by
-    an exact comb() that never executed.
+    an exact test that never executed.
     """
     out, id_fail, tested = [], 0, 0
     min_gap = float("inf")
@@ -121,7 +160,7 @@ def solutions(t, nmax):
                     min_gap = gap
                 if gap < GUARD:
                     tested += 1
-                    if comb(n, k) == comb(n - t, k + t):
+                    if equal_exact(n, k, t):
                         out.append((n, k))
     return out, tested, id_fail, min_gap
 
@@ -130,7 +169,8 @@ def main():
     fail = []
     print(f"A. exact canonical-position solutions, t = 2..{T}, n <= {NMAX}")
     print("   method: g strictly increasing in k (proved in the docstring), so at")
-    print("   most one k per (n,t); binary search finds it, exact comb() confirms.\n")
+    print("   most one k per (n,t); binary search finds it, the factored exact")
+    print("   test confirms it -- see equal_exact(), no binomial is ever built.\n")
     print(f"   {'t':>3} {'200t^2':>9} {'solutions':>10} {'exact tests':>12} "
           f"{'min |g|':>11} {'id fails':>9}  detail")
     total = 0
@@ -154,8 +194,8 @@ def main():
           f"{len([f for f in fail if 'violate' in f])}")
     print(f"\n   HOW THE ABSENCE IS ESTABLISHED. Smallest |log10 ratio| at any")
     print(f"   candidate, over all t and n in range: {worst_sep:.3e}")
-    print(f"   float error budget at n = {NMAX}: ~1.3e-12")
-    print(f"   separation / error budget: {worst_sep/1.3e-12:.3g}x")
+    print(f"   float error budget at n = {NMAX}: ~6.7e-12")
+    print(f"   separation / error budget: {worst_sep/6.7e-12:.3g}x")
     if worst_sep <= 0:
         fail.append(f"min |g| = {worst_sep:.3e} is at or below the guard, so some "
                     f"candidate was NOT separated and the absence claim is not "
@@ -163,7 +203,11 @@ def main():
     else:
         print("   Every candidate is separated from equality by far more than the")
         print("   error. Candidates within the guard were additionally confirmed by")
-        print("   exact integer comb(); the 'exact tests' column says how many.")
+        print("   the factored exact integer test; the 'exact tests' column says")
+        print("   how many. Correctness does not rest on this separation: the guard")
+        print("   is 1e-5, about 1.5 million times the error budget, so no true")
+        print("   equality can be screened out. The ratio below only says how close")
+        print("   the nearest NON-solution comes, which shrinks as n grows.")
 
     print("\nB. t = 1 control -- OUTSIDE the theorem, which requires t >= 2")
     s1, _, _, _ = solutions(1, NMAX)
