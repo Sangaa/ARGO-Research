@@ -34,6 +34,8 @@ This is a derived special-case formulation and computational check, not a novelt
 - [R03 certificate](R03/probe.py), [stdout](R03/probe.log), [development correction](R03/DEVELOPMENT_LOG.md), [literature note](R03/LITERATURE_NOTE.md), and [experience reuse](R03/EXPERIENCE_REUSE.md)
 - [R04 certificate](R04/probe.py), [stdout](R04/probe.log), [development/checkpoint log](R04/DEVELOPMENT_LOG.md), [literature note](R04/LITERATURE_NOTE.md), and [experience reuse](R04/EXPERIENCE_REUSE.md)
 - [R05 certificate](R05/probe.py), [stdout](R05/probe.log), [development/error log](R05/DEVELOPMENT_LOG.md), [literature note](R05/LITERATURE_NOTE.md), [experience reuse](R05/EXPERIENCE_REUSE.md), and preserved [failed draft](R05/failed-attempt-01.py) with [traceback](R05/failed-attempt-01.log)
+- [R06 boundary report](R06/BERTH_CHANNEL_RELEASE_BOUNDARY_R06.md) with [probe](R06/probe.py) and [stdout](R06/probe.log)
+- [R07 finite-capacity report](R07/FINITE_HOLDING_CAPACITY_BACKPRESSURE_R07.md), [probe](R07/probe.py), [stdout](R07/probe.log), and [development/review log](R07/DEVELOPMENT_LOG.md)
 
 Status: SESSION-DERIVED / NON-CANONICAL / REQUIRES VALIDATION. No field data were used.
 
