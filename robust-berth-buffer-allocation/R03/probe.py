@@ -40,6 +40,9 @@ def main():
     interval_demand = a[0] + sum(b[0:3]) - caps[2]
     primal_value = costs[1] * weighted_candidate[1] + costs[2] * weighted_candidate[2]
     dual_y_13 = 1
+    # The sole dual variable crosses both available gaps; check each capacity.
+    assert dual_y_13 <= costs[1]
+    assert dual_y_13 <= costs[2]
     dual_value = interval_demand * dual_y_13
     assert interval_demand == 3
     assert primal_value == dual_value == 3
